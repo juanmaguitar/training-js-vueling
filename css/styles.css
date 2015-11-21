@@ -96,7 +96,7 @@ h6 {
   src: url("../fonts/Chunkfive.otf") format("opentype"); }
 @font-face {
   font-family: MOHAVE;
-  src: url("../fonts/Mohave.otf") format("opentype"); }
+  src: url("Mohave.otf") format("opentype"); }
 /* line 117, ../../src/scss/styles.scss */
 #Cover, #MainCover {
   /*img {
