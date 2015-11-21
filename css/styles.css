@@ -93,10 +93,10 @@ h6 {
 
 @font-face {
   font-family: CHUNKFIVE;
-  src: url("/fonts/Chunkfive.otf") format("opentype"); }
+  src: url("../fonts/Chunkfive.otf") format("opentype"); }
 @font-face {
   font-family: MOHAVE;
-  src: url("/fonts/Mohave.otf") format("opentype"); }
+  src: url("../fonts/Mohave.otf") format("opentype"); }
 /* line 117, ../../src/scss/styles.scss */
 #Cover, #MainCover {
   /*img {
