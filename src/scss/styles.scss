@@ -1,0 +1,325 @@
+
+
+
+.clear-ideas-gruntfile.smallcode {
+	ul ul li code { font-size:16px; }
+	pre {
+		margin-top:20px;
+		margin-left:100px;
+		code:before { margin:0;}
+	}
+}
+
+#contents {
+	h2 { margin-bottom:45px;}
+	.icon-keyboard:before, 	.icon-laptop:before {
+		margin-left: 52px;
+		margin-right: -15px;
+	}
+}
+
+.slide h2 {
+	font-size:40px;
+}
+
+[class^="icon-"] {
+	font-family: "Open Sans",sans-serif;
+	&:before {
+		font-family: FontAwesome;
+	}
+}
+
+.not-alone {
+	ul {
+		ul {
+			margin-top:10px;
+			margin-left:30px;
+			li {
+				position:relative;
+				margin-left:-60px;
+				margin-bottom:10px;
+			}
+		}
+	}
+}
+
+.devicons {
+	&.devicons-java {
+		top:6px;
+	}
+	&.devicons-php {
+		top:10px;
+	}
+	&.devicons-python {
+		top:10px;
+	}
+	width: 30px;
+	height:30px;
+	font-size:40px;
+	display:block-inline;
+	margin-left:-45px;
+	padding-left:10px;
+	position:relative;
+	&:before {
+		margin-right:20px;
+	}
+
+
+}
+
+a[class|=icon] {
+	font-size: 1.3em;
+	background: none;
+	text-decoration: none;
+	width:auto !important;
+	&:before { margin-right:10px; }
+}
+
+.clear-ideas.small {
+	ol,ul {
+		font-size:.9em;
+	}
+}
+
+.no-bullet-list {
+	ul {
+		& > li:before {
+			content:'';
+		}
+	}
+}
+.section {
+	h1 {
+		margin-top:100px;
+		font-size:4em;
+		text-align: center;
+
+	}
+}
+
+h6 {
+	color: #ccc;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+@font-face {
+	font-family: CHUNKFIVE;
+	src: url("../fonts/Chunkfive.otf") format("opentype");
+}
+
+@font-face {
+	font-family: MOHAVE;
+	src: url("../fonts/Mohave.otf") format("opentype");
+}
+
+#Cover, #MainCover {
+	& {
+		background: url("../img/vueling-logo.png") no-repeat scroll right 220px top 340px #FFD245;
+	}
+	& > div {
+		top: 0;
+	}
+	/*img {
+		position: absolute;
+		top: 150px;
+		left: 100px;
+	}
+	*/
+	h2, h3, ul li {
+		color: #453015;
+		font-family: "MOHAVE",Helvetica,Arial,sans-serif;
+	}
+	h2 {
+		position: absolute;
+		top: 140px;
+    left: 430px;
+    font-size: 4em;
+    font-weight: bolder;
+	}
+	.logos {
+		position: absolute;
+    top: 0;
+    border: 1px solid #CCC;
+    background: #FFF;
+    height: 260px;
+    padding: 20px;
+    left: 0;
+    height: 100%;
+    width: 31%;
+
+		& > .box {
+			position: absolute;
+			top:210px;
+			left:55px;
+		}
+		img {
+			margin:10px;
+		}
+		img[alt="Jasmine Logo"] {
+			width: 100px;
+			height: 100px;
+		}
+
+		img[alt="Javascript Logo"] {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	h3 {
+		position: absolute;
+    top: 360px;
+    left: 35px;
+    font-size: 1.5em;
+    width: 28%;
+    line-height: 39px;
+    text-align: center;
+    strong {
+    	font-size:1.5em;
+    }
+	}
+
+}
+
+#MainCover {
+	ul {
+		list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 43px;
+    width: 26%;
+    line-height: 50px;
+    text-align: center;
+    background: white;
+    height: 100%;
+    padding: 50px;
+    padding-top: 80px;
+    li {
+    	margin-bottom: 25px;
+    }
+	}
+}
+
+#Cover {
+	&.tdd {
+		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 305px #4285F4;
+
+		h2 { color: #FFF; top:250px; font-size:2.7em;}
+	}
+
+}
+
+#contents {
+	&.general {
+		ol {
+			display: flex;
+    	flex-direction:column;
+  		flex-wrap:wrap;
+    	li { display: flex; }
+    }
+	}
+}
+
+
+.what {
+	blockquote {
+		margin-top:1.2em;
+		font-size : 3em;
+	}
+}
+
+.what2 {
+	blockquote {
+		margin-top:2em;
+		font-size :2em;
+	}
+}
+
+.what3 {
+	blockquote {
+		p {
+			line-height: 1.5em;
+		}
+		margin-top:2em;
+		font-size :2em;
+	}
+}
+
+.two-columns-list {
+
+	$max-column-items: 10; /* The maximum number of items a single column can handle.  If a column has more items than the maximum defined here, some items won't display. */
+	$line-height: 1.5;
+	$list-font-size: 16px;
+
+	ol {
+	  position: relative;
+	  margin: 0 0 50px;
+	  padding: 0;
+	  font-size: $list-font-size;
+	}
+
+	ol li {
+	  position: absolute;
+	  margin: 0;
+	  padding: 0;
+	  width: 50%;
+	  list-style-position: inside;
+	  line-height: $line-height;
+	}
+
+	@for $i from 2 through $max-column-items{
+		ol li:nth-child( n+#{$i} ) {
+			top: $line-height * ($i - 1) + em; /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/
+		}
+	}
+
+	@for $i from 2 through $max-column-items {
+		ol li:nth-child(n+#{$i + 1}):nth-last-child(-n+#{$i}) {
+			position: static;
+			margin-left: 50%;
+		}
+	}
+}
+
+.slide  {
+	ol, ul {
+		margin-bottom: 10px;
+	}
+	p {
+		display: inline;
+	}
+	& {
+		background: url("../img/vueling-logo.jpg") no-repeat top 25px right 25px #FFF;
+		background-size: 10%;
+	}
+
+}
+
+.showterm {
+	a {
+		margin:0;
+		float:right;
+/*		background: none; */
+	}
+}
+
+.smallcode  {
+	h2 {
+		margin-bottom:25px;
+	}
+	pre {
+		margin-left:50px;
+		code {
+			line-height: 1.5;
+			font-size: 14px;
+		}
+	}
+	&.smaller {
+		pre code {
+			font-size: 12px;
+		}
+
+	}
+}
