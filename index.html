@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&e98975ac1a02">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&032b63b5831a">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?3d9c209d1a9d">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?4a86f732746b">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?d4fd0d118473">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?97b49f43829d">
 	
-		<link rel="stylesheet" href="css/styles.css?d9b1c35f5398">
+		<link rel="stylesheet" href="css/styles.css?5cd11ce51618">
 	
 </head>
 <body class="list">
@@ -51,6 +51,8 @@
 <ul>
 <li><a class="icon-pixelovers" href="http://pixelovers.com" target="_blank">https://pixelovers.com</a></li>
 <li><a class="icon-twitter" href="https://twitter.com/pixelovers" target="_blank">@pixelovers</a></li>
+<li><a class="icon-book" href="http://apuntesjs.com" target="_blank">Apuntes de Javascript</a></li>
+
 </ul>
 
 <!-- ######################## CONTENTS ######################## --> 
@@ -60,7 +62,7 @@
 	<section class="slide contents general" ><div>
 		<h2>Contents</h2>
 <ul>
-<li>[Day 1] TDD</li>
+<li>[Day 1] TDD/BDD with Jasmine</li>
 <li>[Day 2] JS Avanzado: objetos, falsy values, scope y closures, dom y bom</li>
 <li>[Day 3] JS Avanzado: this, prototype y herencia</li>
 <li>[Day 4] JS Avanzado: patrones de diseño</li>
@@ -83,7 +85,7 @@
 
 	</div></section>
 	
-	<section class="slide tdd" id="Cover"><div>
+	<section class="slide coverSession tdd" ><div>
 		<section class="logos">
   <div class="box">
     <img src="img/JavaScript-logo.png" alt="Javascript Logo">
@@ -103,7 +105,54 @@
 <li><a href="https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#1--unit-testings-pruebas-unitarias">Unit Testings</a></li>
 <li><a href="https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#2--tdd-y-bdd">TDD y BDD</a></li>
 <li><a href="https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks">Testing Frameworks</a> </li>
+<li><a href="https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks">Testing Runners</a> </li>
 </ol>
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+	</div></section>
+	
+	<section class="slide tdd kata" ><div>
+		<h2>KATA: Native function <code>myIndexOf()</code></h2>
+<p>Implement the JavaScript native function <code>myIndexOf()</code>  </p>
+<p>The <code>myIndexOf()</code> method returns the index within the calling String object of the first occurrence of the specified value, starting the search at <em>fromIndex</em> , returns -1 if the value is not found. The indexOf method is case sensitive.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>searchValue</code></td>
+<td>A string representing the value to search for.</td>
+</tr>
+<tr>
+<td><code>fromIndex</code></td>
+<td>The location within the calling string to start the search from. It can be any integer between 0 and the length of the string. The default value is 0.</td>
+</tr>
+</tbody>
+</table>
+
+	</div></section>
+	
+	<section class="slide tdd kata" ><div>
+		<h2>KATA: Poker</h2>
+<p>Create a useful model of a standard 52-card deck of cards:  </p>
+<ul>
+<li>4 suits - spades, hearts, diamonds, clubs</li>
+<li>13 ranks - Ace, two to ten, Jack, Queen, King</li>
+</ul>
+<p>I should be able to draw a poker hand (5 card draw, not Texas hold &#39;em) and identify useful properties of the hand :</p>
+<ul>
+<li>Is there a pair of card? (e.g. two Aces)</li>
+<li>Is there three of a kind?</li>
+<li>Four of a kind?</li>
+<li>Are there two pairs?</li>
+<li>Is there a straight? (e.g. 4, 5, 6, 7, 8 of any suit)</li>
+<li>Is there a flush? (e.g. 2, 4, 6, 8, King - all of Hearts)</li>
+<li>What is the highest/lowest card?</li>
+</ul>
 <!-- ######################## RESOURCES TDD ######################## --> 
 
 	</div></section>
@@ -116,8 +165,7 @@
 <li><a href="http://karma-runner.github.io/0.13/index.html">Karma</a></li>
 <li><a href="http://phantomjs.org/">Phantom JS</a></li>
 <li><a href="https://github.com/karma-runner/karma-coverage">Karma Coverage</a></li>
-<li><a href="http://www.letscodejavascript.com/">Let’s Code: Test-Driven JavaScript</a></li>
-<li><a href="http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229">Testing Your JavaScript with Jasmine</a></li>
+<li><a href="https://github.com/mawrkus/js-unit-testing-guide">JS Unit Testing Guide</a></li>
 </ul>
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -126,8 +174,10 @@
 	<section class="slide tdd" ><div>
 		<h2>Resources for this Unit</h2>
 <ul>
-<li><a href="https://github.com/mawrkus/js-unit-testing-guide">JS Unit Testing Guide</a></li>
-<li><a href="http://www.slideshare.net/cebartling/javascript-tdd-with-jasmine-and-karma">Javascript TDD w/ Karma</a></li>
+<li><a href="http://simonsmith.io/headless-testing-with-phantomjs-and-grunt/">Headless testing with Jasmine, PhantomJS and Grunt</a></li>
+<li><a href="http://www.letscodejavascript.com/">Let’s Code: Test-Driven JavaScript</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229">Testing Your JavaScript with Jasmine</a></li>
+<li><a href="http://www.techinsight.io/review/devops-and-automation/automating-unit-and-integration-testing-with-the-mean-stack/">Automated testing on the MEAN stack</a></li>
 </ul>
 <!-- ######################## KATAS ######################## --> 
 
@@ -136,6 +186,7 @@
 	<section class="slide tdd" ><div>
 		<h2>Katas</h2>
 <ul>
+<li><a href="https://github.com/mawrkus/js-kata-kit">JS Kata Kit</a></li>
 <li><a href="http://katas.softwarecraftsmanship.org/">Code Kata | pernix</a></li>
 <li><a href="http://codekata.com/">Code Kata | Dave Thomas</a></li>
 <li><a href="https://projecteuler.net/archives">Project Euler</a></li>
@@ -144,6 +195,32 @@
 <li><a href="http://cyber-dojo.org/">Cyber Dojo</a></li>
 <li><a href="http://www.codewars.com/">CodeWars</a></li>
 </ul>
+<!-- ######################## COVER Advanced JS ######################## --> 
+
+	</div></section>
+	
+	<section class="slide coverSession concepts" ><div>
+		<section class="logos">
+  <div class="box">
+    <img src="img/JavaScript-logo.png" alt="Javascript Logo">
+  <div>
+</section>
+
+<h2>Advanced JS Training</h2>
+<h3>Advanced <strong>Javascript</strong> concepts</h3>
+<!-- ######################## COVER Advanced JS ######################## --> 
+
+	</div></section>
+	
+	<section class="slide coverSession jquery" ><div>
+		<section class="logos">
+  <div class="box">
+    <img src="img/jquery-logo.gif" alt="jQuery Logo">
+  <div>
+</section>
+
+<h2>Advanced JS Training</h2>
+<h3>Using <strong>jQuery</strong></h3>
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
 	</div></section>
