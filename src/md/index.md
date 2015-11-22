@@ -40,24 +40,16 @@ by [JuanMa Garrido](#trainer)
 
 ## Contents
 
-- [Day 1] TDD/BDD with Jasmine
-- [Day 2] JS Avanzado: objetos, falsy values, scope y closures, dom y bom
-- [Day 3] JS Avanzado: this, prototype y herencia
-- [Day 4] JS Avanzado: patrones de diseño
-- [Day 5] jQuery
-- [Day 6] jQuery
-- [Day 7] Arquitectura Frontend: NPM, Grunt, JSLint, format, compilation
-
-<!-- ######################## CONTENTS ######################## --> 
-
-!SLIDE contents general
-
-## Contents
-
-- [Day 8] ES2015 (ES6)
-- [Day 9] ES2015 (ES6)
-- [Day 10] Final Practice
-
+1. <span class="icon-calendar"> TDD/BDD with Jasmine
+1. <span class="icon-calendar"> JS Avanzado: objetos, falsy values, scope y closures, dom y bom
+1. <span class="icon-calendar"> JS Avanzado: this, prototype y herencia
+1. <span class="icon-calendar"> JS Avanzado: patrones de diseño
+1. <span class="icon-calendar"> jQuery
+1. <span class="icon-calendar"> jQuery
+1. <span class="icon-calendar"> Arquitectura Frontend: NPM, Grunt, JSLint, format, compilation
+1. <span class="icon-calendar"> ES2015 (ES6)
+1. <span class="icon-calendar"> ES2015 (ES6)
+1. <span class="icon-calendar"> Final Practice
 
 <!-- ######################## COVER ######################## --> 
 
@@ -83,13 +75,13 @@ by [JuanMa Garrido](#trainer)
 1. [Unit Testings](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#1--unit-testings-pruebas-unitarias)
 1. [TDD y BDD](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#2--tdd-y-bdd)
 1. [Testing Frameworks](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
-1. [Testing Runners](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
+1. [Testing Runners](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#4--testing-runners) 
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
 !SLIDE tdd kata
 
-## KATA: Native function `myIndexOf()`
+## <span class="icon-keyboard"></span> KATA: Native function `myIndexOf()`
 
 Implement the JavaScript native function `myIndexOf()`  
 
@@ -103,7 +95,7 @@ The `myIndexOf()` method returns the index within the calling String object of t
 
 !SLIDE tdd kata
 
-## KATA: Poker
+## <span class="icon-keyboard"></span> KATA: Poker
 
 Create a useful model of a standard 52-card deck of cards:  
 
@@ -122,43 +114,43 @@ I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and iden
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
-!SLIDE tdd
+!SLIDE tdd no-bullet-list resources
 
 ## Resources for this Unit
 
-- [BOOK: Test Driven JavaScript Development](http://www.amazon.es/Driven-JavaScript-Development-Developers-Library/dp/0321683919)
-- [Jasmine](https://jasmine.github.io/)
-- [Karma](http://karma-runner.github.io/0.13/index.html)
-- [Phantom JS](http://phantomjs.org/)
-- [Karma Coverage](https://github.com/karma-runner/karma-coverage)
-- [JS Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
+- <span class="icon-book"> [Test Driven JavaScript Development](http://www.amazon.es/Driven-JavaScript-Development-Developers-Library/dp/0321683919)
+- <span class="icon-link"> [Jasmine](https://jasmine.github.io/)
+- <span class="icon-link"> [Karma](http://karma-runner.github.io/0.13/index.html)
+- <span class="icon-link"> [Phantom JS](http://phantomjs.org/)
+- <span class="icon-github"> [Karma Coverage](https://github.com/karma-runner/karma-coverage)
+- <span class="icon-github"> [JS Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
  
 <!-- ######################## RESOURCES TDD ######################## --> 
 
-!SLIDE tdd
+!SLIDE tdd no-bullet-list resources
 
 ## Resources for this Unit
 
-- [Headless testing with Jasmine, PhantomJS and Grunt](http://simonsmith.io/headless-testing-with-phantomjs-and-grunt/)
-- [Let’s Code: Test-Driven JavaScript](http://www.letscodejavascript.com/)
-- [Testing Your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
-- [Automated testing on the MEAN stack](http://www.techinsight.io/review/devops-and-automation/automating-unit-and-integration-testing-with-the-mean-stack/)
+- <span class="icon-link"> [Headless testing with Jasmine, PhantomJS and Grunt](http://simonsmith.io/headless-testing-with-phantomjs-and-grunt/)
+- <span class="icon-link"> [Let’s Code: Test-Driven JavaScript](http://www.letscodejavascript.com/)
+- <span class="icon-link"> [Testing Your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
+- <span class="icon-link"> [Automated testing on the MEAN stack](http://www.techinsight.io/review/devops-and-automation/automating-unit-and-integration-testing-with-the-mean-stack/)
 
 
 <!-- ######################## KATAS ######################## --> 
 
-!SLIDE tdd
+!SLIDE tdd no-bullet-list resources
 
 ## Katas
 
-- [JS Kata Kit](https://github.com/mawrkus/js-kata-kit)
-- [Code Kata | pernix](http://katas.softwarecraftsmanship.org/)
-- [Code Kata | Dave Thomas](http://codekata.com/)
-- [Project Euler](https://projecteuler.net/archives)
-- [codekatas.org](http://www.codekatas.org/)
-- [Javascript Katas](http://www.javascriptkata.com/)
-- [Cyber Dojo](http://cyber-dojo.org/)
-- [CodeWars](http://www.codewars.com/)
+- <span class="icon-github"> [JS Kata Kit](https://github.com/mawrkus/js-kata-kit)
+- <span class="icon-link"> [Code Kata | pernix](http://katas.softwarecraftsmanship.org/)
+- <span class="icon-link"> [Code Kata | Dave Thomas](http://codekata.com/)
+- <span class="icon-link"> [Project Euler](https://projecteuler.net/archives)
+- <span class="icon-link"> [codekatas.org](http://www.codekatas.org/)
+- <span class="icon-link"> [Javascript Katas](http://www.javascriptkata.com/)
+- <span class="icon-link"> [Cyber Dojo](http://cyber-dojo.org/)
+- <span class="icon-link"> [CodeWars](http://www.codewars.com/)
 
 <!-- ######################## COVER Advanced JS ######################## --> 
 

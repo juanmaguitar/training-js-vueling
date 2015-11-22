@@ -82,14 +82,23 @@ a[class|=icon] {
   /* line 93, ../../src/scss/styles.scss */
   .no-bullet-list.slide ul > li:before {
     content: ''; }
-
+/* line 98, ../../src/scss/styles.scss */
+.no-bullet-list.slide.resources ul {
+  margin-left: -50px; }
 /* line 99, ../../src/scss/styles.scss */
+.no-bullet-list.slide.resources a {
+  margin-left: -10px; }
+/* line 100, ../../src/scss/styles.scss */
+.no-bullet-list.slide.resources span {
+  margin-left: 60px; }
+
+/* line 105, ../../src/scss/styles.scss */
 .section h1 {
   margin-top: 100px;
   font-size: 4em;
   text-align: center; }
 
-/* line 107, ../../src/scss/styles.scss */
+/* line 113, ../../src/scss/styles.scss */
 h6 {
   color: #ccc;
   position: absolute;
@@ -99,7 +108,7 @@ h6 {
 @font-face {
   font-family: MOHAVE;
   src: url("Mohave.otf") format("opentype"); }
-/* line 119, ../../src/scss/styles.scss */
+/* line 125, ../../src/scss/styles.scss */
 .coverSession, #MainCover {
   /*img {
   	position: absolute;
@@ -107,24 +116,24 @@ h6 {
   	left: 100px;
   }
   */ }
-  /* line 120, ../../src/scss/styles.scss */
+  /* line 126, ../../src/scss/styles.scss */
   .coverSession, #MainCover {
     background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #FFD245; }
-  /* line 124, ../../src/scss/styles.scss */
+  /* line 130, ../../src/scss/styles.scss */
   .coverSession > div, #MainCover > div {
     top: 0; }
-  /* line 133, ../../src/scss/styles.scss */
+  /* line 139, ../../src/scss/styles.scss */
   .coverSession h2, .coverSession h3, .coverSession ul li, #MainCover h2, #MainCover h3, #MainCover ul li {
     color: #453015;
     font-family: "MOHAVE",Helvetica,Arial,sans-serif; }
-  /* line 137, ../../src/scss/styles.scss */
+  /* line 143, ../../src/scss/styles.scss */
   .coverSession h2, #MainCover h2 {
     position: absolute;
     top: 200px;
     left: 430px;
     font-size: 4em;
     font-weight: bolder; }
-  /* line 144, ../../src/scss/styles.scss */
+  /* line 150, ../../src/scss/styles.scss */
   .coverSession .logos, #MainCover .logos {
     position: absolute;
     top: 0;
@@ -135,15 +144,15 @@ h6 {
     left: 0;
     height: 100%;
     width: 31%; }
-    /* line 155, ../../src/scss/styles.scss */
+    /* line 161, ../../src/scss/styles.scss */
     .coverSession .logos > .box, #MainCover .logos > .box {
       position: absolute;
       top: 210px;
       left: 55px; }
-    /* line 160, ../../src/scss/styles.scss */
+    /* line 166, ../../src/scss/styles.scss */
     .coverSession .logos img, #MainCover .logos img {
       margin: 10px; }
-  /* line 164, ../../src/scss/styles.scss */
+  /* line 170, ../../src/scss/styles.scss */
   .coverSession h3, #MainCover h3 {
     position: absolute;
     top: 360px;
@@ -152,11 +161,11 @@ h6 {
     width: 28%;
     line-height: 39px;
     text-align: center; }
-    /* line 172, ../../src/scss/styles.scss */
+    /* line 178, ../../src/scss/styles.scss */
     .coverSession h3 strong, #MainCover h3 strong {
       font-size: 1.5em; }
 
-/* line 180, ../../src/scss/styles.scss */
+/* line 186, ../../src/scss/styles.scss */
 #MainCover ul {
   list-style-type: none;
   position: absolute;
@@ -170,23 +179,23 @@ h6 {
   height: 100%;
   padding: 50px;
   padding-top: 80px; }
-  /* line 193, ../../src/scss/styles.scss */
+  /* line 199, ../../src/scss/styles.scss */
   #MainCover ul li {
     margin-bottom: 25px; }
 
-/* line 200, ../../src/scss/styles.scss */
+/* line 206, ../../src/scss/styles.scss */
 .slide.tdd {
   border-left: 10px solid #34A853; }
 
-/* line 205, ../../src/scss/styles.scss */
+/* line 211, ../../src/scss/styles.scss */
 .slide.tdd.kata p, .slide.tdd.kata table, .slide.tdd.kata ul {
   font-size: 18px;
   padding: 0;
   display: block; }
-/* line 210, ../../src/scss/styles.scss */
+/* line 216, ../../src/scss/styles.scss */
 .slide.tdd.kata p {
   margin: 0 0 20px; }
-/* line 212, ../../src/scss/styles.scss */
+/* line 218, ../../src/scss/styles.scss */
 .slide.tdd.kata ul li {
   width: 45%;
   padding: 10px;
@@ -194,77 +203,84 @@ h6 {
   margin: 0;
   line-height: 20px; }
 
-/* line 219, ../../src/scss/styles.scss */
+/* line 225, ../../src/scss/styles.scss */
+.contents.general ol li {
+  font-size: 20px; }
+  /* line 227, ../../src/scss/styles.scss */
+  .contents.general ol li span {
+    padding: 0 0 0 60px; }
+
+/* line 231, ../../src/scss/styles.scss */
 .slide.concepts {
   border-left: 10px solid #EA4335; }
 
-/* line 223, ../../src/scss/styles.scss */
+/* line 235, ../../src/scss/styles.scss */
 .slide.jquery {
   border-left: 10px solid #0769AD; }
 
-/* line 228, ../../src/scss/styles.scss */
+/* line 240, ../../src/scss/styles.scss */
 .coverSession.tdd {
   background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #34A853; }
-  /* line 230, ../../src/scss/styles.scss */
+  /* line 242, ../../src/scss/styles.scss */
   .coverSession.tdd img[alt="Jasmine Logo"] {
     width: 100px;
     height: 100px; }
-  /* line 235, ../../src/scss/styles.scss */
+  /* line 247, ../../src/scss/styles.scss */
   .coverSession.tdd img[alt="Javascript Logo"] {
     width: 100px;
     height: 100px; }
-/* line 240, ../../src/scss/styles.scss */
+/* line 252, ../../src/scss/styles.scss */
 .coverSession.concepts {
   background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #EA4335; }
-  /* line 242, ../../src/scss/styles.scss */
+  /* line 254, ../../src/scss/styles.scss */
   .coverSession.concepts img[alt="Javascript Logo"] {
     margin: -20px 48px;
     height: 150px; }
-/* line 249, ../../src/scss/styles.scss */
+/* line 261, ../../src/scss/styles.scss */
 .coverSession.jquery {
   background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #0769AD; }
-  /* line 251, ../../src/scss/styles.scss */
+  /* line 263, ../../src/scss/styles.scss */
   .coverSession.jquery img[alt="jQuery Logo"] {
     margin: -20px 48px;
     height: 150px; }
 
-/* line 262, ../../src/scss/styles.scss */
+/* line 274, ../../src/scss/styles.scss */
 #contents.general ol {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
-  /* line 266, ../../src/scss/styles.scss */
+  /* line 278, ../../src/scss/styles.scss */
   #contents.general ol li {
     display: flex; }
 
-/* line 273, ../../src/scss/styles.scss */
+/* line 285, ../../src/scss/styles.scss */
 .what blockquote {
   margin-top: 1.2em;
   font-size: 3em; }
 
-/* line 280, ../../src/scss/styles.scss */
+/* line 292, ../../src/scss/styles.scss */
 .what2 blockquote {
   margin-top: 2em;
   font-size: 2em; }
 
-/* line 287, ../../src/scss/styles.scss */
+/* line 299, ../../src/scss/styles.scss */
 .what3 blockquote {
   margin-top: 2em;
   font-size: 2em; }
-  /* line 288, ../../src/scss/styles.scss */
+  /* line 300, ../../src/scss/styles.scss */
   .what3 blockquote p {
     line-height: 1.5em; }
 
-/* line 296, ../../src/scss/styles.scss */
+/* line 308, ../../src/scss/styles.scss */
 .two-columns-list {
   /* The maximum number of items a single column can handle.  If a column has more items than the maximum defined here, some items won't display. */ }
-  /* line 302, ../../src/scss/styles.scss */
+  /* line 314, ../../src/scss/styles.scss */
   .two-columns-list ol {
     position: relative;
     margin: 0 0 50px;
     padding: 0;
     font-size: 16px; }
-  /* line 309, ../../src/scss/styles.scss */
+  /* line 321, ../../src/scss/styles.scss */
   .two-columns-list ol li {
     position: absolute;
     margin: 0;
@@ -272,107 +288,107 @@ h6 {
     width: 50%;
     list-style-position: inside;
     line-height: 1.5; }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+2) {
     top: 1.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+3) {
     top: 3em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+4) {
     top: 4.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+5) {
     top: 6em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+6) {
     top: 7.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+7) {
     top: 9em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+8) {
     top: 10.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+9) {
     top: 12em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 319, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+10) {
     top: 13.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+3):nth-last-child(-n+2) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+4):nth-last-child(-n+3) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+5):nth-last-child(-n+4) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+6):nth-last-child(-n+5) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+7):nth-last-child(-n+6) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+8):nth-last-child(-n+7) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+9):nth-last-child(-n+8) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+10):nth-last-child(-n+9) {
     position: static;
     margin-left: 50%; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 337, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+11):nth-last-child(-n+10) {
     position: static;
     margin-left: 50%; }
 
-/* line 333, ../../src/scss/styles.scss */
+/* line 345, ../../src/scss/styles.scss */
 .slide ol, .slide ul {
   margin-bottom: 10px; }
-/* line 336, ../../src/scss/styles.scss */
+/* line 348, ../../src/scss/styles.scss */
 .slide p {
   display: inline; }
-/* line 339, ../../src/scss/styles.scss */
+/* line 351, ../../src/scss/styles.scss */
 .slide {
   background: url("../img/vueling-logo.jpg") no-repeat top 25px right 25px #FFF;
   background-size: 10%; }
 
-/* line 347, ../../src/scss/styles.scss */
+/* line 359, ../../src/scss/styles.scss */
 .showterm a {
   margin: 0;
   float: right;
   /*		background: none; */ }
 
-/* line 355, ../../src/scss/styles.scss */
+/* line 367, ../../src/scss/styles.scss */
 .smallcode h2 {
   margin-bottom: 25px; }
-/* line 358, ../../src/scss/styles.scss */
+/* line 370, ../../src/scss/styles.scss */
 .smallcode pre {
   margin-left: 50px; }
-  /* line 360, ../../src/scss/styles.scss */
+  /* line 372, ../../src/scss/styles.scss */
   .smallcode pre code {
     line-height: 1.5;
     font-size: 14px; }
-/* line 366, ../../src/scss/styles.scss */
+/* line 378, ../../src/scss/styles.scss */
 .smallcode.smaller pre code {
   font-size: 12px; }
 
@@ -411,7 +427,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 */
-/* line 417, ../../src/scss/styles.scss */
+/* line 429, ../../src/scss/styles.scss */
 .icon-pixelovers:before {
   font-family: "untitled-font-1" !important;
   font-style: normal !important;
@@ -450,6 +466,6 @@ h6 {
   content: "i";
 }
 */
-/* line 456, ../../src/scss/styles.scss */
+/* line 468, ../../src/scss/styles.scss */
 .icon-pixelovers-1:before {
   content: "j"; }
