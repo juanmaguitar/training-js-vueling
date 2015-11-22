@@ -18,8 +18,13 @@
 	}
 }
 
+.slide.tdd {
+  border-left: 10px solid #4285F4;
+}
+
 .slide h2 {
 	font-size:40px;
+  margin-bottom:20px;
 }
 
 [class^="icon-"] {
@@ -81,8 +86,9 @@ a[class|=icon] {
 	}
 }
 
-.no-bullet-list {
+.no-bullet-list.slide {
 	ul {
+		margin-bottom:50px;
 		& > li:before {
 			content:'';
 		}
@@ -105,18 +111,14 @@ h6 {
 }
 
 @font-face {
-	font-family: CHUNKFIVE;
-	src: url("../fonts/Chunkfive.otf") format("opentype");
-}
-
-@font-face {
 	font-family: MOHAVE;
-	src: url("../fonts/Mohave.otf") format("opentype");
+	src: url("Mohave.otf") format("opentype");
 }
 
 #Cover, #MainCover {
 	& {
-		background: url("../img/vueling-logo.png") no-repeat scroll right 220px top 340px #FFD245;
+		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #FFD245;
+		//background: url("../img/vueling-logo.png") no-repeat scroll right 220px top 340px #FFD245;
 	}
 	& > div {
 		top: 0;
@@ -133,7 +135,7 @@ h6 {
 	}
 	h2 {
 		position: absolute;
-		top: 140px;
+		top: 200px;
     left: 430px;
     font-size: 4em;
     font-weight: bolder;
@@ -204,9 +206,9 @@ h6 {
 
 #Cover {
 	&.tdd {
-		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 305px #4285F4;
+		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #4285F4;
 
-		h2 { color: #FFF; top:250px; font-size:2.7em;}
+		//h2 { color: #FFF; top:250px; font-size:2.7em;}
 	}
 
 }
@@ -323,3 +325,91 @@ h6 {
 
 	}
 }
+
+/* custom fonts */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/
+/*
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/
+.icon-pixelovers:before {
+	  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "a";
+}
+/*
+.icon-t-shirt:before {
+  content: "b";
+}
+.icon-home:before {
+  content: "c";
+}
+.icon-fontawesome-webfont:before {
+  content: "d";
+}
+.icon-linkedin:before {
+  content: "e";
+}
+.icon-twitter:before {
+  content: "f";
+}
+.icon-facebook:before {
+  content: "g";
+}
+.icon-google-plus:before {
+  content: "h";
+}
+.icon-letter-mail:before {
+  content: "i";
+}
+*/
+.icon-pixelovers-1:before {
+  content: "j";
+}
+

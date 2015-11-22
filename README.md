@@ -8,7 +8,7 @@ This repository contains the materials used in the "Advanced JS Training" done f
 
 ## Training Goals ##
 
-Learn and practice some advanced concepts of Javascript so the students can apply this knowledge to create a more organized, efficient, scalable, tested and documented javascript code within a team environment.
+Learn and practice some advanced concepts of Javascript so the students can apply this knowledge in their daily work to create a more organized, efficient, scalable, tested and documented javascript code within a team environment.
 
 ## Contents ##
 

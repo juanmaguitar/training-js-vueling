@@ -27,6 +27,11 @@ by [JuanMa Garrido](#trainer)
 <li><a class="icon-github" href="https://github.com/juanmaguitar" target="_blank">https://github.com/juanmaguitar</a></li>
 </ul>
 
+<ul>
+<li><a class="icon-pixelovers" href="http://pixelovers.com" target="_blank">https://pixelovers.com</a></li>
+<li><a class="icon-twitter" href="https://twitter.com/pixelovers" target="_blank">@pixelovers</a></li>
+</ul>
+
 <!-- ######################## CONTENTS ######################## --> 
 
 !SLIDE contents general
@@ -69,22 +74,51 @@ by [JuanMa Garrido](#trainer)
 
 <!-- ######################## CONTENTS ######################## --> 
 
-!SLIDE #contents
+!SLIDE #contents tdd
 
 ## Contents
 
 1. [Unit Testings](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#1--unit-testings-pruebas-unitarias)
-1. TDD y BDD
-1. Jasmine 
+1. [TDD y BDD](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#2--tdd-y-bdd)
+1. [Testing Frameworks](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
-!SLIDE
+!SLIDE tdd
 
 ## Resources for this Unit
 
 - [BOOK: Test Driven JavaScript Development](http://www.amazon.es/Driven-JavaScript-Development-Developers-Library/dp/0321683919)
+- [Jasmine](https://jasmine.github.io/)
+- [Karma](http://karma-runner.github.io/0.13/index.html)
+- [Phantom JS](http://phantomjs.org/)
+- [Karma Coverage](https://github.com/karma-runner/karma-coverage)
+- [Let’s Code: Test-Driven JavaScript](http://www.letscodejavascript.com/)
+- [Testing Your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
+
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+!SLIDE tdd
+
+## Resources for this Unit
+
 - [JS Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
+- [Javascript TDD w/ Karma](http://www.slideshare.net/cebartling/javascript-tdd-with-jasmine-and-karma)
+
+<!-- ######################## KATAS ######################## --> 
+
+!SLIDE tdd
+
+## Katas
+
+- [Code Kata | pernix](http://katas.softwarecraftsmanship.org/)
+- [Code Kata | Dave Thomas](http://codekata.com/)
+- [Project Euler](https://projecteuler.net/archives)
+- [codekatas.org](http://www.codekatas.org/)
+- [Javascript Katas](http://www.javascriptkata.com/)
+- [Cyber Dojo](http://cyber-dojo.org/)
+- [CodeWars](http://www.codewars.com/)
+
 
 <!-- ######################## WHAT IS GRUNT ######################## --> 
 
