@@ -1,3 +1,8 @@
+/* VARIABLES */
+
+$color-tdd: #34A853;
+$color-advanced-js: #EA4335;
+$color-jquery: #0769AD;
 
 
 
@@ -16,10 +21,6 @@
 		margin-left: 52px;
 		margin-right: -15px;
 	}
-}
-
-.slide.tdd {
-  border-left: 10px solid #4285F4;
 }
 
 .slide h2 {
@@ -73,7 +74,7 @@
 }
 
 a[class|=icon] {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	background: none;
 	text-decoration: none;
 	width:auto !important;
@@ -115,7 +116,7 @@ h6 {
 	src: url("Mohave.otf") format("opentype");
 }
 
-#Cover, #MainCover {
+.coverSession, #MainCover {
 	& {
 		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #FFD245;
 		//background: url("../img/vueling-logo.png") no-repeat scroll right 220px top 340px #FFD245;
@@ -159,15 +160,6 @@ h6 {
 		img {
 			margin:10px;
 		}
-		img[alt="Jasmine Logo"] {
-			width: 100px;
-			height: 100px;
-		}
-
-		img[alt="Javascript Logo"] {
-			width: 100px;
-			height: 100px;
-		}
 	}
 	h3 {
 		position: absolute;
@@ -204,12 +196,64 @@ h6 {
 	}
 }
 
-#Cover {
-	&.tdd {
-		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #4285F4;
 
-		//h2 { color: #FFF; top:250px; font-size:2.7em;}
+.slide.tdd {
+  border-left: 10px solid $color-tdd;
+}
+
+.slide.tdd.kata {
+  p, table, ul {
+    font-size:18px;
+    padding:0;
+    display:block;
+  }
+  p { margin:0 0 20px; }
+
+  ul li {
+    width: 45%; padding:10px; float:left; margin:0; line-height:20px;
+  }
+
+}
+
+
+.slide.concepts {
+  border-left: 10px solid $color-advanced-js;
+}
+
+.slide.jquery {
+  border-left: 10px solid $color-jquery;
+}
+
+.coverSession {
+	&.tdd {
+    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-tdd;
+		img[alt="Jasmine Logo"] {
+      width: 100px;
+      height: 100px;
+    }
+
+    img[alt="Javascript Logo"] {
+      width: 100px;
+      height: 100px;
+    }
 	}
+  &.concepts {
+    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-advanced-js;
+    img[alt="Javascript Logo"] {
+      margin:-20px 48px;
+      height: 150px;
+    }
+    //h2 { color: #FFF; top:250px; font-size:2.7em;}
+  }
+
+&.jquery {
+    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-jquery;
+    img[alt="jQuery Logo"] {
+      margin:-20px 48px;
+      height: 150px;
+    }
+    //h2 { color: #FFF; top:250px; font-size:2.7em;}
+  }
 
 }
 

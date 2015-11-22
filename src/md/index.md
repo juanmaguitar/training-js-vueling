@@ -30,6 +30,8 @@ by [JuanMa Garrido](#trainer)
 <ul>
 <li><a class="icon-pixelovers" href="http://pixelovers.com" target="_blank">https://pixelovers.com</a></li>
 <li><a class="icon-twitter" href="https://twitter.com/pixelovers" target="_blank">@pixelovers</a></li>
+<li><a class="icon-book" href="http://apuntesjs.com" target="_blank">Apuntes de Javascript</a></li>
+
 </ul>
 
 <!-- ######################## CONTENTS ######################## --> 
@@ -38,7 +40,7 @@ by [JuanMa Garrido](#trainer)
 
 ## Contents
 
-- [Day 1] TDD
+- [Day 1] TDD/BDD with Jasmine
 - [Day 2] JS Avanzado: objetos, falsy values, scope y closures, dom y bom
 - [Day 3] JS Avanzado: this, prototype y herencia
 - [Day 4] JS Avanzado: patrones de diseño
@@ -59,7 +61,7 @@ by [JuanMa Garrido](#trainer)
 
 <!-- ######################## COVER ######################## --> 
 
-!SLIDE #Cover tdd
+!SLIDE coverSession tdd
 
 <section class="logos">
   <div class="box">
@@ -81,6 +83,42 @@ by [JuanMa Garrido](#trainer)
 1. [Unit Testings](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#1--unit-testings-pruebas-unitarias)
 1. [TDD y BDD](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#2--tdd-y-bdd)
 1. [Testing Frameworks](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
+1. [Testing Runners](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
+
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+!SLIDE tdd kata
+
+## KATA: Native function `myIndexOf()`
+
+Implement the JavaScript native function `myIndexOf()`  
+
+The `myIndexOf()` method returns the index within the calling String object of the first occurrence of the specified value, starting the search at _fromIndex_ , returns -1 if the value is not found. The indexOf method is case sensitive.
+
+| Parameter | Description |
+|-----------|-------------|
+| `searchValue` | A string representing the value to search for. |
+| `fromIndex` | The location within the calling string to start the search from. It can be any integer between 0 and the length of the string. The default value is 0. |
+
+
+!SLIDE tdd kata
+
+## KATA: Poker
+
+Create a useful model of a standard 52-card deck of cards:  
+
+- 4 suits - spades, hearts, diamonds, clubs
+- 13 ranks - Ace, two to ten, Jack, Queen, King
+
+I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and identify useful properties of the hand :
+
+- Is there a pair of card? (e.g. two Aces)
+- Is there three of a kind?
+- Four of a kind?
+- Are there two pairs?
+- Is there a straight? (e.g. 4, 5, 6, 7, 8 of any suit)
+- Is there a flush? (e.g. 2, 4, 6, 8, King - all of Hearts)
+- What is the highest/lowest card?
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -93,17 +131,19 @@ by [JuanMa Garrido](#trainer)
 - [Karma](http://karma-runner.github.io/0.13/index.html)
 - [Phantom JS](http://phantomjs.org/)
 - [Karma Coverage](https://github.com/karma-runner/karma-coverage)
-- [Let’s Code: Test-Driven JavaScript](http://www.letscodejavascript.com/)
-- [Testing Your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
-
+- [JS Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
+ 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
 !SLIDE tdd
 
 ## Resources for this Unit
 
-- [JS Unit Testing Guide](https://github.com/mawrkus/js-unit-testing-guide)
-- [Javascript TDD w/ Karma](http://www.slideshare.net/cebartling/javascript-tdd-with-jasmine-and-karma)
+- [Headless testing with Jasmine, PhantomJS and Grunt](http://simonsmith.io/headless-testing-with-phantomjs-and-grunt/)
+- [Let’s Code: Test-Driven JavaScript](http://www.letscodejavascript.com/)
+- [Testing Your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
+- [Automated testing on the MEAN stack](http://www.techinsight.io/review/devops-and-automation/automating-unit-and-integration-testing-with-the-mean-stack/)
+
 
 <!-- ######################## KATAS ######################## --> 
 
@@ -111,6 +151,7 @@ by [JuanMa Garrido](#trainer)
 
 ## Katas
 
+- [JS Kata Kit](https://github.com/mawrkus/js-kata-kit)
 - [Code Kata | pernix](http://katas.softwarecraftsmanship.org/)
 - [Code Kata | Dave Thomas](http://codekata.com/)
 - [Project Euler](https://projecteuler.net/archives)
@@ -118,6 +159,33 @@ by [JuanMa Garrido](#trainer)
 - [Javascript Katas](http://www.javascriptkata.com/)
 - [Cyber Dojo](http://cyber-dojo.org/)
 - [CodeWars](http://www.codewars.com/)
+
+<!-- ######################## COVER Advanced JS ######################## --> 
+
+!SLIDE coverSession concepts
+
+<section class="logos">
+  <div class="box">
+    ![Javascript Logo](img/JavaScript-logo.png)
+  <div>
+</section>
+ 
+## Advanced JS Training  
+### Advanced **Javascript** concepts  
+
+
+<!-- ######################## COVER Advanced JS ######################## --> 
+
+!SLIDE coverSession jquery
+
+<section class="logos">
+  <div class="box">
+    ![jQuery Logo](img/jquery-logo.gif)
+  <div>
+</section>
+ 
+## Advanced JS Training  
+### Using **jQuery**  
 
 
 <!-- ######################## WHAT IS GRUNT ######################## --> 
