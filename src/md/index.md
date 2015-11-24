@@ -40,9 +40,9 @@ by [JuanMa Garrido](#trainer)
 
 ## Contents
 
-1. <span class="icon-calendar"> TDD/BDD with Jasmine
-1. <span class="icon-calendar"> JS Avanzado: objetos, falsy values, scope y closures, dom y bom
-1. <span class="icon-calendar"> JS Avanzado: this, prototype y herencia
+1. <span class="icon-calendar"> TDD/BDD w/ Jasmine
+1. <span class="icon-calendar"> JS Avanzado: Functions, Closures, Objects, value of `this`
+1. <span class="icon-calendar"> JS Avanzado: prototype y herencia
 1. <span class="icon-calendar"> JS Avanzado: patrones de diseño
 1. <span class="icon-calendar"> jQuery
 1. <span class="icon-calendar"> jQuery
@@ -68,14 +68,29 @@ by [JuanMa Garrido](#trainer)
 
 <!-- ######################## CONTENTS ######################## --> 
 
-!SLIDE #contents tdd
+!SLIDE tdd
 
 ## Contents
 
-1. [Unit Testings](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#1--unit-testings-pruebas-unitarias)
-1. [TDD y BDD](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#2--tdd-y-bdd)
-1. [Testing Frameworks](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
-1. [Testing Runners](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#4--testing-runners) 
+- [Unit Testings](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#1--unit-testings-pruebas-unitarias)
+- [TDD y BDD](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#2--tdd-y-bdd)
+- [Testing Frameworks](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#3--testing-frameworks) 
+- [Testing Runners](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/unit_testings#4--testing-runners) 
+
+<!-- ######################## CONTENTS ######################## --> 
+
+!SLIDE tdd
+
+## Contents
+
+- [Jasmine](http://addyosmani.github.com/backbone-fundamentals/#jasmine)
+  - [Suites, Specs & Spies](http://addyosmani.github.com/backbone-fundamentals/#suites-specs-spies)
+    - [Spies](http://jasmine.github.io/edge/introduction.html#section-Spies)
+    - [Spy cheatsheet](http://tobyho.com/2011/12/15/jasmine-spy-cheatsheet/)
+  - [beforeEach and afterEach()
+](http://addyosmani.github.com/backbone-fundamentals/#beforeeach-and-aftereach)
+  - [jQuery matchers and fixture loader](https://github.com/velesin/jasmine-jquery)
+  - [Faking response AJAX](https://github.com/jasmine/jasmine-ajax)
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -179,6 +194,20 @@ I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and iden
   - [Closures](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/funciones#closures)
 
 - [Ejemplos de Closures](http://msdn.microsoft.com/en-us/magazine/ff696765.aspx)
+
+<!-- ######################## CONTENTS ######################## --> 
+
+!SLIDE concepts
+
+## Contents
+
+- [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos)
+  - [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
+  - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#objetos)
+    - [Funciones constructoras](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#funciones-constructoras)
+    - [Trabajando con Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#trabajando-con-objetos)
+
+- [El valor de `this`](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/this)
 
 
 !SLIDE concepts
