@@ -387,7 +387,7 @@ h6 {
   /* line 372, ../../src/scss/styles.scss */
   .smallcode pre code {
     line-height: 1.5;
-    font-size: 14px; }
+    font-size: 18px; }
 /* line 378, ../../src/scss/styles.scss */
 .smallcode.smaller pre code {
   font-size: 12px; }
@@ -427,7 +427,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 */
-/* line 429, ../../src/scss/styles.scss */
+/* line 428, ../../src/scss/styles.scss */
 .icon-pixelovers:before {
   font-family: "untitled-font-1" !important;
   font-style: normal !important;
@@ -466,6 +466,6 @@ h6 {
   content: "i";
 }
 */
-/* line 468, ../../src/scss/styles.scss */
+/* line 467, ../../src/scss/styles.scss */
 .icon-pixelovers-1:before {
   content: "j"; }

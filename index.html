@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&3ef750e75908">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&bc5604b061e3">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?2dbcad45e843">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?0ef463a03d8f">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?ac586d9cac5c">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?1009e20e22b8">
 	
-		<link rel="stylesheet" href="css/styles.css?3f6ffe4420ba">
+		<link rel="stylesheet" href="css/styles.css?e693ef1430c1">
 	
 </head>
 <body class="list">
@@ -259,6 +259,107 @@
 <li><p><a href="https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/this">El valor de <code>this</code></a></p>
 </li>
 </ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>var x = &#39;Hello World&#39;;</code>
+<code>function foo(){</code>
+<code>    var x;</code>
+<code>    alert( x );</code>
+<code>    x = &#39;New Value&#39;;</code>
+<code>    alert( x );</code>
+<code>}</code>
+<code>foo();</code></pre><p>¿Qué devolveran los alert? ¿Por qué?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>function test() {</code>
+<code>    foo();</code>
+<code>    bar();</code>
+<code>    var foo = function () {</code>
+<code>        alert(&quot;this won&#39;t run!&quot;);</code>
+<code>    }</code>
+<code>    function bar() {</code>
+<code>        alert(&quot;this will run!&quot;);</code>
+<code>    }</code>
+<code>}</code>
+<code>test();</code></pre><p>¿Qué devolverá la ejecución de test? ¿Por qué?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>var a = 1;</code>
+<code>function f() {</code>
+<code>    var a = 2;</code>
+<code>    function n() {</code>
+<code>        alert(a);</code>
+<code>    }</code>
+<code>    n();</code>
+<code>}</code>
+<code>f();</code></pre><p>¿Qué nos mostrará este código en el alert()? ¿Por qué?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>function F() {</code>
+<code>    function C() {</code>
+<code>        return this;</code>
+<code>    }</code>
+<code>    return C();</code>
+<code>}</code>
+<code>var o = new F();</code></pre><p>¿El valor de this se referirá al objeto global o al objeto o?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>function C(){</code>
+<code>    this.a = 1;</code>
+<code>    return false;</code>
+<code>}</code>
+<code>console.log(typeof new C());</code></pre><p>¿Cuál es el resultado de ejecutar este trozo de código?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>var add = function (x, y) {</code>
+<code>    this.val = x + y;</code>
+<code>},</code>
+<code>obj = { val: 0 };</code>
+<code>add.apply(obj, [2, 8]);</code>
+<code>console.log(obj.val);</code></pre><p>¿Qué devolverá el <code>console.log</code>? ¿A quien apunta <code>this</code> al llamar add ?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>var myObject = {</code>
+<code>    func1:function() {</code>
+<code>        console.log(this);</code>
+<code>        varfunc2 = function() {</code>
+<code>            console.log(this);</code>
+<code>            varfunc3=function() {</code>
+<code>                console.log(this);</code>
+<code>            }();</code>
+<code>        }();</code>
+<code>    }</code>
+<code>};</code>
+<code>myObject.func1();</code></pre><p>¿Qué devolverá la ejecución de <code>myObject.func1</code>? ¿Por qué?</p>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>var myObject = {</code>
+<code>    myProperty:&#39;Icanseethelight&#39;,</code>
+<code>    myMethod:function() {</code>
+<code>        var that=this;</code>
+<code>        var helperFunction = function() {</code>
+<code>            console.log(that.myProperty);</code>
+<code>            console.log(this);</code>
+<code>        }();</code>
+<code>    }</code>
+<code>}</code>
+<code>myObject.myMethod();</code></pre><p>¿Qué devolverá la ejecución de <code>myObject.myMethod</code>? ¿Por qué?</p>
 
 	</div></section>
 	
