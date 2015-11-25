@@ -210,6 +210,137 @@ I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and iden
 - [El valor de `this`](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/this)
 
 
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+var x = 'Hello World';
+function foo(){
+    var x;
+    alert( x );
+    x = 'New Value';
+    alert( x );
+}
+foo();
+```
+
+¿Qué devolveran los alert? ¿Por qué?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+function test() {
+    foo();
+    bar();
+    var foo = function () {
+        alert("this won't run!");
+    }
+    function bar() {
+        alert("this will run!");
+    }
+}
+test();
+
+```
+
+¿Qué devolverá la ejecución de test? ¿Por qué?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+var a = 1;
+function f() {
+    var a = 2;
+    function n() {
+        alert(a);
+    }
+    n();
+}
+f();
+
+```
+
+¿Qué nos mostrará este código en el alert()? ¿Por qué?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+function F() {
+    function C() {
+        return this;
+    }
+    return C();
+}
+var o = new F();
+
+```
+
+¿El valor de this se referirá al objeto global o al objeto o?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+function C(){
+    this.a = 1;
+    return false;
+}
+console.log(typeof new C());
+
+```
+
+¿Cuál es el resultado de ejecutar este trozo de código?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+var add = function (x, y) {
+    this.val = x + y;
+},
+obj = { val: 0 };
+add.apply(obj, [2, 8]);
+console.log(obj.val);
+
+```
+
+¿Qué devolverá el `console.log`? ¿A quien apunta `this` al llamar add ?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+var myObject = {
+    func1:function() {
+        console.log(this);
+        varfunc2 = function() {
+            console.log(this);
+            varfunc3=function() {
+                console.log(this);
+            }();
+        }();
+    }
+};
+myObject.func1();
+```
+
+¿Qué devolverá la ejecución de `myObject.func1`? ¿Por qué?
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+var myObject = {
+    myProperty:'Icanseethelight',
+    myMethod:function() {
+        var that=this;
+        var helperFunction =  function() {
+            console.log(that.myProperty);
+            console.log(this);
+        }();
+    }
+}
+myObject.myMethod();
+```
+
+¿Qué devolverá la ejecución de `myObject.myMethod`? ¿Por qué?
+
+
 !SLIDE concepts
 
 ## <span class="icon-keyboard"></span> Closures practice
