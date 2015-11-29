@@ -9,9 +9,9 @@ by [JuanMa Garrido](#trainer)
 ## Advanced JS Training  
 
 - TDD/BDD with Jasmine
-- Object Oriented Javascript
+- Javascript Advanced Concepts
 - jQuery
-- Frontend Arquitecture
+- Frontend Architecture
 - ES6
 
 <!-- ######################## TEACHER ######################## --> 
@@ -41,9 +41,9 @@ by [JuanMa Garrido](#trainer)
 ## Contents
 
 1. <span class="icon-calendar"> TDD/BDD w/ Jasmine
-1. <span class="icon-calendar"> JS Avanzado: Functions, Closures, Objects, value of `this`
-1. <span class="icon-calendar"> JS Avanzado: prototype y herencia
-1. <span class="icon-calendar"> JS Avanzado: patrones de diseño
+1. <span class="icon-calendar"> Advanced JS concepts: Functions & Closures
+1. <span class="icon-calendar"> Advanced JS concepts: Arrays & Functional Programming
+1. <span class="icon-calendar"> Advanced JS concepts: Objects & inheritance
 1. <span class="icon-calendar"> jQuery
 1. <span class="icon-calendar"> jQuery
 1. <span class="icon-calendar"> Arquitectura Frontend: NPM, Grunt, JSLint, format, compilation
@@ -110,6 +110,16 @@ The `myIndexOf()` method returns the index within the calling String object of t
 
 !SLIDE tdd kata
 
+## <span class="icon-keyboard"></span> KATA: Native function `myIndexOf()`
+
+- [Instructions](https://github.com/juanmaguitar/katas-javascript/blob/master/indexOf/README.md)
+- [Spec](https://github.com/juanmaguitar/katas-javascript/blob/master/indexOf/spec/indexOfSpec.js)
+- [Src](https://github.com/juanmaguitar/katas-javascript/blob/master/indexOf/src/indexOf.js)
+- [Test](http://juanmaguitar.github.io/katas-javascript/indexOf/SpecRunner.html)
+
+
+!SLIDE tdd kata
+
 ## <span class="icon-keyboard"></span> KATA: Poker
 
 Create a useful model of a standard 52-card deck of cards:  
@@ -126,6 +136,16 @@ I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and iden
 - Is there a straight? (e.g. 4, 5, 6, 7, 8 of any suit)
 - Is there a flush? (e.g. 2, 4, 6, 8, King - all of Hearts)
 - What is the highest/lowest card?
+
+!SLIDE tdd kata
+
+## <span class="icon-keyboard"></span> KATA: Poker
+
+- [Instructions](https://github.com/juanmaguitar/katas-javascript/blob/master/poker/README.md)
+- [Spec](https://github.com/juanmaguitar/katas-javascript/blob/master/poker/spec/PokerHandSpec.js)
+- [Src](https://github.com/juanmaguitar/katas-javascript/blob/master/poker/src/PokerHand.js)
+- [Test](http://juanmaguitar.github.io/katas-javascript/poker/SpecRunner.html)
+
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -195,21 +215,6 @@ I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and iden
 
 - [Ejemplos de Closures](http://msdn.microsoft.com/en-us/magazine/ff696765.aspx)
 
-<!-- ######################## CONTENTS ######################## --> 
-
-!SLIDE concepts
-
-## Contents
-
-- [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos)
-  - [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
-  - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#objetos)
-    - [Funciones constructoras](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#funciones-constructoras)
-    - [Trabajando con Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#trabajando-con-objetos)
-
-- [El valor de `this`](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/this)
-
-
 !SLIDE clear-ideas no-bullet-list smallcode concepts
 
 ```
@@ -260,6 +265,27 @@ f();
 ```
 
 ¿Qué nos mostrará este código en el alert()? ¿Por qué?
+
+!SLIDE concepts
+
+## <span class="icon-keyboard"></span> Closures practice
+
+Do the following exercises to practice closures [http://nathansjslessons.appspot.com/lesson?id=1000](http://nathansjslessons.appspot.com/lesson?id=1000)
+
+<!-- ######################## CONTENTS ######################## --> 
+
+!SLIDE concepts
+
+## Contents
+
+- [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos)
+  - [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
+  - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#objetos)
+    - [Funciones constructoras](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#funciones-constructoras)
+    - [Trabajando con Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#trabajando-con-objetos)
+
+- [El valor de `this`](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/this)
+
 
 !SLIDE clear-ideas no-bullet-list smallcode concepts
 
@@ -340,12 +366,11 @@ myObject.myMethod();
 
 ¿Qué devolverá la ejecución de `myObject.myMethod`? ¿Por qué?
 
-
 !SLIDE concepts
 
-## <span class="icon-keyboard"></span> Closures practice
+## <span class="icon-keyboard"></span> KOAN Javascript-Jasmine
 
-Do the following exercises to practice closures [http://nathansjslessons.appspot.com/lesson?id=1000](http://nathansjslessons.appspot.com/lesson?id=1000)
+Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to practice javascript concepts
 
 <!-- ######################## COVER Advanced JS ######################## --> 
 

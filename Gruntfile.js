@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 				sassDir: '<%= srcFolder %>/scss',
 				cssDir: '<%= baseFolder %>/css',
 				outputStyle : 'nested',
-				environment: 'development'
+				environment: 'development',
+				sourcemap: true
 			}
 		},
 		theme : {

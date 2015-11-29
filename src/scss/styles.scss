@@ -4,8 +4,6 @@ $color-tdd: #34A853;
 $color-advanced-js: #EA4335;
 $color-jquery: #0769AD;
 
-
-
 .clear-ideas-gruntfile.smallcode {
 	ul ul li code { font-size:16px; }
 	pre {
@@ -69,8 +67,6 @@ $color-jquery: #0769AD;
 	&:before {
 		margin-right:20px;
 	}
-
-
 }
 
 a[class|=icon] {
@@ -211,12 +207,12 @@ h6 {
   p, table, ul {
     font-size:18px;
     padding:0;
-    display:block;
+    display:inline-block;
   }
   p { margin:0 0 20px; }
 
   ul li {
-    width: 45%; padding:10px; float:left; margin:0; line-height:20px;
+    width: 45%; padding:10px; float:left; margin:0; line-height:20px; clear:right;
   }
 
 }
