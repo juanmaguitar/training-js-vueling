@@ -278,6 +278,75 @@ Do the following exercises to practice closures [http://nathansjslessons.appspot
 
 ## Contents
 
+- [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
+- [Array as an Object](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
+  - [Array basic methods](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
+  - [Functional programming w/ array higher order functions](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts
+
+```
+var mathy = function(x) {
+    return function (y) {
+        return function (z) {
+            return (x / y) - z;
+        }
+    }
+}
+```
+
+¿Cómo hariamos la operación `(4 / 3) - 2` con este código en una linea?
+
+<!-- http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/ -->
+
+!SLIDE clear-ideas no-bullet-list smallcode concepts smaller
+
+```
+var superGreeter = function(greeting) {
+    return function(place) {
+        return function(nickname) {
+            return function(name) {
+                return greeting + ', ' + name + '! Welcome to ' + place + ', ' + nickname + '.';
+            }
+        }
+    } 
+};
+
+superGreeter('Hey')('Berlin')('old pal')('Hans')
+//'Hey, Hans! Welcome to Berlin, old pal.'
+
+hiParisBuddyGreeter = superGreeter('Hi')('Paris')('buddy');
+helloTokyoGreeter = superGreeter('Hello')('Tokyo');
+
+hiParisBuddyGreeter('Franz')
+//'Hi, Franz! Welcome to Paris, buddy.'
+helloTokyoGreeter('friend')
+//[Function]
+helloTokyoGreeter('friend')('Yuki')
+//'Hello, Yuki! Welcome to Tokyo, friend.'
+
+```
+
+<!-- http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/ -->
+
+!SLIDE concepts
+
+## <span class="icon-github"></span> Functional programming workflow
+
+Follow the steps on [this repository](https://github.com/juanmaguitar/functional-programming-sm-steps) to see the workflow of some functional programming code
+
+!SLIDE concepts
+
+## <span class="icon-keyboard"></span> Functional programming exercises
+
+Do the [exercises 1-27](http://reactivex.io/learnrx/) to practice functional programming
+
+<!-- ######################## CONTENTS ######################## --> 
+
+!SLIDE concepts
+
+## Contents
+
 - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos)
   - [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
   - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#objetos)

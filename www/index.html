@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&ca676e36d9cf">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&b5000692125a">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?3c67b7c9b5d4">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?3c07a315ed9c">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?b9810c86c050">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?dd3b7ef20a0d">
 	
-		<link rel="stylesheet" href="css/styles.css?015660e515d8">
+		<link rel="stylesheet" href="css/styles.css?e90cb80f57c1">
 	
 </head>
 <body class="list">
@@ -307,6 +307,70 @@
 	<section class="slide concepts" ><div>
 		<h2><span class="icon-keyboard"></span> Closures practice</h2>
 <p>Do the following exercises to practice closures <a href="http://nathansjslessons.appspot.com/lesson?id=1000">http://nathansjslessons.appspot.com/lesson?id=1000</a></p>
+<!-- ######################## CONTENTS ######################## --> 
+
+	</div></section>
+	
+	<section class="slide concepts" ><div>
+		<h2>Contents</h2>
+<ul>
+<li><a href="https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays">Arrays</a></li>
+<li><a href="https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays">Array as an Object</a><ul>
+<li><a href="https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays">Array basic methods</a></li>
+<li><a href="https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays">Functional programming w/ array higher order functions</a></li>
+</ul>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts" ><div>
+		<pre><code>var mathy = function(x) {</code>
+<code>    return function (y) {</code>
+<code>        return function (z) {</code>
+<code>            return (x / y) - z;</code>
+<code>        }</code>
+<code>    }</code>
+<code>}</code></pre><p>¿Cómo hariamos la operación <code>(4 / 3) - 2</code> con este código en una linea?</p>
+<!-- http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/ -->
+
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode concepts smaller" ><div>
+		<pre><code>var superGreeter = function(greeting) {</code>
+<code>    return function(place) {</code>
+<code>        return function(nickname) {</code>
+<code>            return function(name) {</code>
+<code>                return greeting + &#39;, &#39; + name + &#39;! Welcome to &#39; + place + &#39;, &#39; + nickname + &#39;.&#39;;</code>
+<code>            }</code>
+<code>        }</code>
+<code>    } </code>
+<code>};</code>
+<code>&shy;</code>
+<code>superGreeter(&#39;Hey&#39;)(&#39;Berlin&#39;)(&#39;old pal&#39;)(&#39;Hans&#39;)</code>
+<code>//&#39;Hey, Hans! Welcome to Berlin, old pal.&#39;</code>
+<code>&shy;</code>
+<code>hiParisBuddyGreeter = superGreeter(&#39;Hi&#39;)(&#39;Paris&#39;)(&#39;buddy&#39;);</code>
+<code>helloTokyoGreeter = superGreeter(&#39;Hello&#39;)(&#39;Tokyo&#39;);</code>
+<code>&shy;</code>
+<code>hiParisBuddyGreeter(&#39;Franz&#39;)</code>
+<code>//&#39;Hi, Franz! Welcome to Paris, buddy.&#39;</code>
+<code>helloTokyoGreeter(&#39;friend&#39;)</code>
+<code>//[Function]</code>
+<code>helloTokyoGreeter(&#39;friend&#39;)(&#39;Yuki&#39;)</code>
+<code>//&#39;Hello, Yuki! Welcome to Tokyo, friend.&#39;</code></pre><!-- http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/ -->
+
+	</div></section>
+	
+	<section class="slide concepts" ><div>
+		<h2><span class="icon-github"></span> Functional programming workflow</h2>
+<p>Follow the steps on <a href="https://github.com/juanmaguitar/functional-programming-sm-steps">this repository</a> to see the workflow of some functional programming code</p>
+
+	</div></section>
+	
+	<section class="slide concepts" ><div>
+		<h2><span class="icon-keyboard"></span> Functional programming exercises</h2>
+<p>Do the <a href="http://reactivex.io/learnrx/">exercises 1-27</a> to practice functional programming</p>
 <!-- ######################## CONTENTS ######################## --> 
 
 	</div></section>
