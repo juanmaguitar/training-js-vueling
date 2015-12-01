@@ -14,16 +14,16 @@ Learn and practice some advanced concepts of Javascript so the students can appl
 
 - TDD
 - Advanced JS
-    + Objects, Falsy Values, Functions, Scope, Closures, DOM and BOM
-    + The value of this, inheritance and prototype
-    + Design Patterns
+    + Functions & Closures
+    + Arrays & Functional Programming
+    + Objects & inheritance
 - jQuery
 - Frontend Architecture: NPM, Grunt, JSLint, format, compilation
 - ES2015/ES6
 
 ## Materials ##
 
-You can access to the presentation used in the workshop from the URL : [http://juanmaguitar.github.io/training-js-vueling](http://juanmaguitar.github.io/training-js-vueling/)
+You can access to the presentation used in the training at the URL : [http://juanmaguitar.github.io/training-js-vueling](http://juanmaguitar.github.io/training-js-vueling/)
 
 ## Using this material ##
 
