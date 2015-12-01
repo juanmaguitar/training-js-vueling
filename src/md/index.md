@@ -279,9 +279,9 @@ Do the following exercises to practice closures [http://nathansjslessons.appspot
 ## Contents
 
 - [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
-- [Array as an Object](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
+- [Array as an Object](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales#array)
   - [Array basic methods](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
-  - [Functional programming w/ array higher order functions](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
+  - [Functional programming w/ array higher order functions](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays#métodos-de-array-como-higher-order-functions)
 
 !SLIDE clear-ideas no-bullet-list smallcode concepts
 
