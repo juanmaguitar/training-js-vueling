@@ -348,10 +348,12 @@ Do the [exercises 1-27](http://reactivex.io/learnrx/) to practice functional pro
 ## Contents
 
 - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos)
-  - [Arrays](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#arrays)
-  - [Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#objetos)
     - [Funciones constructoras](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#funciones-constructoras)
     - [Trabajando con Objetos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos#trabajando-con-objetos)
+
+- [`prototype`](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/prototype)
+
+- [Herencia](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/herencia)
 
 - [El valor de `this`](https://github.com/juanmaguitar/apuntes-javascript-avanzado/tree/master/markdown/this)
 
