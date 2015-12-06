@@ -43,13 +43,13 @@ by [JuanMa Garrido](#trainer)
 1. <span class="icon-calendar"> TDD/BDD w/ Jasmine
 1. <span class="icon-calendar"> Advanced JS concepts: Functions & Closures
 1. <span class="icon-calendar"> Advanced JS concepts: Arrays & Functional Programming
-1. <span class="icon-calendar"> Advanced JS concepts: Objects & inheritance
+1. <span class="icon-calendar"> Advanced JS concepts: Objects & Inheritance
 1. <span class="icon-calendar"> jQuery
 1. <span class="icon-calendar"> jQuery
-1. <span class="icon-calendar"> Arquitectura Frontend: NPM, Grunt, JSLint, format, compilation
+1. <span class="icon-calendar"> Workflow Tools: NPM, Grunt, Bower, ESLint & more
 1. <span class="icon-calendar"> ES2015 (ES6)
 1. <span class="icon-calendar"> ES2015 (ES6)
-1. <span class="icon-calendar"> Final Practice
+1. <span class="icon-calendar"> Frontend Arquitecture: Modular Arquitecture, Bundles & Asynchronous loading (w/ CommonJs & Webpack)
 
 <!-- ######################## COVER ######################## --> 
 
@@ -455,5 +455,45 @@ Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to pra
  
 ## Advanced JS Training  
 ### Using **jQuery**  
+
+!SLIDE jquery
+
+## Contents
+
+- [About jQuery](http://learn.jquery.com/about-jquery/)
+  
+- [Using jQuery Core](http://learn.jquery.com/using-jquery-core/)
+    - [Selecting Elements](http://learn.jquery.com/using-jquery-core/selecting-elements/)
+    - [Manipulating Elements](http://learn.jquery.com/using-jquery-core/manipulating-elements/)
+    - [The jQuery Object](http://learn.jquery.com/using-jquery-core/jquery-object/)
+    - [Traversing](http://learn.jquery.com/using-jquery-core/traversing/)
+    - [Utility Methods](http://learn.jquery.com/using-jquery-core/utility-methods/)
+    - [`$.each()`  and `.each()`](http://learn.jquery.com/using-jquery-core/iterating/)
+
+!SLIDE jquery
+
+## Contents
+
+- [Events](http://learn.jquery.com/events/)
+  
+
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+!SLIDE jquery no-bullet-list resources
+
+## Resources for this Unit
+
+- <span class="icon-link"> [jQuery Source Viewer](http://james.padolsey.com/jquery/#v=1.11.2&fn=jQuery.css)
+- <span class="icon-link"> [jQuery Deconstructed](http://davestewart.io/resources/javascript/deconstructed/jquery/)
+- <span class="icon-facetime-video"> [10 things I learned from the jQuery Source](http://www.paulirish.com/2010/10-things-i-learned-from-the-jquery-source/)
+- <span class="icon-link"> [You might not need jQuery](http://youmightnotneedjquery.com/) 
+
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+!SLIDE no-bullet-list resources
+
+## Final Resources
+
+- <span class="icon-link"> [Awesome Javascript](https://github.com/sorrycc/awesome-javascript)
 
 
