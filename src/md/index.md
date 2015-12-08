@@ -476,6 +476,14 @@ Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to pra
 
 - [Events](http://learn.jquery.com/events/)
   
+!SLIDE jquery
+
+## <span class="icon-keyboard"></span> jQuery Exercises
+
+Do the following exercises and then let's share the results one by one
+
+- [Hide/Show a Form](http://jsfiddle.net/juanma/b9wt8jvz/)
+
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -489,6 +497,10 @@ Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to pra
 - <span class="icon-link"> [You might not need jQuery](http://youmightnotneedjquery.com/) 
 
 <!-- ######################## RESOURCES TDD ######################## --> 
+
+
+
+
 
 !SLIDE no-bullet-list resources
 
