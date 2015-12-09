@@ -463,27 +463,40 @@ Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to pra
 - [About jQuery](http://learn.jquery.com/about-jquery/)
   
 - [Using jQuery Core](http://learn.jquery.com/using-jquery-core/)
-    - [Selecting Elements](http://learn.jquery.com/using-jquery-core/selecting-elements/)
+    - [**Selecting Elements**](http://learn.jquery.com/using-jquery-core/selecting-elements/)
     - [Manipulating Elements](http://learn.jquery.com/using-jquery-core/manipulating-elements/)
     - [The jQuery Object](http://learn.jquery.com/using-jquery-core/jquery-object/)
     - [Traversing](http://learn.jquery.com/using-jquery-core/traversing/)
+      - [Examples](http://jsfiddle.net/juanma/pp3h1hpo/)
     - [Utility Methods](http://learn.jquery.com/using-jquery-core/utility-methods/)
-    - [`$.each()`  and `.each()`](http://learn.jquery.com/using-jquery-core/iterating/)
+  
 
 !SLIDE jquery
 
 ## Contents
 
+- [Using jQuery Core](http://learn.jquery.com/using-jquery-core/)
+  - [`$.each()`  and `.each()`](http://learn.jquery.com/using-jquery-core/iterating/)
 - [Events](http://learn.jquery.com/events/)
+  - [¿Cómo funcionan los eventos en el DOM?](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/eventos#eventos)
+  - [Capturando eventos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/eventos#capturando-eventos) 
+  - [Deteniendo el flujo de los eventos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/eventos#deteniendo-el-flujo-de-los-eventos)
+  - [Delegación de eventos](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/eventos#delegación-de-eventos)
+  - [Eventos con jQuery](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/eventos#eventos-con-jquery) 
   
 !SLIDE jquery
 
 ## <span class="icon-keyboard"></span> jQuery Exercises
 
-Do the following exercises and then let's share the results one by one
+Do the following exercises and then let's share and the comment the solutions
 
 - [Hide/Show a Form](http://jsfiddle.net/juanma/b9wt8jvz/)
 
+!SLIDE concepts
+
+## <span class="icon-keyboard"></span> KOAN jQuery
+
+Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure the undersanding of jquery concepts
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
