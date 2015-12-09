@@ -492,7 +492,7 @@ Do the following exercises and then let's share and the comment the solutions
 
 - [Hide/Show a Form](http://jsfiddle.net/juanma/b9wt8jvz/)
 
-!SLIDE concepts
+!SLIDE jquery
 
 ## <span class="icon-keyboard"></span> KOAN jQuery
 
