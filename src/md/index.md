@@ -490,7 +490,7 @@ Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to pra
 
 Do the following exercises and then let's share and the comment the solutions
 
-- [Hide/Show a Form](http://jsfiddle.net/juanma/b9wt8jvz/)
+- [Hide/Show a Form](http://jsfiddle.net/juanma/kuLjg92s/)
 
 !SLIDE jquery
 
