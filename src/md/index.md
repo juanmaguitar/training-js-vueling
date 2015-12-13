@@ -511,6 +511,79 @@ Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure 
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
+!SLIDE coverSession workflow
+
+<section class="logos">
+  <div class="box">
+    ![npm logo](img/workflow/npm.svg)
+    ![grunt logo](img/workflow/grunt.png)
+    ![bower logo](img/workflow/bower.png)
+    ![yeoman logo](img/workflow/yeoman.png)
+  <div>
+</section>
+ 
+## Advanced JS Training  
+### **Workflow** Tools  
+
+!SLIDE workflow
+
+## <span class="icon-gears"></span> Before starting...
+
+For this section you need to install at your machine the following:
+
+- [**Node.js**](https://nodejs.org) and [**NPM**](https://www.npmjs.com/) from [https://nodejs.org/en/download/](https://nodejs.org/en/download/) (the installation of node.js includes NPM)
+- [**Git**](http://git-scm.com/) from [http://git-scm.com/downloads](http://git-scm.com/downloads)
+  
+!SLIDE workflow
+
+## Contents
+
+- [NPM](https://www.npmjs.com/)
+  
+
+<!-- ######################## FIRST TASKS ######################## --> 
+
+!SLIDE smallcode no-bullet-list workflow
+
+## <span class="icon-keyboard"></span> Creating my first Grunt project
+
+- @@Steps@@:
+
+    1. Create a _project_ folder (and _src_ subfolder)
+    1. Create a `package.json` interactively with `npm init`
+    1. Create a simple `Gruntfile.js` (simple task, no plugin loading)
+    1. Launch the task w/ Grunt
+
+!SLIDE first-tasks smallcode workflow
+
+## <span class="icon-keyboard"></span> Creating my first Grunt project
+
+    .
+    ├── Gruntfile.js
+    ├── package.json
+
+```
+$ mkdir project
+$ cd project/
+$ mkdir src
+$ npm init
+$ npm install @@--save-dev@@ grunt
+$ vi Gruntfile.js
+  module.exports = function(grunt) {
+    @@@grunt.registerTask@@@('foo', function() {
+           grunt.log.writeln('foo is running...');
+    });
+  };
+$ grunt foo
+```
+
+!SLIDE first-tasks smallcode showterm workflow
+
+## <span class="icon-keyboard"></span> Creating my first Grunt project 
+
+[[+]](http://showterm.io/a177bf1bdcc8033709a69)
+
+<iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
 
 
 

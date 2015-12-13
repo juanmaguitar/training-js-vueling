@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&5ba694faee39">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&2ed86b878136">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?3e331eb5be45">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?8f89afad0197">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?eff380358892">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?21880480cd29">
 	
-		<link rel="stylesheet" href="css/styles.css?355ab3daeca8">
+		<link rel="stylesheet" href="css/styles.css?8686481a3cbb">
 	
 </head>
 <body class="list">
@@ -539,6 +539,84 @@
 <li><span class="icon-link"> <a href="http://youmightnotneedjquery.com/">You might not need jQuery</a> </li>
 </ul>
 <!-- ######################## RESOURCES TDD ######################## --> 
+
+	</div></section>
+	
+	<section class="slide coverSession workflow" ><div>
+		<section class="logos">
+  <div class="box">
+    <img src="img/workflow/npm.svg" alt="npm logo">
+    <img src="img/workflow/grunt.png" alt="grunt logo">
+    <img src="img/workflow/bower.png" alt="bower logo">
+    <img src="img/workflow/yeoman.png" alt="yeoman logo">
+  <div>
+</section>
+
+<h2>Advanced JS Training</h2>
+<h3><strong>Workflow</strong> Tools</h3>
+
+	</div></section>
+	
+	<section class="slide workflow" ><div>
+		<h2><span class="icon-gears"></span> Before starting...</h2>
+<p>For this section you need to install at your machine the following:</p>
+<ul>
+<li><a href="https://nodejs.org"><strong>Node.js</strong></a> and <a href="https://www.npmjs.com/"><strong>NPM</strong></a> from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> (the installation of node.js includes NPM)</li>
+<li><a href="http://git-scm.com/"><strong>Git</strong></a> from <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide workflow" ><div>
+		<h2>Contents</h2>
+<ul>
+<li><a href="https://www.npmjs.com/">NPM</a></li>
+</ul>
+<!-- ######################## FIRST TASKS ######################## --> 
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list workflow" ><div>
+		<h2><span class="icon-keyboard"></span> Creating my first Grunt project</h2>
+<ul>
+<li><p><mark>Steps</mark>:</p>
+<ol>
+<li>Create a <em>project</em> folder (and <em>src</em> subfolder)</li>
+<li>Create a <code>package.json</code> interactively with <code>npm init</code></li>
+<li>Create a simple <code>Gruntfile.js</code> (simple task, no plugin loading)</li>
+<li>Launch the task w/ Grunt</li>
+</ol>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide first-tasks smallcode workflow" ><div>
+		<h2><span class="icon-keyboard"></span> Creating my first Grunt project</h2>
+<pre><code>.</code>
+<code>├── Gruntfile.js</code>
+<code>├── package.json</code></pre><pre><code>$ mkdir project</code>
+<code>$ cd project/</code>
+<code>$ mkdir src</code>
+<code>$ npm init</code>
+<code>$ npm install <mark>--save-dev</mark> grunt</code>
+<code>$ vi Gruntfile.js</code>
+<code>  module.exports = function(grunt) {</code>
+<code>    <mark class="important">grunt.registerTask</mark>(&#39;foo&#39;, function() {</code>
+<code>           grunt.log.writeln(&#39;foo is running...&#39;);</code>
+<code>    });</code>
+<code>  };</code>
+<code>$ grunt foo</code></pre>
+	</div></section>
+	
+	<section class="slide first-tasks smallcode showterm workflow" ><div>
+		<h2><span class="icon-keyboard"></span> Creating my first Grunt project</h2>
+<p><a href="http://showterm.io/a177bf1bdcc8033709a69">[+]</a></p>
+<iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
+
+
+
+
 
 	</div></section>
 	

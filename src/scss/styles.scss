@@ -3,6 +3,7 @@
 $color-tdd: #34A853;
 $color-advanced-js: #EA4335;
 $color-jquery: #0769AD;
+$color-workflow: #F37D0B;
 
 .clear-ideas-gruntfile.smallcode {
 	ul ul li code { font-size:16px; }
@@ -232,6 +233,10 @@ h6 {
   border-left: 10px solid $color-jquery;
 }
 
+.slide.workflow {
+  border-left: 10px solid $color-workflow;
+}
+
 .coverSession {
 	&.tdd {
     background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-tdd;
@@ -254,7 +259,7 @@ h6 {
     //h2 { color: #FFF; top:250px; font-size:2.7em;}
   }
 
-&.jquery {
+  &.jquery {
     background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-jquery;
     img[alt="jQuery Logo"] {
       margin:-20px 48px;
@@ -262,6 +267,24 @@ h6 {
     }
     //h2 { color: #FFF; top:250px; font-size:2.7em;}
   }
+
+  &.workflow {
+    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-workflow;
+
+  /*   ![npm Logo](img/workflow/npm.svg)
+    ![grunt Logo](img/workflow/grunt.png)
+    ![bower Logo](img/workflow/bower.png)
+    ![yeoman Logo](img/workflow/yeoman.png)
+  <d
+   */
+    img[alt$="logo"] {
+      /* margin:-20px 48px; */
+      height: 100px; float:left;
+    }
+    .box {top:150px;}
+    h3 { top:420px;}
+  }
+
 
 }
 
@@ -366,7 +389,7 @@ h6 {
 	pre {
 		margin-left:50px;
 		code {
-			line-height: 1.5;
+			line-height: 1.3;
 			font-size: 18px;
 		}
 	}
