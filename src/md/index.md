@@ -526,10 +526,10 @@ Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure 
 
 <section class="logos">
   <div class="box">
-    ![npm logo](img/workflow/npm.svg)
-    ![grunt logo](img/workflow/grunt.png)
-    ![bower logo](img/workflow/bower.png)
-    ![yeoman logo](img/workflow/yeoman.png)
+    ![npm logo](img/npm.svg)
+    ![grunt logo](img/grunt.png)
+    ![bower logo](img/bower.png)
+    ![yeoman logo](img/yeoman.png)
   <div>
 </section>
  
