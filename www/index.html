@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&2ed86b878136">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&19a4d1829090">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?8f89afad0197">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?5df5591500dd">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?21880480cd29">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?279585311e16">
 	
-		<link rel="stylesheet" href="css/styles.css?8686481a3cbb">
+		<link rel="stylesheet" href="css/styles.css?5df8eacf5874">
 	
 </head>
 <body class="list">
@@ -68,7 +68,7 @@
 <li><span class="icon-calendar"> Advanced JS concepts: Objects &amp; Inheritance</li>
 <li><span class="icon-calendar"> jQuery</li>
 <li><span class="icon-calendar"> jQuery</li>
-<li><span class="icon-calendar"> Workflow Tools: NPM, Grunt, Bower, ESLint &amp; more</li>
+<li><span class="icon-calendar"> Workflow Tools: NPM, Grunt, Bower &amp; Yeoman</li>
 <li><span class="icon-calendar"> ES2015 (ES6)</li>
 <li><span class="icon-calendar"> ES2015 (ES6)</li>
 <li><span class="icon-calendar"> Frontend Arquitecture: Modular Arquitecture, Bundles &amp; Asynchronous loading (w/ CommonJs &amp; Webpack)</li>
@@ -458,6 +458,15 @@
 	<section class="slide concepts" ><div>
 		<h2><span class="icon-keyboard"></span> KOAN Javascript-Jasmine</h2>
 <p>Do the following <a href="https://github.com/mrdavidlaing/javascript-koans">KOAN</a> to practice javascript concepts</p>
+
+	</div></section>
+	
+	<section class="slide concepts" ><div>
+		<h2><span class="icon-keyboard"></span> KOAN Javascript-Jasmine</h2>
+<ul>
+<li><a href="https://github.com/juanmaguitar/javascript-koans/tree/master/koans">Koans solved</a></li>
+<li><a href="http://juanmaguitar.github.io/javascript-koans/KoansRunner.html">Tests passing</a></li>
+</ul>
 <!-- ######################## COVER Advanced JS ######################## --> 
 
 	</div></section>
@@ -516,7 +525,7 @@
 	
 	<section class="slide jquery" ><div>
 		<h2><span class="icon-keyboard"></span> jQuery Exercises</h2>
-<p>Do the following exercises and then let&#39;s share and the comment the solutions</p>
+<p>Do the following exercises and then let&#39;s share and comment the solutions</p>
 <ul>
 <li><a href="http://jsfiddle.net/juanma/kuLjg92s/">Hide/Show a Form</a></li>
 </ul>
@@ -557,21 +566,66 @@
 
 	</div></section>
 	
-	<section class="slide workflow" ><div>
+	<section class="slide workflow starting" ><div>
 		<h2><span class="icon-gears"></span> Before starting...</h2>
 <p>For this section you need to install at your machine the following:</p>
+<ol>
+<li><a href="https://nodejs.org"><strong>Node.js</strong></a> and <a href="https://www.npmjs.com/"><strong>NPM</strong></a> from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> (the <a href="https://docs.npmjs.com/getting-started/installing-node">installation of node.js</a> includes NPM)</li>
+<li><a href="http://git-scm.com/"><strong>Git</strong></a> from <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a> <a class="icon-link ml-l" href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git"></a></li>
+<li>To use <em>Grunt from comand line</em> we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
+</ol>
+
+	</div></section>
+	
+	<section class="slide workflow contents" ><div>
+		<h2>Contents</h2>
 <ul>
-<li><a href="https://nodejs.org"><strong>Node.js</strong></a> and <a href="https://www.npmjs.com/"><strong>NPM</strong></a> from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> (the installation of node.js includes NPM)</li>
-<li><a href="http://git-scm.com/"><strong>Git</strong></a> from <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></li>
+<li><a href="https://www.npmjs.com/">NPM</a><ul>
+<li><a href="https://docs.npmjs.com/getting-started/what-is-npm">What is NPM?</a></li>
+<li><a href="http://book.mixu.net/node/ch8.html">Node modules</a> <a class="icon-facetime-video" href="https://docs.npmjs.com/getting-started/creating-node-modules"></a></li>
+</ul>
+</li>
+</ul>
+<!-- ######################## USING GRUNT ######################## --> 
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list workflow" ><div>
+		<h2><span class="icon-keyboard"></span> Using Grunt in an existing project</h2>
+<ul>
+<li><p><mark>Steps</mark>:</p>
+<ol>
+<li>Change to the project&#39;s root directory.</li>
+<li>Install project dependencies with <code>npm install</code></li>
+<li>Run Grunt with <code>grunt</code></li>
+</ol>
+</li>
 </ul>
 
 	</div></section>
 	
-	<section class="slide workflow" ><div>
-		<h2>Contents</h2>
-<ul>
-<li><a href="https://www.npmjs.com/">NPM</a></li>
-</ul>
+	<section class="slide smallcode workflow" ><div>
+		<h2><span class="icon-keyboard"></span> Using Grunt in an existing project</h2>
+<pre><code>$ git --version</code>
+<code>$ node -v</code>
+<code>$ npm -v</code>
+<code>$ npm install -g grunt-cli</code>
+<code>$ git clone git@github.com:juanmaguitar/training-js-vueling.git</code>
+<code>$ cd training-js-vueling</code>
+<code>$ npm install</code>
+<code>$ grunt --version</code>
+<code>$ grunt -h</code>
+<code>$ grunt tasks</code>
+<code>$ grunt compass</code>
+<code>$ grunt shower</code>
+<code>$ grunt serve</code></pre>
+	</div></section>
+	
+	<section class="slide first-tasks smallcode showterm workflow" ><div>
+		<h2><span class="icon-keyboard"></span> Using Grunt in an existing project</h2>
+<p><a href="http://showterm.io/96af3794234bd10f75b67">[+]</a></p>
+<iframe src="http://showterm.io/96af3794234bd10f75b67" width="700" height="380"></iframe>
+
 <!-- ######################## FIRST TASKS ######################## --> 
 
 	</div></section>
@@ -614,10 +668,77 @@
 <p><a href="http://showterm.io/a177bf1bdcc8033709a69">[+]</a></p>
 <iframe src="http://showterm.io/a177bf1bdcc8033709a69" width="700" height="380"></iframe>
 
+<!-- ######################## CLEAR IDEAS ######################## --> 
 
+	</div></section>
+	
+	<section class="slide clear-ideas small no-bullet-list workflow" ><div>
+		<h2>Clear Ideas about Grunt</h2>
+<ul>
+<li><span class="icon-building"></span>Grunt and Grunt-plugins are installed and managed via <a href="https://npmjs.org/">npm</a>, the <a href="http://nodejs.org/">Node.js</a> package manager.</li>
+<li><span class="icon-terminal"></span>To use <em>Grunt from comand line</em> we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
+<li><span class="icon-terminal"></span>In <em>new projects</em> we install Grunt and Grunt-plugins as node modules → <code>npm install --save-dev grunt grunt-contrib-jshint</code></li>
+<li><span class="icon-terminal"></span>In <em>existing Grunt projects</em> we install Grunt and Grunt-plugins with → <code>npm install</code></li>
+</ul>
 
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list workflow" ><div>
+		<h2>Clear Ideas about Grunt</h2>
+<!-- 
+- <span class="icon-cogs"></span>The _grunt command line_ (globally) runs the grunt 'package' at `node_modules` (locally)
+-->
+<ul>
+<li>Main Files:<ul>
+<li><span class="icon-file"></span><code><mark class="important">package.json</mark></code>: The Grunt runner and Grunt plugins used in the <em>Gruntfile.js</em> are set as project dependencies in this file</li>
+<li><span class="icon-file"></span><code><mark class="important">Gruntfile.js</mark></code>: The tasks are defined/configured and grunt plugins are loaded in this file </li>
+</ul>
+</li>
+</ul>
 
-
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode workflow" ><div>
+		<h2>Clear Ideas about Grunt</h2>
+<ul>
+<li><span class="icon-code"></span> <a href="http://browsenpm.org/package.json">sample</a> <a href="https://docs.npmjs.com/files/package.json"><code>package.json</code></a>:</li>
+</ul>
+<pre><code>{</code>
+<code>  &quot;name&quot;: &quot;my-project-name&quot;,</code>
+<code>  &quot;version&quot;: &quot;0.1.0&quot;,</code>
+<code>  &quot;<mark>devDependencies</mark>&quot;: {</code>
+<code>    &quot;grunt&quot;: &quot;~0.4.5&quot;,</code>
+<code>    &quot;grunt-contrib-jshint&quot;: &quot;~0.10.0&quot;,</code>
+<code>    &quot;grunt-contrib-nodeunit&quot;: &quot;~0.4.1&quot;,</code>
+<code>    &quot;grunt-contrib-uglify&quot;: &quot;~0.5.0&quot;</code>
+<code>  }</code>
+<code>}</code></pre>
+	</div></section>
+	
+	<section class="slide clear-ideas no-bullet-list smallcode smaller workflow" ><div>
+		<h2>Clear Ideas about Grunt</h2>
+<ul>
+<li><span class="icon-code"></span> <a href="http://gruntjs.com/sample-gruntfile">sample</a> <code>Gruntfile.js</code>:</li>
+</ul>
+<pre><code>module.exports = function(grunt) {</code>
+<code>  grunt.<mark>initConfig</mark>({</code>
+<code>    jshint: {</code>
+<code>      files: [&#39;Gruntfile.js&#39;, &#39;src/**/*.js&#39;, &#39;test/**/*.js&#39;],</code>
+<code>      options: {</code>
+<code>        globals: {</code>
+<code>          jQuery: true</code>
+<code>        }</code>
+<code>      }</code>
+<code>    },</code>
+<code>    watch: {</code>
+<code>      files: [&#39;&lt;%= jshint.files %&gt;&#39;],</code>
+<code>      tasks: [&#39;jshint&#39;]</code>
+<code>    }</code>
+<code>  });</code>
+<code>  grunt.<mark>loadNpmTasks</mark>(&#39;grunt-contrib-jshint&#39;);</code>
+<code>  grunt.loadNpmTasks(&#39;grunt-contrib-watch&#39;);</code>
+<code>  grunt.<mark>registerTask</mark>(&#39;default&#39;, [&#39;jshint&#39;]);</code>
+<code>};</code></pre>
 	</div></section>
 	
 	<section class="slide no-bullet-list resources" ><div>

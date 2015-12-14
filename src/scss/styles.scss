@@ -1,3 +1,6 @@
+@import "__config";
+@import "_atomic-margins-padding";
+
 /* VARIABLES */
 
 $color-tdd: #34A853;
@@ -121,7 +124,7 @@ h6 {
 
 .coverSession, #MainCover {
 	& {
-		background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px #FFD245;
+		background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #FFD245;
 		//background: url("../img/vueling-logo.png") no-repeat scroll right 220px top 340px #FFD245;
 	}
 	& > div {
@@ -213,14 +216,15 @@ h6 {
   p { margin:0 0 20px; }
 
   ul li {
-    width: 45%; padding:10px; float:left; margin:0; line-height:20px; clear:right;
+    width: 45%; padding:8px 10px; float:left; margin:0; line-height:17px; clear:right;
   }
 
 }
 
-.contents.general {
+.general {
   ol li {
     font-size: 20px;
+    line-height: 1.8em;
     span { padding:0 0 0 60px; }
   }
 }
@@ -235,11 +239,14 @@ h6 {
 
 .slide.workflow {
   border-left: 10px solid $color-workflow;
+  a[class^="icon-"] {
+    margin-left: 2em;
+  }
 }
 
 .coverSession {
 	&.tdd {
-    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-tdd;
+    background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-tdd;
 		img[alt="Jasmine Logo"] {
       width: 100px;
       height: 100px;
@@ -251,7 +258,7 @@ h6 {
     }
 	}
   &.concepts {
-    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-advanced-js;
+    background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-advanced-js;
     img[alt="Javascript Logo"] {
       margin:-20px 48px;
       height: 150px;
@@ -260,7 +267,7 @@ h6 {
   }
 
   &.jquery {
-    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-jquery;
+    background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-jquery;
     img[alt="jQuery Logo"] {
       margin:-20px 48px;
       height: 150px;
@@ -269,7 +276,7 @@ h6 {
   }
 
   &.workflow {
-    background: url("../img/vueling-transparent.png") no-repeat scroll right 320px top 400px $color-workflow;
+    background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-workflow;
 
   /*   ![npm Logo](img/workflow/npm.svg)
     ![grunt Logo](img/workflow/grunt.png)
@@ -288,15 +295,14 @@ h6 {
 
 }
 
-#contents {
-	&.general {
-		ol {
-			display: flex;
-    	flex-direction:column;
-  		flex-wrap:wrap;
-    	li { display: flex; }
-    }
-	}
+
+.general {
+	ol {
+		display: flex;
+  	flex-direction:column;
+		flex-wrap:wrap;
+  	li { display: flex; }
+  }
 }
 
 
@@ -368,8 +374,8 @@ h6 {
 		display: inline;
 	}
 	& {
-		background: url("../img/vueling-logo.jpg") no-repeat top 25px right 25px #FFF;
-		background-size: 10%;
+		background: url("../img/vueling-in2-top-logo-2.png") no-repeat top 25px right 25px #FFF;
+		background-size: 15%;
 	}
 
 }
@@ -419,7 +425,7 @@ h6 {
 /*
 [data-icon]:before {
   font-family: "untitled-font-1" !important;
-  content: attr(data-icon);
+  contents: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -486,4 +492,3 @@ h6 {
 .icon-pixelovers-1:before {
   content: "j";
 }
-
