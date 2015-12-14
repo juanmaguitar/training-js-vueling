@@ -542,9 +542,9 @@ Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure 
 
 For this section you need to install at your machine the following:
 
-- [**Node.js**](https://nodejs.org) and [**NPM**](https://www.npmjs.com/) from [https://nodejs.org/en/download/](https://nodejs.org/en/download/) (the [installation of node.js](https://docs.npmjs.com/getting-started/installing-node) includes NPM)  
-- [**Git**](http://git-scm.com/) from [http://git-scm.com/downloads](http://git-scm.com/downloads) <a class="icon-windows ml-xl" href="http://git-for-windows.github.io/"></a> <a class="icon icon-warning-sign ml-m" href="https://github.com/bower/bower#windows-users"></a>   
-- To use _[Grunt](http://gruntjs.com/), [Bower](http://bower.io/) and [Yeoman](http://yeoman.io/) from comand line_ we have to install them globally → `npm install -g yo bower grunt-cli`
+1. [**Node.js**](https://nodejs.org) and [**NPM**](https://www.npmjs.com/) from [https://nodejs.org/en/download/](https://nodejs.org/en/download/) (the [installation of node.js](https://docs.npmjs.com/getting-started/installing-node) includes NPM)  
+2. [**Git**](http://git-scm.com/) from [http://git-scm.com/downloads](http://git-scm.com/downloads) <a class="icon-windows ml-xl" href="http://git-for-windows.github.io/"></a> <a class="icon icon-warning-sign ml-m" href="https://github.com/bower/bower#windows-users"></a>   
+3. To use _[Grunt](http://gruntjs.com/), [Bower](http://bower.io/) and [Yeoman](http://yeoman.io/) from comand line_ we have to install them globally → `npm install -g yo bower grunt-cli`
 
 !SLIDE workflow contents
 
@@ -719,7 +719,6 @@ module.exports = function(grunt) {
 ## Contents
 
 - [Bower](http://bower.io/)
-  - https://github.com/bower/bower#windows-users
   - [`bower.json`](https://github.com/bower/spec/blob/master/json.md)
   - [bower configuration](https://github.com/bower/spec/blob/master/config.md)
 
