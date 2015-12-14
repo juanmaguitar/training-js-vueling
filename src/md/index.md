@@ -517,6 +517,8 @@ Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure 
 - <span class="icon-link"> [jQuery Deconstructed](http://davestewart.io/resources/javascript/deconstructed/jquery/)
 - <span class="icon-facetime-video"> [10 things I learned from the jQuery Source](http://www.paulirish.com/2010/10-things-i-learned-from-the-jquery-source/)
 - <span class="icon-link"> [You might not need jQuery](http://youmightnotneedjquery.com/) 
+- <span class="icon-link"> [jsPerf](https://jsperf.com/popular) 
+- <span class="icon-link"> [canIUse](http://caniuse.com/) 
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -540,9 +542,9 @@ Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure 
 
 For this section you need to install at your machine the following:
 
-1. [**Node.js**](https://nodejs.org) and [**NPM**](https://www.npmjs.com/) from [https://nodejs.org/en/download/](https://nodejs.org/en/download/) (the [installation of node.js](https://docs.npmjs.com/getting-started/installing-node) includes NPM)
-2. [**Git**](http://git-scm.com/) from [http://git-scm.com/downloads](http://git-scm.com/downloads) <a class="icon-link ml-l" href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git"></a>
-3. To use _Grunt from comand line_ we have to install (globally) the [Grunt's CLI](http://gruntjs.com/using-the-cli) → `npm install -g grunt-cli`
+- [**Node.js**](https://nodejs.org) and [**NPM**](https://www.npmjs.com/) from [https://nodejs.org/en/download/](https://nodejs.org/en/download/) (the [installation of node.js](https://docs.npmjs.com/getting-started/installing-node) includes NPM)  
+- [**Git**](http://git-scm.com/) from [http://git-scm.com/downloads](http://git-scm.com/downloads) <a class="icon-windows ml-xl" href="http://git-for-windows.github.io/"></a> <a class="icon icon-warning-sign ml-m" href="https://github.com/bower/bower#windows-users"></a>   
+- To use _[Grunt](http://gruntjs.com/), [Bower](http://bower.io/) and [Yeoman](http://yeoman.io/) from comand line_ we have to install them globally → `npm install -g yo bower grunt-cli`
 
 !SLIDE workflow contents
 
@@ -551,6 +553,11 @@ For this section you need to install at your machine the following:
 - [NPM](https://www.npmjs.com/)
   - [What is NPM?](https://docs.npmjs.com/getting-started/what-is-npm)
   - [Node modules](http://book.mixu.net/node/ch8.html) <a class="icon-facetime-video" href="https://docs.npmjs.com/getting-started/creating-node-modules"></a>
+  - [Utilising Node.js and npm for front-end development workflow](http://jsforallof.us/2015/02/12/utilising-node-and-npm-for-front-end-development-workflow/)
+
+- [Grunt | Official Site](http://gruntjs.com/)
+  - [Configuring tasks](http://gruntjs.com/configuring-tasks)
+  - [Creating tasks](http://gruntjs.com/creating-tasks) 
   
 <!-- ######################## USING GRUNT ######################## --> 
 
@@ -707,6 +714,25 @@ module.exports = function(grunt) {
 };
 ```
 
+!SLIDE workflow contents
+
+## Contents
+
+- [Bower](http://bower.io/)
+  - https://github.com/bower/bower#windows-users
+  - [`bower.json`](https://github.com/bower/spec/blob/master/json.md)
+  - [bower configuration](https://github.com/bower/spec/blob/master/config.md)
+
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+!SLIDE workflow no-bullet-list resources
+
+## Resources for this Unit
+
+- [Introducing Grunt | Boucup](http://bocoup.com/weblog/introducing-grunt/)
+- [Get Up And Running With Grunt | Smashing Magazine](http://www.smashingmagazine.com/2013/10/29/get-up-running-grunt/)
+- [Meet Grunt: The Build Tool for JavaScript | tutsplus](http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856)
+- [JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli](http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/)
 
 
 !SLIDE no-bullet-list resources
