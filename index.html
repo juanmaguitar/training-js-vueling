@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&931d4f193ff6">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&d55b18b9ce44">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?40046d2a5f3c">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?5017d3b09b3d">
 	
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?70c95d6d9e10">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css?723d02f87ee5">
 	
-		<link rel="stylesheet" href="css/styles.css?4bc3ec873584">
+		<link rel="stylesheet" href="css/styles.css?1340a91b99d1">
 	
 </head>
 <body class="list">
@@ -571,20 +571,28 @@
 	<section class="slide workflow starting" ><div>
 		<h2><span class="icon-gears"></span> Before starting...</h2>
 <p>For this section you need to install at your machine the following:</p>
-<ol>
-<li><a href="https://nodejs.org"><strong>Node.js</strong></a> and <a href="https://www.npmjs.com/"><strong>NPM</strong></a> from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> (the <a href="https://docs.npmjs.com/getting-started/installing-node">installation of node.js</a> includes NPM)</li>
-<li><a href="http://git-scm.com/"><strong>Git</strong></a> from <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a> <a class="icon-link ml-l" href="http://git-scm.com/book/en/v2/Getting-Started-Installing-Git"></a></li>
-<li>To use <em>Grunt from comand line</em> we have to install (globally) the <a href="http://gruntjs.com/using-the-cli">Grunt&#39;s CLI</a> → <code>npm install -g grunt-cli</code></li>
-</ol>
+<ul>
+<li><a href="https://nodejs.org"><strong>Node.js</strong></a> and <a href="https://www.npmjs.com/"><strong>NPM</strong></a> from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> (the <a href="https://docs.npmjs.com/getting-started/installing-node">installation of node.js</a> includes NPM)  </li>
+<li><a href="http://git-scm.com/"><strong>Git</strong></a> from <a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a> <a class="icon-windows ml-xl" href="http://git-for-windows.github.io/"></a> <a class="icon icon-warning-sign ml-m" href="https://github.com/bower/bower#windows-users"></a>   </li>
+<li>To use <em><a href="http://gruntjs.com/">Grunt</a>, <a href="http://bower.io/">Bower</a> and <a href="http://yeoman.io/">Yeoman</a> from comand line</em> we have to install them globally → <code>npm install -g yo bower grunt-cli</code></li>
+</ul>
 
 	</div></section>
 	
 	<section class="slide workflow contents" ><div>
 		<h2>Contents</h2>
 <ul>
-<li><a href="https://www.npmjs.com/">NPM</a><ul>
+<li><p><a href="https://www.npmjs.com/">NPM</a></p>
+<ul>
 <li><a href="https://docs.npmjs.com/getting-started/what-is-npm">What is NPM?</a></li>
 <li><a href="http://book.mixu.net/node/ch8.html">Node modules</a> <a class="icon-facetime-video" href="https://docs.npmjs.com/getting-started/creating-node-modules"></a></li>
+<li><a href="http://jsforallof.us/2015/02/12/utilising-node-and-npm-for-front-end-development-workflow/">Utilising Node.js and npm for front-end development workflow</a></li>
+</ul>
+</li>
+<li><p><a href="http://gruntjs.com/">Grunt | Official Site</a></p>
+<ul>
+<li><a href="http://gruntjs.com/configuring-tasks">Configuring tasks</a></li>
+<li><a href="http://gruntjs.com/creating-tasks">Creating tasks</a> </li>
 </ul>
 </li>
 </ul>
@@ -741,6 +749,31 @@
 <code>  grunt.loadNpmTasks(&#39;grunt-contrib-watch&#39;);</code>
 <code>  grunt.<mark>registerTask</mark>(&#39;default&#39;, [&#39;jshint&#39;]);</code>
 <code>};</code></pre>
+	</div></section>
+	
+	<section class="slide workflow contents" ><div>
+		<h2>Contents</h2>
+<ul>
+<li><a href="http://bower.io/">Bower</a><ul>
+<li><a href="https://github.com/bower/bower#windows-users">https://github.com/bower/bower#windows-users</a></li>
+<li><a href="https://github.com/bower/spec/blob/master/json.md"><code>bower.json</code></a></li>
+<li><a href="https://github.com/bower/spec/blob/master/config.md">bower configuration</a></li>
+</ul>
+</li>
+</ul>
+<!-- ######################## RESOURCES TDD ######################## --> 
+
+	</div></section>
+	
+	<section class="slide workflow no-bullet-list resources" ><div>
+		<h2>Resources for this Unit</h2>
+<ul>
+<li><a href="http://bocoup.com/weblog/introducing-grunt/">Introducing Grunt | Boucup</a></li>
+<li><a href="http://www.smashingmagazine.com/2013/10/29/get-up-running-grunt/">Get Up And Running With Grunt | Smashing Magazine</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856">Meet Grunt: The Build Tool for JavaScript | tutsplus</a></li>
+<li><a href="http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/">JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli</a></li>
+</ul>
+
 	</div></section>
 	
 	<section class="slide no-bullet-list resources" ><div>
