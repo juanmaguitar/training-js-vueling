@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 			styles: [
 				'http://fonts.googleapis.com/css?family=Lato',
 				'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css',
-				'//cdn.jsdelivr.net/devicons/1.7.0/css/devicons.min.css',
+				'http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css',
 				'css/styles.css',
 
 			],

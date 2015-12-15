@@ -96,7 +96,7 @@ by [JuanMa Garrido](#trainer)
 
 !SLIDE tdd kata
 
-## <span class="icon-keyboard"></span> KATA: Native function `myIndexOf()`
+## <span class="icon-laptop"></span> KATA: Native function `myIndexOf()`
 
 Implement the JavaScript native function `myIndexOf()`  
 
@@ -110,7 +110,7 @@ The `myIndexOf()` method returns the index within the calling String object of t
 
 !SLIDE tdd kata
 
-## <span class="icon-keyboard"></span> KATA: Native function `myIndexOf()`
+## <span class="icon-laptop"></span> KATA: Native function `myIndexOf()`
 
 - [Instructions](https://github.com/juanmaguitar/katas-javascript/blob/master/indexOf/README.md)
 - [Spec](https://github.com/juanmaguitar/katas-javascript/blob/master/indexOf/spec/indexOfSpec.js)
@@ -120,7 +120,7 @@ The `myIndexOf()` method returns the index within the calling String object of t
 
 !SLIDE tdd kata
 
-## <span class="icon-keyboard"></span> KATA: Poker
+## <span class="icon-laptop"></span> KATA: Poker
 
 Create a useful model of a standard 52-card deck of cards:  
 
@@ -139,7 +139,7 @@ I should be able to draw a poker hand (5 card draw, not Texas hold 'em) and iden
 
 !SLIDE tdd kata
 
-## <span class="icon-keyboard"></span> KATA: Poker
+## <span class="icon-laptop"></span> KATA: Poker
 
 - [Instructions](https://github.com/juanmaguitar/katas-javascript/blob/master/poker/README.md)
 - [Spec](https://github.com/juanmaguitar/katas-javascript/blob/master/poker/spec/PokerHandSpec.js)
@@ -268,7 +268,7 @@ f();
 
 !SLIDE concepts
 
-## <span class="icon-keyboard"></span> Closures practice
+## <span class="icon-laptop"></span> Closures practice
 
 Do the following exercises to practice closures [http://nathansjslessons.appspot.com/lesson?id=1000](http://nathansjslessons.appspot.com/lesson?id=1000)
 
@@ -337,7 +337,7 @@ Follow the steps on [this repository](https://github.com/juanmaguitar/functional
 
 !SLIDE concepts
 
-## <span class="icon-keyboard"></span> Functional programming exercises
+## <span class="icon-laptop"></span> Functional programming exercises
 
 Do the [exercises 1-27](http://reactivex.io/learnrx/) to practice functional programming
 
@@ -439,13 +439,13 @@ myObject.myMethod();
 
 !SLIDE concepts
 
-## <span class="icon-keyboard"></span> KOAN Javascript-Jasmine
+## <span class="icon-laptop"></span> KOAN Javascript-Jasmine
 
 Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to practice javascript concepts
 
 !SLIDE concepts
 
-## <span class="icon-keyboard"></span> KOAN Javascript-Jasmine
+## <span class="icon-laptop"></span> KOAN Javascript-Jasmine
 
 - [Koans solved](https://github.com/juanmaguitar/javascript-koans/tree/master/koans)
 - [Tests passing](http://juanmaguitar.github.io/javascript-koans/KoansRunner.html)
@@ -495,7 +495,7 @@ Do the following [KOAN](https://github.com/mrdavidlaing/javascript-koans) to pra
   
 !SLIDE jquery
 
-## <span class="icon-keyboard"></span> jQuery Exercises
+## <span class="icon-laptop"></span> jQuery Exercises
 
 Do the following exercises and then let's share and comment the solutions
 
@@ -503,7 +503,7 @@ Do the following exercises and then let's share and comment the solutions
 
 !SLIDE jquery
 
-## <span class="icon-keyboard"></span> KOAN jQuery
+## <span class="icon-laptop"></span> KOAN jQuery
 
 Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure the undersanding of jquery concepts
 
@@ -714,6 +714,113 @@ module.exports = function(grunt) {
 };
 ```
 
+!SLIDE smallcode no-bullet-list workflow
+
+## <span class="icon-keyboard"></span> Loading Grunt plugins
+
+- @@Steps@@:
+
+    1. Create a _project_ folder and _src_ subfolder
+    1. Create a `package.json` interactively with `npm init`
+    1. Install the grunt plugins (`grunt` & `grunt-contrib-jshint`)
+    1. Create a `Gruntfile.js` (as defined [here](#gruntfile1))
+    1. Launch the default task w/ Grunt
+
+!SLIDE first-tasks smallcode  workflow
+
+## <span class="icon-keyboard"></span> Loading Grunt plugins
+
+    .
+    ├── Gruntfile.js
+    ├── package.json
+    └── src
+        └── foo.js
+
+```
+$ mkdir project2
+$ cd project2/
+$ mkdir src
+$ npm init
+$ npm install --save-dev @@grunt grunt-contrib-jshint@@
+```
+
+!SLIDE #gruntfile1 first-tasks smallcode  workflow
+
+## <span class="icon-keyboard"></span> Loading Grunt plugins
+
+```
+$ vi Gruntfile.js
+  module.exports = function(grunt) {
+    @@@grunt.loadNpmTasks('grunt-contrib-jshint');@@@
+    grunt.initConfig({
+      @@@jshint@@@: {
+        options: {
+          curly: true,
+          eqeqeq: true
+        },
+        target1: ['Gruntfile.js', 'src/**/*.js']
+      }
+    });
+    @@@grunt.registerTask('default', ['jshint']);@@@
+  };
+$ grunt
+```
+
+!SLIDE first-tasks smallcode showterm  workflow
+
+## <span class="icon-keyboard"></span> Loading Grunt plugins
+
+[[+]](http://showterm.io/7a31032086f0cc49f3cec)
+
+<iframe src="http://showterm.io/7a31032086f0cc49f3cec" width="700" height="380"></iframe>
+
+<!-- ######################## CLEAR IDEAS GRUNTFILE.JS ######################## --> 
+
+!SLIDE clear-ideas-gruntfile no-bullet-list smallcode  workflow
+
+## Clear Ideas about Gruntfile.js
+
+- <span class="icon-code"></span> [`grunt.initConfig({...})`](http://gruntjs.com/api/grunt.config#grunt.config.init) → [Configuration object](http://gruntjs.com/sample-gruntfile)
+```
+grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json')
+    @@uglify@@: {
+        @@options@@: {
+            // the banner is inserted at the top of the output
+            banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        },
+        @@dist@@: {
+            @@files@@: {
+                'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+            }
+        }
+    }
+});
+```
+
+!SLIDE clear-ideas-gruntfile no-bullet-list smallcode  workflow
+
+## Clear Ideas about Gruntfile.js
+
+- <span class="icon-code"></span> Tasks are _configured_ via `initConfig` using @@task-named properties@@ as key of a configuration object that has:
+  - @@[_targets_](http://gruntjs.com/configuring-tasks#task-configuration-and-targets)@@ →  groups of files/options (`dist`) →  `grunt uglify:dist`
+  - @@[`options`](http://gruntjs.com/configuring-tasks#options)@@ →  custom setting overriding general settings (also _target_ devel)
+  - @@[`files`](http://gruntjs.com/configuring-tasks#files)@@ →  src & dest files
+
+
+
+!SLIDE clear-ideas-gruntfile no-bullet-list smallcode  workflow
+
+## Clear Ideas about Gruntfile.js
+
+- <span class="icon-code"></span>[`grunt.loadNpmTasks(...);`](http://gruntjs.com/api/grunt.task#grunt.task.loadnpmtasks) → Load the Grunt plugins.
+  - `grunt.@@loadNpmTasks@@("grunt-contrib-uglify");`
+<br/><br/>
+- <span class="icon-code"></span>[`grunt.registerTask(...);`](http://gruntjs.com/api/grunt.task#grunt.task.registertask) → Aliases for already loaded/created tasks
+    - `grunt.@@registerTask@@('default', ['jshint', 'qunit', 'concat', 'uglify']);`
+
+
+
 !SLIDE workflow contents
 
 ## Contents
@@ -722,12 +829,76 @@ module.exports = function(grunt) {
   - [`bower.json`](https://github.com/bower/spec/blob/master/json.md)
   - [bower configuration](https://github.com/bower/spec/blob/master/config.md)
 
+- [Yeoman](http://yeoman.io/)
+  - [Generators](http://yeoman.io/generators/)
+
+<!-- ######################## FINAL PROJECT ######################## --> 
+
+!SLIDE smallcode no-bullet-list  workflow
+
+## <span class="icon-laptop"></span> Fully functional Grunt project
+
+    ├── Gruntfile.js
+    ├── dist
+    ├── index.html
+    ├── package.json
+    ├── src
+    │   ├── js
+    │   │   ├── bar.js
+    │   │   └── foo.js
+    │   ├── scss
+    │   │   └── styles.scss
+    │   └── vendor
+    │       └── jquery-2.1.3.js
+    └── test
+      ├── barSpec.js
+      └── fooSpec.js
+
+!SLIDE smallcode no-bullet-list workflow exercise
+
+## <span class="icon-laptop"></span> Fully functional Grunt project
+
+- _Given the previous structure, create a Grunt project that provides the following tasks:_
+
+- <span class="devicons devicons-grunt icon-"></span> [`grunt concat`](https://github.com/gruntjs/grunt-contrib-concat) → concatenate all _.js_ files  at _src_ folder (using `;` as separator) in a npm-project-named _.js_ file placed at _dist_ folder
+- <span class="devicons devicons-grunt icon-"></span> [`grunt uglify`](https://github.com/gruntjs/grunt-contrib-uglify) → _uglify_  file generated by _concat_ task into a new _.min.js_ file placed at _dist_ folder
+- <span class="devicons devicons-grunt icon-"></span> [`grunt jshint`](https://github.com/gruntjs/grunt-contrib-jshint) → validate the js code (Gruntfile.js, _src/js_, _test_)
+
+!SLIDE smallcode no-bullet-list  workflow exercise
+
+## <span class="icon-laptop"></span> Fully functional Grunt project
+
+- <span class="devicons devicons-grunt icon-"></span> [`grunt compass`](https://github.com/gruntjs/grunt-contrib-compass) → compile _src/styles.scss_ file into a _dist/styles.css_
+- <span class="devicons devicons-grunt icon-"></span> `grunt` or `grunt default`→ launches all previous tasks (jshint, concat, uglify, compass)
+- <span class="devicons devicons-grunt icon-"></span> [`grunt watch`](https://github.com/gruntjs/grunt-contrib-watch) → watch any change done at _Gruntfile.js_ or _src_ folder and launches _default_ task w/ new changes
+
+!SLIDE smallcode no-bullet-list  workflow exercise
+
+## <span class="icon-laptop"></span> Fully functional Grunt project (extras)
+
+- <span class="devicons devicons-grunt icon-"></span> [`grunt jasmine`](https://github.com/gruntjs/grunt-contrib-jasmine) → launch all jasmine tests at _test_ folder (add it to _default_ task)
+- <span class="devicons devicons-grunt icon-"></span> [`grunt serve`](https://github.com/gruntjs/grunt-contrib-connect) → launch a local server at _localhost:8081_ (after launching _default_ task)
+
+!SLIDE smallcode no-bullet-list  workflow exercise
+
+## <span class="icon-laptop"></span> Fully functional Grunt project (extras)
+
+_Also, prepare the project w/ the following:_
+
+- <span class="devicons devicons-npm icon-"></span> `package.json` → prepare the project to install all grunt dependencies w/ `npm install`
+- <span class="devicons devicons-bower icon-"></span> `bower.json` → remove the folder `vendor` and add jquery as a bower dependency. Modify the grunt tasks if necessary.
+- <span class="devicons devicons-grunt icon-"></span> [`livereload`](http://seanamarasinghe.com/developer/grunt-watch-livereload-with-javascript-sass/) → prepare your _watch_ grunt tasks to reload the page in the browser automatically when detect changes
+
+
+<!-- ######################## MORE INFO ######################## --> 
+
+
 <!-- ######################## RESOURCES TDD ######################## --> 
 
-!SLIDE workflow no-bullet-list resources
+!SLIDE workflow resources
 
-## Resources for this Unit
-
+## Resources for this Unit  
+  
 - [Introducing Grunt | Boucup](http://bocoup.com/weblog/introducing-grunt/)
 - [Get Up And Running With Grunt | Smashing Magazine](http://www.smashingmagazine.com/2013/10/29/get-up-running-grunt/)
 - [Meet Grunt: The Build Tool for JavaScript | tutsplus](http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856)

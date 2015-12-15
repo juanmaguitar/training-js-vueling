@@ -1,0 +1,20 @@
+{
+  "name": "grunt-project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/juanmaguitar/training-js-vueling",
+  "authors": [
+    "JuanMa Garrido <JuanMa.Garrido@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~1.7.1"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}

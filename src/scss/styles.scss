@@ -242,6 +242,16 @@ h6 {
   a[class^="icon-"] {
     margin-left: 2em;
   }
+  &.exercise {
+    span.devicons {
+      font-size: 35px;
+      &:before {
+        top: 9px;
+        position: relative;
+        right: -24px;
+      }
+    }
+  }
 }
 
 .coverSession {
