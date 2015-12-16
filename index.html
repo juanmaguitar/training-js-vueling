@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&9aef434dbb53">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&418f5135e177">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?e8aaa95bd39d">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?57849034a8c6">
 	
-		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?7b4524c4ee34">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?14ad7e774d33">
 	
-		<link rel="stylesheet" href="css/styles.css?11468a9e8fe4">
+		<link rel="stylesheet" href="css/styles.css?ca826ae0adf1">
 	
 </head>
 <body class="list">
@@ -932,7 +932,7 @@
 		<h2><span class="icon-laptop"></span> Fully functional Grunt project (extras)</h2>
 <p><em>Also, prepare the project w/ the following:</em></p>
 <ul>
-<li><span class="devicons devicons-npm icon-"></span> <code>package.json</code> → prepare the project to install all grunt dependencies w/ <code>npm install</code></li>
+<li><span class="devicons devicons-npm icon-"></span> <code>package.json</code> → add here all grunt dependencies (you can test if this works by removing the <code>node_modules</code> folder, launching <code>npm install</code> and test that all grunt tasks work properly )</li>
 <li><span class="devicons devicons-bower icon-"></span> <code>bower.json</code> → remove the folder <code>vendor</code> and add jquery as a bower dependency. Modify the grunt tasks if necessary.</li>
 <li><span class="devicons devicons-grunt icon-"></span> <a href="http://seanamarasinghe.com/developer/grunt-watch-livereload-with-javascript-sass/"><code>livereload</code></a> → prepare your <em>watch</em> grunt tasks to reload the page in the browser automatically when detect changes</li>
 </ul>
@@ -1136,12 +1136,230 @@
 
 	</div></section>
 	
-	<section class="slide es2015" ><div>
-		<h2><span class="icon-laptop"></span> ES6 Katas: Block Scope</h2>
-<p>Do the following katas to assure the undersanding of arrow functions</p>
+	<section class="slide es2015 smallcode" ><div>
+		<h2><a href="https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/">Template Strings</a></h2>
 <ul>
-<li><a href="http://tddbin.com/#?kata=es6/language/block-scoping/let"><code>let</code> declaration</a></li>
-<li><a href="http://tddbin.com/#?kata=es6/language/block-scoping/const"><code>const</code> declaration</a></li>
+<li>Enclosed by back-ticks <mark><code>`` </code> </mark></li>
+<li>Multi-line support</li>
+<li>Can contain placeholders <code>${ expression }</code></li>
+</ul>
+<pre><code class="language-javascript">`string text`</code>
+<code>&shy;</code>
+<code>`string text line 1</code>
+<code> string text line 2`</code>
+<code>&shy;</code>
+<code>`string text ${expression} string text`</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Template Strings</h2>
+<p>BEFORE (ES5)</p>
+<pre><code class="language-javascript">var name = &quot;juanma&quot;;</code>
+<code>var getSuitableDrink = function(who) {</code>
+<code>  return who === &#39;juanma&#39; ? &#39;beer&#39; : &#39;cocktail&#39;</code>
+<code>};</code>
+<code>&shy;</code>
+<code>console.log( &#39;Hello, &#39;+name+&#39;!\nFancy a &#39;+getSuitableDrink()+&#39;?&#39; );</code>
+<code>&shy;</code>
+<code>// Hello, juanma!</code>
+<code>// Fancy a beer?</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Template Strings</h2>
+<p>AFTER (ES2015)</p>
+<pre><code class="language-javascript">var name = &quot;juanma&quot;;</code>
+<code>var getSuitableDrink = function(who) {</code>
+<code>  return who === &#39;juanma&#39; ? &#39;beer&#39; : &#39;cocktail&#39;</code>
+<code>};</code>
+<code>&shy;</code>
+<code>console.log( `Hello, ${ name }!</code>
+<code>  Fancy a ${ getSuitableDrink() }?` );</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2>Template Strings</h2>
+<ul>
+<li><a href="https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/">Template Strings</a></li>
+<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5#template-literals">ECMAScript 6 equivalents in ES5: Template Literals</a>  </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Template Strings</h2>
+<p>Do the following katas to assure the undersanding of template strings</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/template-strings/basics">basics</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/template-strings/multiline">multiline</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/template-strings/tagged">tagged template strings</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/template-strings/raw"><code>raw</code> property</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2><a href="https://github.com/lukehoban/es6features#enhanced-object-literals">Enhanced Object Literals</a></h2>
+<ul>
+<li>Shorthand property names</li>
+<li>Shorthand methods names</li>
+<li>Dynamic property names</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get"><em>getter</em></a> and <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/set"><em>setter</em></a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Enhanced Object Literals</h2>
+<pre><code class="language-javascript">var a = &quot;foo&quot;,</code>
+<code>    b = 42,</code>
+<code>    c = {};</code>
+<code>&shy;</code>
+<code>function myMethod() {</code>
+<code>    console.log(&#39;ooOoh!&#39;);</code>
+<code>}</code>
+<code>&shy;</code>
+<code>// Shorthand property names</code>
+<code><mark>var o = { a, b, c };</mark></code>
+<code>&shy;</code>
+<code>// Shorthand method name and dynamic property name</code>
+<code>var o2 = {</code>
+<code>  myMethod,</code>
+<code>  <mark>[&#39;myPropertyNum&#39;+b]: &#39;bar&#39;</mark></code>
+<code>}</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Enhanced Object Literals</h2>
+<pre><code class="language-javascript">var messages = {</code>
+<code>  <mark>get latest ()</mark> {</code>
+<code>    if (this.log.length == 0) return undefined;</code>
+<code>    return this.log[this.log.length - 1]</code>
+<code>  },</code>
+<code>  <mark>set current (str)</mark> {</code>
+<code>    this.log[this.log.length] = str;</code>
+<code>  },</code>
+<code>  log: []</code>
+<code>}</code>
+<code>&shy;</code>
+<code>messages.current = &quot;hey!&quot;;</code>
+<code>messages.latest // hey!</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Enhanced Object Literals</h2>
+<p>Do the following katas to assure the undersanding of Enhanced Object Literals</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/object-literal/basics">basics</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/object-literal/computed-properties">computed properties</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/object-literal/getter">getter</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/object-literal/setter">setter</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters">Default parameters</a></h2>
+<pre><code class="language-javascript">function f(x, y=12) {</code>
+<code>  // y is 12 if not passed (or passed as undefined)</code>
+<code>  return x + y;</code>
+<code>}</code>
+<code>&shy;</code>
+<code>f(3) === 15;</code>
+<code>f(3, undefined) === 15;</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Default parameters</h2>
+<p>Do the following katas to assure the undersanding of Default parameters</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/default-parameters/basics">basic</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring Assignment</a></h2>
+<ul>
+<li>Array destructuring</li>
+<li>Object destructuring</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Destructuring Assignment</h2>
+<pre><code class="language-javascript">var [first, second, third, , fifth = 5] = [1, 2];</code>
+<code>first // 1</code>
+<code>second // 2</code>
+<code>third // undefined</code>
+<code>fifth // 5</code>
+<code>&shy;</code>
+<code>[second, first] = [first, second] // swap values</code>
+<code>first // 2</code>
+<code>second // 1</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Destructuring Assignment</h2>
+<pre><code class="language-javascript">var customer = {</code>
+<code>  name: &#39;John&#39;,</code>
+<code>  surname: &#39;Doe&#39;,</code>
+<code>  dateOfBirth: {</code>
+<code>    year: 1988</code>
+<code>  }</code>
+<code>};</code>
+<code>&shy;</code>
+<code>var {name, surname, dateOfBirth: {year}, children} = customer;</code>
+<code>name // &#39;John&#39;</code>
+<code>surname // &#39;Doe&#39;</code>
+<code>year // 1988</code>
+<code>children // undefined</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Destructuring Assignment</h2>
+<p>Do the following katas to assure the undersanding of Destructuring Assignment</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/destructuring/array">array</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/destructuring/string">string</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/destructuring/object">object</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/destructuring/defaults">defaults</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/destructuring/parameters">parameters</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/destructuring/rename">assign</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 resources smallcode" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters">Rest operator</a></h2>
+<ul>
+<li>Bind trailing parameters to an array using <code>...</code></li>
+<li>Replaces the need for <mark>arguments</mark></li>
+</ul>
+<pre><code class="language-javascript">function multiply(multiplier, ...numbers) {</code>
+<code>  return numbers.map(n =&gt; multiplier * n);</code>
+<code>}</code>
+<code>&shy;</code>
+<code>var arr = multiply(2, 1, 2, 3);</code>
+<code>console.log(arr); // [2, 4, 6]</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Rest operator</h2>
+<p>Do the following katas to assure the undersanding of Rest operator</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/rest/as-parameter">as parameter</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/rest/with-destructuring">with destructuring</a></li>
 </ul>
 
 	</div></section>
@@ -1155,6 +1373,8 @@
 <li><a href="https://hacks.mozilla.org/category/es6-in-depth/">ES6 In Depth</a></li>
 <li><a href="http://ariya.ofilabs.com/tag/es6">ariya.ofilabs.com | ES6</a> </li>
 <li><a href="https://medium.com/ecmascript-2015">ECMAScript 2015</a></li>
+<li><a href="http://es6katas.org/">ES6 Katas</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn">Scratch JS (chrome plugin)</a></li>
 </ul>
 
 	</div></section>
