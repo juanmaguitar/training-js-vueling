@@ -904,6 +904,211 @@ _Also, prepare the project w/ the following:_
 - [Meet Grunt: The Build Tool for JavaScript | tutsplus](http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856)
 - [JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli](http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/)
 
+<!-- ######################## COVER ######################## --> 
+
+!SLIDE coverSession es2015
+
+<section class="logos">
+  <div class="box">
+    ![es2015 logo](img/es-2015.jpg)
+  <div>
+</section>
+ 
+## Advanced JS Training  
+### **ES2015** 
+#### (former ES6)
+
+!SLIDE es2015 history
+
+- [TC39](http://ecma-international.org/memento/TC39.htm)
+  - ECMA Technical Committee evolving JavaScript
+  - Members: companies (all major browser vendors, ...)
+
+- [ECMAScript](http://www.ecmascript.org/index.php)
+  + The name of the language standardized by ECMA
+  + ECMAScript 1 => 1997
+  + ECMAScript 2 => 1998
+  + ECMAScript 3 => 1999
+  + ~~ECMAScript 4~~ => abandoned
+  + ECMAScript 5 => 2009
+  + ~~ECMAScript 6~~ => rebaptised ECMAScript 2015
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript?redirectlocale=en-US&redirectslug=JavaScript)
+  - Colloquially: the language
+  - Formally: one implementation of ECMAScript
+
+
+!SLIDE es2015
+
+## ES2015 Overview
+
+- Approved in @@June 2015@@, 1st update since 2009!
+- A lot of @@new syntax features@@
+- @@Backwards compatible@@ (mostly syntactic sugar that can be desugared to older versions of the language)
+- Current support: [Kangax compatibility table](http://kangax.github.io/compat-table/es6/)
+- We can use them @@right now@@ with a source to source compiler (transpiler) : see [Babel](https://babeljs.io/), [Traceur](https://github.com/google/traceur-compiler) and [TypeScript](http://www.typescriptlang.org/)
+
+!SLIDE es2015
+
+## [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+- Shorter syntax using `=>`
+- Always anonymous
+- Lexically bind `this`
+- Really useful for event handlers and callbacks
+- Really neat when using functional programming
+
+!SLIDE es2015
+
+## Arrow Functions
+
+- [ECMAScript 6 equivalents in ES5: Arrow Functions](https://github.com/addyosmani/es6-equivalents-in-es5#arrow-functions)  
+- [ES6 In Depth: Arrow functions](https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/)  
+- [Understanding ECMAScript 6 arrow functions](https://www.nczonline.net/blog/2013/09/10/understanding-ecmascript-6-arrow-functions/)
+
+!SLIDE es2015 smallcode
+
+## Arrow Functions
+
+Four versions:
+
+```javascript
+    (arg1, arg2, ...) => expr
+    (arg1, arg2, ...) => { stmt1; stmt2; ... }
+    singleArg => expr
+    singleArg => { stmt1; stmt2; ... }
+```
+
+!SLIDE es2015 smallcode
+
+## Arrow Functions
+
+BEFORE (ES5)
+
+```javascript
+var self = this;
+this.element.addEventListener('click', function(event) {
+  self.registerClick(event.target.id);
+});
+```
+
+!SLIDE es2015 smallcode
+
+## Arrow Functions
+
+AFTER (ES2015)
+
+```javascript
+this.element.addEventListener('click', event => {
+  this.registerClick(event.target.id);
+});
+```
+
+!SLIDE es2015 smallcode
+
+## Arrow Functions
+
+BEFORE (ES5)
+
+```javascript
+[1,3,4,5,6,7].filter(function(n) { return n % 2 } )
+  .map(function(n, i) { return n + i } ); 
+// [1, 4, 7, 10]
+```
+
+!SLIDE es2015 smallcode
+
+## Arrow Functions
+
+AFTER (ES2015)
+
+```javascript
+[1,2,3,4,5,6,7].filter(n => n % 2).map((n, i) => n+i);
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Arrow Functions
+
+Do the following katas to assure the undersanding of arrow functions
+- [basics](http://tddbin.com/#?kata=es6/language/arrow-functions/basics)
+- [function binding](http://tddbin.com/#?kata=es6/language/arrow-functions/binding)
+
+!SLIDE es2015
+
+## [Block Scope](https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/)
+
+- Two new types of _"variables"_: [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+- Both with block scope
+
+!SLIDE es2015
+
+## Block Scope
+
+- [ECMAScript 6 equivalents in ES5: Block Scoping Functions](https://github.com/addyosmani/es6-equivalents-in-es5#block-scoping-functions)  
+- [ECMAScript 6 and Block Scope](http://ariya.ofilabs.com/2013/05/es6-and-block-scope.html)
+
+
+!SLIDE es2015 smallcode
+
+## Block Scope
+
+BEFORE (ES5)
+
+```javascript
+var arr = [1, 2, 3];
+for (var i = 0; i < arr.length; i++) {
+  // i from 0 to 2
+}
+i; // 3
+{
+  var TEMPERATURE = 32;
+  TEMPERATURE = 16;
+  TEMPERATURE // 16
+}
+TEMPERATURE; // 16
+```
+
+!SLIDE es2015 smallcode
+
+## Block Scope
+
+AFTER (ES2015)
+
+```javascript
+var arr = [1, 2, 3];
+for (let i = 0; i < arr.length; i++) {
+  // i from 0 to 2
+}
+i; // ReferenceError: i is not defined!
+{
+  const TEMPERATURE = 32;
+  TEMPERATURE = 16;
+  TEMPERATURE; // 32
+}
+TEMPERATURE; // ReferenceError: TEMPERATURE is not defined!
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Block Scope
+
+Do the following katas to assure the undersanding of arrow functions
+- [`let` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/let)
+- [`const` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/const)
+
+
+!SLIDE es2015 resources
+
+## Resources for this Unit  
+  
+- [Using Grunt & the ES6 Module Transpiler](http://www.thomasboyt.com/2013/06/21/es6-module-transpiler)
+- [`grunt-es6-module-transpiler`](https://github.com/joefiorini/grunt-es6-module-transpiler)
+- [ECMAScript 6 equivalents in ES5](https://github.com/addyosmani/es6-equivalents-in-es5)
+- [ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
+- [ariya.ofilabs.com | ES6](http://ariya.ofilabs.com/tag/es6) 
+- [ECMAScript 2015](https://medium.com/ecmascript-2015)
+
 
 !SLIDE no-bullet-list resources
 

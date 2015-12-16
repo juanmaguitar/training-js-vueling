@@ -7,6 +7,8 @@ $color-tdd: #34A853;
 $color-advanced-js: #EA4335;
 $color-jquery: #0769AD;
 $color-workflow: #F37D0B;
+$color-es2015: #323330;
+$color-es2015-text: #F5DA55;
 
 .clear-ideas-gruntfile.smallcode {
 	ul ul li code { font-size:16px; }
@@ -136,7 +138,7 @@ h6 {
 		left: 100px;
 	}
 	*/
-	h2, h3, ul li {
+	h2, h3, h4, ul li {
 		color: #453015;
 		font-family: "MOHAVE",Helvetica,Arial,sans-serif;
 	}
@@ -167,7 +169,7 @@ h6 {
 			margin:10px;
 		}
 	}
-	h3 {
+	h3,h4 {
 		position: absolute;
     top: 360px;
     left: 35px;
@@ -254,6 +256,15 @@ h6 {
   }
 }
 
+.slide.es2015 {
+  border-left: 10px solid $color-es2015;
+  &.history {
+    ul li {
+    line-height: 33px;
+    font-size: 20px; }
+  }
+}
+
 .coverSession {
 	&.tdd {
     background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-tdd;
@@ -300,6 +311,26 @@ h6 {
     }
     .box {top:150px;}
     h3 { top:420px;}
+
+  }
+
+  &.es2015 {
+    background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-es2015;
+
+  /*   ![npm Logo](img/workflow/npm.svg)
+    ![grunt Logo](img/workflow/grunt.png)
+    ![bower Logo](img/workflow/bower.png)
+    ![yeoman Logo](img/workflow/yeoman.png)
+  <d
+   */
+    h2 { color: $color-es2015-text; }
+    img[alt$="logo"] {
+      /* margin:-20px 48px; */
+      height: 200px; float:left;
+    }
+    .box { top:150px; left:30px; }
+    h3 { top:400px;}
+    h4 { top:460px;}
   }
 
 

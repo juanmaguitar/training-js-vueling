@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&7e99d91eb96d">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&9aef434dbb53">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?fc19b4b59297">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?e8aaa95bd39d">
 	
-		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?0e0741271301">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?7b4524c4ee34">
 	
-		<link rel="stylesheet" href="css/styles.css?f328f51bf23c">
+		<link rel="stylesheet" href="css/styles.css?11468a9e8fe4">
 	
 </head>
 <body class="list">
@@ -948,6 +948,213 @@
 <li><a href="http://www.smashingmagazine.com/2013/10/29/get-up-running-grunt/">Get Up And Running With Grunt | Smashing Magazine</a></li>
 <li><a href="http://code.tutsplus.com/tutorials/meet-grunt-the-build-tool-for-javascript--net-24856">Meet Grunt: The Build Tool for JavaScript | tutsplus</a></li>
 <li><a href="http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/">JS Task Runners Comparison: Grunt vs Cake vs Gulp vs Broccoli</a></li>
+</ul>
+<!-- ######################## COVER ######################## --> 
+
+	</div></section>
+	
+	<section class="slide coverSession es2015" ><div>
+		<section class="logos">
+  <div class="box">
+    <img src="img/es-2015.jpg" alt="es2015 logo">
+  <div>
+</section>
+
+<h2>Advanced JS Training</h2>
+<h3><strong>ES2015</strong></h3>
+<h4>(former ES6)</h4>
+
+	</div></section>
+	
+	<section class="slide es2015 history" ><div>
+		<ul>
+<li><p><a href="http://ecma-international.org/memento/TC39.htm">TC39</a></p>
+<ul>
+<li>ECMA Technical Committee evolving JavaScript</li>
+<li>Members: companies (all major browser vendors, ...)</li>
+</ul>
+</li>
+<li><p><a href="http://www.ecmascript.org/index.php">ECMAScript</a></p>
+<ul>
+<li>The name of the language standardized by ECMA</li>
+<li>ECMAScript 1 =&gt; 1997</li>
+<li>ECMAScript 2 =&gt; 1998</li>
+<li>ECMAScript 3 =&gt; 1999</li>
+<li><del>ECMAScript 4</del> =&gt; abandoned</li>
+<li>ECMAScript 5 =&gt; 2009</li>
+<li><del>ECMAScript 6</del> =&gt; rebaptised ECMAScript 2015</li>
+</ul>
+</li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript?redirectlocale=en-US&amp;redirectslug=JavaScript">JavaScript</a></p>
+<ul>
+<li>Colloquially: the language</li>
+<li>Formally: one implementation of ECMAScript</li>
+</ul>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2>ES2015 Overview</h2>
+<ul>
+<li>Approved in <mark>June 2015</mark>, 1st update since 2009!</li>
+<li>A lot of <mark>new syntax features</mark></li>
+<li><mark>Backwards compatible</mark> (mostly syntactic sugar that can be desugared to older versions of the language)</li>
+<li>Current support: <a href="http://kangax.github.io/compat-table/es6/">Kangax compatibility table</a></li>
+<li>We can use them <mark>right now</mark> with a source to source compiler (transpiler) : see <a href="https://babeljs.io/">Babel</a>, <a href="https://github.com/google/traceur-compiler">Traceur</a> and <a href="http://www.typescriptlang.org/">TypeScript</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">Arrow Functions</a></h2>
+<ul>
+<li>Shorter syntax using <code>=&gt;</code></li>
+<li>Always anonymous</li>
+<li>Lexically bind <code>this</code></li>
+<li>Really useful for event handlers and callbacks</li>
+<li>Really neat when using functional programming</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2>Arrow Functions</h2>
+<ul>
+<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5#arrow-functions">ECMAScript 6 equivalents in ES5: Arrow Functions</a>  </li>
+<li><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/">ES6 In Depth: Arrow functions</a>  </li>
+<li><a href="https://www.nczonline.net/blog/2013/09/10/understanding-ecmascript-6-arrow-functions/">Understanding ECMAScript 6 arrow functions</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Arrow Functions</h2>
+<p>Four versions:</p>
+<pre><code class="language-javascript">    (arg1, arg2, ...) =&gt; expr</code>
+<code>    (arg1, arg2, ...) =&gt; { stmt1; stmt2; ... }</code>
+<code>    singleArg =&gt; expr</code>
+<code>    singleArg =&gt; { stmt1; stmt2; ... }</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Arrow Functions</h2>
+<p>BEFORE (ES5)</p>
+<pre><code class="language-javascript">var self = this;</code>
+<code>this.element.addEventListener(&#39;click&#39;, function(event) {</code>
+<code>  self.registerClick(event.target.id);</code>
+<code>});</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Arrow Functions</h2>
+<p>AFTER (ES2015)</p>
+<pre><code class="language-javascript">this.element.addEventListener(&#39;click&#39;, event =&gt; {</code>
+<code>  this.registerClick(event.target.id);</code>
+<code>});</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Arrow Functions</h2>
+<p>BEFORE (ES5)</p>
+<pre><code class="language-javascript">[1,3,4,5,6,7].filter(function(n) { return n % 2 } )</code>
+<code>  .map(function(n, i) { return n + i } ); </code>
+<code>// [1, 4, 7, 10]</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Arrow Functions</h2>
+<p>AFTER (ES2015)</p>
+<pre><code class="language-javascript">[1,2,3,4,5,6,7].filter(n =&gt; n % 2).map((n, i) =&gt; n+i);</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Arrow Functions</h2>
+<p>Do the following katas to assure the undersanding of arrow functions</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/arrow-functions/basics">basics</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/arrow-functions/binding">function binding</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><a href="https://hacks.mozilla.org/2015/07/es6-in-depth-let-and-const/">Block Scope</a></h2>
+<ul>
+<li>Two new types of <em>&quot;variables&quot;</em>: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><code>let</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"><code>const</code></a></li>
+<li>Both with block scope</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2>Block Scope</h2>
+<ul>
+<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5#block-scoping-functions">ECMAScript 6 equivalents in ES5: Block Scoping Functions</a>  </li>
+<li><a href="http://ariya.ofilabs.com/2013/05/es6-and-block-scope.html">ECMAScript 6 and Block Scope</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Block Scope</h2>
+<p>BEFORE (ES5)</p>
+<pre><code class="language-javascript">var arr = [1, 2, 3];</code>
+<code>for (var i = 0; i &lt; arr.length; i++) {</code>
+<code>  // i from 0 to 2</code>
+<code>}</code>
+<code>i; // 3</code>
+<code>{</code>
+<code>  var TEMPERATURE = 32;</code>
+<code>  TEMPERATURE = 16;</code>
+<code>  TEMPERATURE // 16</code>
+<code>}</code>
+<code>TEMPERATURE; // 16</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 smallcode" ><div>
+		<h2>Block Scope</h2>
+<p>AFTER (ES2015)</p>
+<pre><code class="language-javascript">var arr = [1, 2, 3];</code>
+<code>for (let i = 0; i &lt; arr.length; i++) {</code>
+<code>  // i from 0 to 2</code>
+<code>}</code>
+<code>i; // ReferenceError: i is not defined!</code>
+<code>{</code>
+<code>  const TEMPERATURE = 32;</code>
+<code>  TEMPERATURE = 16;</code>
+<code>  TEMPERATURE; // 32</code>
+<code>}</code>
+<code>TEMPERATURE; // ReferenceError: TEMPERATURE is not defined!</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Block Scope</h2>
+<p>Do the following katas to assure the undersanding of arrow functions</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/block-scoping/let"><code>let</code> declaration</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/block-scoping/const"><code>const</code> declaration</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 resources" ><div>
+		<h2>Resources for this Unit</h2>
+<ul>
+<li><a href="http://www.thomasboyt.com/2013/06/21/es6-module-transpiler">Using Grunt &amp; the ES6 Module Transpiler</a></li>
+<li><a href="https://github.com/joefiorini/grunt-es6-module-transpiler"><code>grunt-es6-module-transpiler</code></a></li>
+<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5">ECMAScript 6 equivalents in ES5</a></li>
+<li><a href="https://hacks.mozilla.org/category/es6-in-depth/">ES6 In Depth</a></li>
+<li><a href="http://ariya.ofilabs.com/tag/es6">ariya.ofilabs.com | ES6</a> </li>
+<li><a href="https://medium.com/ecmascript-2015">ECMAScript 2015</a></li>
 </ul>
 
 	</div></section>
