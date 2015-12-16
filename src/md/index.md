@@ -885,7 +885,7 @@ grunt.initConfig({
 
 _Also, prepare the project w/ the following:_
 
-- <span class="devicons devicons-npm icon-"></span> `package.json` → prepare the project to install all grunt dependencies w/ `npm install`
+- <span class="devicons devicons-npm icon-"></span> `package.json` → add here all grunt dependencies (you can test if this works by removing the `node_modules` folder, launching `npm install` and test that all grunt tasks work properly )
 - <span class="devicons devicons-bower icon-"></span> `bower.json` → remove the folder `vendor` and add jquery as a bower dependency. Modify the grunt tasks if necessary.
 - <span class="devicons devicons-grunt icon-"></span> [`livereload`](http://seanamarasinghe.com/developer/grunt-watch-livereload-with-javascript-sass/) → prepare your _watch_ grunt tasks to reload the page in the browser automatically when detect changes
 
@@ -1089,14 +1089,240 @@ i; // ReferenceError: i is not defined!
 TEMPERATURE; // ReferenceError: TEMPERATURE is not defined!
 ```
 
+!SLIDE es2015 smallcode
+
+## [Template Strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
+
+- Enclosed by back-ticks @@` `` ` @@
+- Multi-line support
+- Can contain placeholders `${ expression }`
+
+```javascript
+`string text`
+
+`string text line 1
+ string text line 2`
+
+`string text ${expression} string text`
+```
+
+!SLIDE es2015 smallcode
+
+## Template Strings
+
+BEFORE (ES5)
+
+```javascript
+var name = "juanma";
+var getSuitableDrink = function(who) {
+  return who === 'juanma' ? 'beer' : 'cocktail'
+};
+
+console.log( 'Hello, '+name+'!\nFancy a '+getSuitableDrink()+'?' );
+
+// Hello, juanma!
+// Fancy a beer?
+```
+
+!SLIDE es2015 smallcode
+
+## Template Strings
+
+AFTER (ES2015)
+
+```javascript
+var name = "juanma";
+var getSuitableDrink = function(who) {
+  return who === 'juanma' ? 'beer' : 'cocktail'
+};
+
+console.log( `Hello, ${ name }!
+  Fancy a ${ getSuitableDrink() }?` );
+```
+
+
 !SLIDE es2015
 
-## <span class="icon-laptop"></span> ES6 Katas: Block Scope
+## Template Strings
 
-Do the following katas to assure the undersanding of arrow functions
-- [`let` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/let)
-- [`const` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/const)
+- [Template Strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
+- [ECMAScript 6 equivalents in ES5: Template Literals](https://github.com/addyosmani/es6-equivalents-in-es5#template-literals)  
 
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Template Strings
+
+Do the following katas to assure the undersanding of template strings
+- [basics](http://tddbin.com/#?kata=es6/language/template-strings/basics)
+- [multiline](http://tddbin.com/#?kata=es6/language/template-strings/multiline)
+- [tagged template strings](http://tddbin.com/#?kata=es6/language/template-strings/tagged)
+- [`raw` property](http://tddbin.com/#?kata=es6/language/template-strings/raw)
+
+!SLIDE es2015 smallcode
+
+## [Enhanced Object Literals](https://github.com/lukehoban/es6features#enhanced-object-literals)
+
+- Shorthand property names
+- Shorthand methods names
+- Dynamic property names
+- [_getter_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) and [_setter_](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/set)
+
+
+!SLIDE es2015 smallcode
+
+## Enhanced Object Literals
+
+```javascript
+var a = "foo",
+    b = 42,
+    c = {};
+
+function myMethod() {
+    console.log('ooOoh!');
+}
+
+// Shorthand property names
+@@var o = { a, b, c };@@
+
+// Shorthand method name and dynamic property name
+var o2 = {
+  myMethod,
+  @@['myPropertyNum'+b]: 'bar'@@
+}
+```
+
+!SLIDE es2015 smallcode
+
+## Enhanced Object Literals
+
+```javascript
+var messages = {
+  @@get latest ()@@ {
+    if (this.log.length == 0) return undefined;
+    return this.log[this.log.length - 1]
+  },
+  @@set current (str)@@ {
+    this.log[this.log.length] = str;
+  },
+  log: []
+}
+
+messages.current = "hey!";
+messages.latest // hey!
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Enhanced Object Literals
+
+Do the following katas to assure the undersanding of Enhanced Object Literals
+- [basics](http://tddbin.com/#?kata=es6/language/object-literal/basics)
+- [computed properties](http://tddbin.com/#?kata=es6/language/object-literal/computed-properties)
+- [getter](http://tddbin.com/#?kata=es6/language/object-literal/getter)
+- [setter](http://tddbin.com/#?kata=es6/language/object-literal/setter)
+
+!SLIDE es2015 smallcode
+
+## [Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+```javascript
+function f(x, y=12) {
+  // y is 12 if not passed (or passed as undefined)
+  return x + y;
+}
+
+f(3) === 15;
+f(3, undefined) === 15;
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Default parameters
+
+Do the following katas to assure the undersanding of Default parameters
+- [basic](http://tddbin.com/#?kata=es6/language/default-parameters/basics)
+ 
+
+
+!SLIDE es2015 smallcode
+
+## [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+- Array destructuring
+- Object destructuring
+
+!SLIDE es2015 smallcode
+
+## Destructuring Assignment
+
+```javascript
+var [first, second, third, , fifth = 5] = [1, 2];
+first // 1
+second // 2
+third // undefined
+fifth // 5
+
+[second, first] = [first, second] // swap values
+first // 2
+second // 1
+```
+
+!SLIDE es2015 smallcode
+
+## Destructuring Assignment
+
+```javascript
+var customer = {
+  name: 'John',
+  surname: 'Doe',
+  dateOfBirth: {
+    year: 1988
+  }
+};
+
+var {name, surname, dateOfBirth: {year}, children} = customer;
+name // 'John'
+surname // 'Doe'
+year // 1988
+children // undefined
+```
+
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Destructuring Assignment
+
+Do the following katas to assure the undersanding of Destructuring Assignment
+- [array](http://tddbin.com/#?kata=es6/language/destructuring/array)
+- [string](http://tddbin.com/#?kata=es6/language/destructuring/string)
+- [object](http://tddbin.com/#?kata=es6/language/destructuring/object)
+- [defaults](http://tddbin.com/#?kata=es6/language/destructuring/defaults)
+- [parameters](http://tddbin.com/#?kata=es6/language/destructuring/parameters)
+- [assign](http://tddbin.com/#?kata=es6/language/destructuring/rename)
+
+!SLIDE es2015 resources smallcode
+
+## [Rest operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+- Bind trailing parameters to an array using `...`
+- Replaces the need for @@arguments@@
+
+```javascript
+function multiply(multiplier, ...numbers) {
+  return numbers.map(n => multiplier * n);
+}
+
+var arr = multiply(2, 1, 2, 3);
+console.log(arr); // [2, 4, 6]
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Rest operator
+
+Do the following katas to assure the undersanding of Rest operator
+- [as parameter](http://tddbin.com/#?kata=es6/language/rest/as-parameter)
+- [with destructuring](http://tddbin.com/#?kata=es6/language/rest/with-destructuring)
 
 !SLIDE es2015 resources
 
@@ -1108,6 +1334,8 @@ Do the following katas to assure the undersanding of arrow functions
 - [ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
 - [ariya.ofilabs.com | ES6](http://ariya.ofilabs.com/tag/es6) 
 - [ECMAScript 2015](https://medium.com/ecmascript-2015)
+- [ES6 Katas](http://es6katas.org/)
+- [Scratch JS (chrome plugin)](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn)
 
 
 !SLIDE no-bullet-list resources
