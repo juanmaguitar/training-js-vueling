@@ -1089,6 +1089,14 @@ i; // ReferenceError: i is not defined!
 TEMPERATURE; // ReferenceError: TEMPERATURE is not defined!
 ```
 
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Block Scope
+
+Do the following katas to assure the undersanding of Block Scope
+- [`let` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/let)
+- [`const` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/const)
+
 !SLIDE es2015 smallcode
 
 ## [Template Strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
