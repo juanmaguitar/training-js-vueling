@@ -1491,7 +1491,7 @@ Rectangle.prototype.toString = function() {
 
 ## Classes
 
-BEFORE
+AFTER
 
 ```javascript
 class Shape {
@@ -1603,17 +1603,6 @@ http.post('/my/url', 'body');
 
 Do the following katas to assure the understanding of Modules
 - [`import` statement](http://tddbin.com/#?kata=es6/language/modules/import)
-
-
-!SLIDE es2015
-
-## [Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
-
-- Native modules, alternative to [CommonJS](http://www.commonjs.org/) and [AMD](http://requirejs.org/docs/whyamd.html)
-- Modules can export multiple values (unlike the others)
-- Statically analyzed to load dependencies
-- Dependencies are loaded asynchronously, but can be optimized with a module bundler ([rollup](http://rollupjs.org/) or [webpack](https://webpack.github.io/))
-
 
 !SLIDE es2015
 
