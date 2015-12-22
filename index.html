@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&93b60d3e972f">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&2a404440f617">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?94f22842bef3">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?835f910f6cfe">
 	
-		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?138f730c846f">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?41a95849a4c9">
 	
-		<link rel="stylesheet" href="css/styles.css?00037acda32e">
+		<link rel="stylesheet" href="css/styles.css?7ed1da00680b">
 	
 </head>
 <body class="list">
@@ -1618,6 +1618,88 @@
 <ul>
 <li><a href="http://addyosmani.com/writing-modular-js/">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a></li>
 </ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Modules</h2>
+<p>Do the following katas to assure the understanding of Modules</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/modules/import"><code>import</code> statement</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><a href="https://hacks.mozilla.org/2015/08/es6-in-depth-modules/">Modules</a></h2>
+<ul>
+<li>Native modules, alternative to <a href="http://www.commonjs.org/">CommonJS</a> and <a href="http://requirejs.org/docs/whyamd.html">AMD</a></li>
+<li>Modules can export multiple values (unlike the others)</li>
+<li>Statically analyzed to load dependencies</li>
+<li>Dependencies are loaded asynchronously, but can be optimized with a module bundler (<a href="http://rollupjs.org/">rollup</a> or <a href="https://webpack.github.io/">webpack</a>)</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></h2>
+<p>Array object extended with:</p>
+<ul>
+<li>New static methods: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from"><code>from()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of"><code>of()</code></a></li>
+<li>New instance methods: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"><code>copyWithin()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries"><code>entries()</code></a> , <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"><code>fill()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"><code>find()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"><code>findIndex()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys"><code>keys()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values"><code>values()</code></a> </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 resources smallcode" ><div>
+		<h2>Array</h2>
+<pre><code class="language-javascript">Array.from(arguments) // [].slice.call(arguments);</code>
+<code>Array.from({0: &#39;hello&#39;, 1: world, length: 2}); // [&#39;hello&#39;, &#39;world&#39;]</code>
+<code>Array.of(1, 2, 3) // [1, 2, 3]</code>
+<code>&shy;</code>
+<code>[1, 2, 3, 4, 5].copyWithin(0, 3, 4) // [4, 2, 3, 4, 5]</code>
+<code>[1, 2, 3].fill(4) // [4, 4, 4]</code>
+<code>[4, 5, 8, 12].find(isPrime) // 5</code>
+<code>[4, 5, 8, 12].findIndex(isPrime) // 2</code>
+<code>[4, 5, 8, 12].keys() // iterator from 0 to 3</code>
+<code>[4, 5, 8, 12].values() // iterator from 4 to 12</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Array</h2>
+<p>Do the following katas to assure the understanding of Array</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/from"><code>Array.from()</code></a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/of"><code>Array.of()</code></a> </li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/fill"><code>[].fill()</code></a> </li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/find"><code>[].find()</code></a> </li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/findIndex"><code>[].findIndex()</code></a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/entries"><code>[].entries()</code></a> </li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/keys"><code>[].keys()</code></a> </li>
+<li><a href="http://tddbin.com/#?kata=es6/language/array-api/values"><code>[].values()</code></a> </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></h2>
+<p>String object extended with:</p>
+<ul>
+<li>New static methods: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw"><code>raw()</code></a></li>
+<li>New instance methods: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"><code>startsWith()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"><code>endsWith()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes"><code>includes()</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat"><code>repeat()</code></a>, ...</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 resources smallcode" ><div>
+		<h2>String</h2>
+<pre><code class="language-javascript">String.raw`Line 1\nLine 2\nLine 3` // &#39;Line 1\\nLine 2\\nLine 3&#39;</code>
+<code>String.fromCodePoint(0x1D306, 0x61, 0x1D307) // &quot;\uD834\uDF06a\uD834\uDF07&quot;</code>
+<code>&#39;Hello world&#39;.startsWith(&#39;Hello&#39;) // true</code>
+<code>&#39;Hello world&#39;.endsWith(&#39;world&#39;) // true</code>
+<code>&#39;Hello world&#39;.includes(&#39;orl&#39;) // true</code>
+<code>&#39;Hello world&#39;.repeat(2) // &#39;Hello worldHello world&#39;</code></pre>
 
 	</div></section>
 	
