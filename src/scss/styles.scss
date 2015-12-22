@@ -8,6 +8,8 @@ $color-advanced-js: #EA4335;
 $color-jquery: #0769AD;
 $color-workflow: #F37D0B;
 $color-es2015: #323330;
+$color-architecture: #8266B2;
+
 $color-es2015-text: #F5DA55;
 
 .clear-ideas-gruntfile.smallcode {
@@ -272,9 +274,13 @@ h6 {
       font-size: 22px;
       margin: 10px 0;
     }
-    pre { margin-top:40px;}
+    pre { margin-top:10px;}
   }
 
+}
+
+.slide.architecture {
+  border-left: 10px solid $color-architecture;
 }
 
 .coverSession {
@@ -338,13 +344,29 @@ h6 {
     h2 { color: $color-es2015-text; }
     img[alt$="logo"] {
       /* margin:-20px 48px; */
-      height: 200px; float:left;
+      height: 135px; float:left;
     }
-    .box { top:150px; left:30px; }
+    .box { top:220px; left:10px; }
     h3 { top:400px;}
     h4 { top:460px;}
   }
 
+  &.architecture {
+    background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px $color-architecture;
+
+    img[alt$="logo"] { margin:0; }
+    img[alt="es2015 logo"] { width: 250px; }
+    img[alt="babel logo"] { width: 185px; }
+    img[alt="webpack logo"] { width: 100px; }
+    .box {
+      top: 160px;
+      left: 30px;
+      width: 300px;
+      text-align: center;
+    }
+    h3 { top:400px;}
+    h4 { top:460px;}
+  }
 
 }
 

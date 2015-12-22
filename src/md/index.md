@@ -910,7 +910,7 @@ _Also, prepare the project w/ the following:_
 
 <section class="logos">
   <div class="box">
-    ![es2015 logo](img/es-2015.jpg)
+    ![es2015 logo](img/es2015-small.png)
   <div>
 </section>
  
@@ -1450,7 +1450,7 @@ Do the following katas to assure the understanding of Map
 - [`map.get()`](http://tddbin.com/#?kata=es6/language/map/get)
 - [`map.set()`](http://tddbin.com/#?kata=es6/language/map/set)
 - [initalize](http://tddbin.com/#?kata=es6/language/map/initialize)
-- [`map.has()](http://tddbin.com/#?kata=es6/language/map/has)
+- [`map.has()`](http://tddbin.com/#?kata=es6/language/map/has)
 
 !SLIDE es2015
 
@@ -1593,12 +1593,6 @@ http.post('/my/url', 'body');
 
 !SLIDE es2015
 
-## Modules
-
-- [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
-
-!SLIDE es2015
-
 ## <span class="icon-laptop"></span> ES6 Katas: Modules
 
 Do the following katas to assure the understanding of Modules
@@ -1667,6 +1661,36 @@ String.raw`Line 1\nLine 2\nLine 3` // 'Line 1\\nLine 2\\nLine 3'
 'Hello world'.repeat(2) // 'Hello worldHello world'
 ```
 
+!SLIDE coverSession architecture
+
+<section class="logos">
+  <div class="box">
+    ![es2015 logo](img/es2015-small.png)
+    ![babel logo](img/babel.png)
+    ![webpack logo](img/webpack.png)
+  <div>
+</section>
+ 
+## Advanced JS Training  
+### Frontend **Architecture** 
+
+
+!SLIDE architecture
+
+## Javascript Modular Architecture "Past"
+
+- [Using AMD loaders to write and manage modular javascript](http://unscriptable.com/code/Using-AMD-loaders/#0)
+- [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
+- [Large-scale JavaScript Application Architecture](https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture)
+
+!SLIDE architecture
+
+## Javascript Modular Architecture Present
+
+- [ES6 Modules: The End of Civilization As We Know It?](https://medium.com/@brianleroux/es6-modules-amd-and-commonjs-c1acefbe6fc0#.pxsaotk7a)
+- [Unlocking ES2015 Features With Webpack And Babel](http://blog.xebia.com/unlocking-es2015-features-with-webpack-and-babel/)
+- [JavaScript Application Architecture On The Road To 2015](https://medium.com/google-developers/javascript-application-architecture-on-the-road-to-2015-d8125811101b#.1f39fqwoo)
+- [TodoMVC | Helping you select an MV* framework](http://todomvc.com/)
 
 !SLIDE es2015 resources
 

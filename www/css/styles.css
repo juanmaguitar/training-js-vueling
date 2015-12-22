@@ -162,48 +162,48 @@
   margin-left: 3.2em !important; }
 
 /* VARIABLES */
-/* line 14, ../../src/scss/styles.scss */
+/* line 16, ../../src/scss/styles.scss */
 .clear-ideas-gruntfile.smallcode ul ul li code {
   font-size: 16px; }
-/* line 15, ../../src/scss/styles.scss */
+/* line 17, ../../src/scss/styles.scss */
 .clear-ideas-gruntfile.smallcode pre {
   margin-top: 20px;
   margin-left: 100px; }
-  /* line 18, ../../src/scss/styles.scss */
+  /* line 20, ../../src/scss/styles.scss */
   .clear-ideas-gruntfile.smallcode pre code:before {
     margin: 0; }
 
-/* line 23, ../../src/scss/styles.scss */
+/* line 25, ../../src/scss/styles.scss */
 #contents h2 {
   margin-bottom: 45px; }
-/* line 24, ../../src/scss/styles.scss */
+/* line 26, ../../src/scss/styles.scss */
 #contents .icon-keyboard:before, #contents .icon-laptop:before {
   margin-left: 52px;
   margin-right: -15px; }
 
-/* line 30, ../../src/scss/styles.scss */
+/* line 32, ../../src/scss/styles.scss */
 .slide h2 {
   font-size: 40px;
   margin-bottom: 20px; }
 
-/* line 35, ../../src/scss/styles.scss */
+/* line 37, ../../src/scss/styles.scss */
 [class^="icon-"] {
   font-family: "Open Sans",sans-serif; }
-  /* line 37, ../../src/scss/styles.scss */
+  /* line 39, ../../src/scss/styles.scss */
   [class^="icon-"]:before {
     font-family: FontAwesome; }
 
-/* line 44, ../../src/scss/styles.scss */
+/* line 46, ../../src/scss/styles.scss */
 .not-alone ul ul {
   margin-top: 10px;
   margin-left: 30px; }
-  /* line 47, ../../src/scss/styles.scss */
+  /* line 49, ../../src/scss/styles.scss */
   .not-alone ul ul li {
     position: relative;
     margin-left: -60px;
     margin-bottom: 10px; }
 
-/* line 56, ../../src/scss/styles.scss */
+/* line 58, ../../src/scss/styles.scss */
 .devicons {
   width: 30px;
   height: 30px;
@@ -212,56 +212,56 @@
   margin-left: -45px;
   padding-left: 10px;
   position: relative; }
-  /* line 57, ../../src/scss/styles.scss */
+  /* line 59, ../../src/scss/styles.scss */
   .devicons.devicons-java {
     top: 6px; }
-  /* line 60, ../../src/scss/styles.scss */
+  /* line 62, ../../src/scss/styles.scss */
   .devicons.devicons-php {
     top: 10px; }
-  /* line 63, ../../src/scss/styles.scss */
+  /* line 65, ../../src/scss/styles.scss */
   .devicons.devicons-python {
     top: 10px; }
-  /* line 73, ../../src/scss/styles.scss */
+  /* line 75, ../../src/scss/styles.scss */
   .devicons:before {
     margin-right: 20px; }
 
-/* line 78, ../../src/scss/styles.scss */
+/* line 80, ../../src/scss/styles.scss */
 a[class|=icon] {
   font-size: 1.2em;
   background: none;
   text-decoration: none;
   width: auto !important; }
-  /* line 83, ../../src/scss/styles.scss */
+  /* line 85, ../../src/scss/styles.scss */
   a[class|=icon]:before {
     margin-right: 10px; }
 
-/* line 87, ../../src/scss/styles.scss */
+/* line 89, ../../src/scss/styles.scss */
 .clear-ideas.small ol, .clear-ideas.small ul {
   font-size: .9em; }
 
-/* line 93, ../../src/scss/styles.scss */
+/* line 95, ../../src/scss/styles.scss */
 .no-bullet-list.slide ul {
   margin-bottom: 50px; }
-  /* line 95, ../../src/scss/styles.scss */
+  /* line 97, ../../src/scss/styles.scss */
   .no-bullet-list.slide ul > li:before {
     content: ''; }
-/* line 100, ../../src/scss/styles.scss */
+/* line 102, ../../src/scss/styles.scss */
 .no-bullet-list.slide.resources ul {
   margin-left: -50px; }
-/* line 103, ../../src/scss/styles.scss */
+/* line 105, ../../src/scss/styles.scss */
 .no-bullet-list.slide.resources a {
   margin-left: -10px; }
-/* line 104, ../../src/scss/styles.scss */
+/* line 106, ../../src/scss/styles.scss */
 .no-bullet-list.slide.resources span {
   margin-left: 60px; }
 
-/* line 110, ../../src/scss/styles.scss */
+/* line 112, ../../src/scss/styles.scss */
 .section h1 {
   margin-top: 100px;
   font-size: 4em;
   text-align: center; }
 
-/* line 118, ../../src/scss/styles.scss */
+/* line 120, ../../src/scss/styles.scss */
 h6 {
   color: #ccc;
   position: absolute;
@@ -271,7 +271,7 @@ h6 {
 @font-face {
   font-family: MOHAVE;
   src: url("Mohave.otf") format("opentype"); }
-/* line 130, ../../src/scss/styles.scss */
+/* line 132, ../../src/scss/styles.scss */
 .coverSession, #MainCover {
   /*img {
   	position: absolute;
@@ -279,24 +279,24 @@ h6 {
   	left: 100px;
   }
   */ }
-  /* line 131, ../../src/scss/styles.scss */
+  /* line 133, ../../src/scss/styles.scss */
   .coverSession, #MainCover {
     background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #FFD245; }
-  /* line 135, ../../src/scss/styles.scss */
+  /* line 137, ../../src/scss/styles.scss */
   .coverSession > div, #MainCover > div {
     top: 0; }
-  /* line 144, ../../src/scss/styles.scss */
+  /* line 146, ../../src/scss/styles.scss */
   .coverSession h2, .coverSession h3, .coverSession h4, .coverSession ul li, #MainCover h2, #MainCover h3, #MainCover h4, #MainCover ul li {
     color: #453015;
     font-family: "MOHAVE",Helvetica,Arial,sans-serif; }
-  /* line 148, ../../src/scss/styles.scss */
+  /* line 150, ../../src/scss/styles.scss */
   .coverSession h2, #MainCover h2 {
     position: absolute;
     top: 200px;
     left: 430px;
     font-size: 4em;
     font-weight: bolder; }
-  /* line 155, ../../src/scss/styles.scss */
+  /* line 157, ../../src/scss/styles.scss */
   .coverSession .logos, #MainCover .logos {
     position: absolute;
     top: 0;
@@ -307,15 +307,15 @@ h6 {
     left: 0;
     height: 100%;
     width: 31%; }
-    /* line 166, ../../src/scss/styles.scss */
+    /* line 168, ../../src/scss/styles.scss */
     .coverSession .logos > .box, #MainCover .logos > .box {
       position: absolute;
       top: 210px;
       left: 55px; }
-    /* line 171, ../../src/scss/styles.scss */
+    /* line 173, ../../src/scss/styles.scss */
     .coverSession .logos img, #MainCover .logos img {
       margin: 10px; }
-  /* line 175, ../../src/scss/styles.scss */
+  /* line 177, ../../src/scss/styles.scss */
   .coverSession h3, .coverSession h4, #MainCover h3, #MainCover h4 {
     position: absolute;
     top: 360px;
@@ -324,11 +324,11 @@ h6 {
     width: 28%;
     line-height: 39px;
     text-align: center; }
-    /* line 183, ../../src/scss/styles.scss */
+    /* line 185, ../../src/scss/styles.scss */
     .coverSession h3 strong, .coverSession h4 strong, #MainCover h3 strong, #MainCover h4 strong {
       font-size: 1.5em; }
 
-/* line 191, ../../src/scss/styles.scss */
+/* line 193, ../../src/scss/styles.scss */
 #MainCover ul {
   list-style-type: none;
   position: absolute;
@@ -342,23 +342,23 @@ h6 {
   height: 100%;
   padding: 50px;
   padding-top: 50px; }
-  /* line 204, ../../src/scss/styles.scss */
+  /* line 206, ../../src/scss/styles.scss */
   #MainCover ul li {
     margin-bottom: 25px; }
 
-/* line 211, ../../src/scss/styles.scss */
+/* line 213, ../../src/scss/styles.scss */
 .slide.tdd {
   border-left: 10px solid #34A853; }
 
-/* line 216, ../../src/scss/styles.scss */
+/* line 218, ../../src/scss/styles.scss */
 .slide.tdd.kata p, .slide.tdd.kata table, .slide.tdd.kata ul {
   font-size: 18px;
   padding: 0;
   display: inline-block; }
-/* line 221, ../../src/scss/styles.scss */
+/* line 223, ../../src/scss/styles.scss */
 .slide.tdd.kata p {
   margin: 0 0 20px; }
-/* line 223, ../../src/scss/styles.scss */
+/* line 225, ../../src/scss/styles.scss */
 .slide.tdd.kata ul li {
   width: 45%;
   padding: 8px 10px;
@@ -367,79 +367,83 @@ h6 {
   line-height: 17px;
   clear: right; }
 
-/* line 230, ../../src/scss/styles.scss */
+/* line 232, ../../src/scss/styles.scss */
 .general ol li {
   font-size: 20px;
   line-height: 1.8em; }
-  /* line 233, ../../src/scss/styles.scss */
+  /* line 235, ../../src/scss/styles.scss */
   .general ol li span {
     padding: 0 0 0 60px; }
 
-/* line 237, ../../src/scss/styles.scss */
+/* line 239, ../../src/scss/styles.scss */
 .slide.concepts {
   border-left: 10px solid #EA4335; }
 
-/* line 241, ../../src/scss/styles.scss */
+/* line 243, ../../src/scss/styles.scss */
 .slide.jquery {
   border-left: 10px solid #0769AD; }
 
-/* line 245, ../../src/scss/styles.scss */
+/* line 247, ../../src/scss/styles.scss */
 .slide.workflow {
   border-left: 10px solid #F37D0B; }
-  /* line 247, ../../src/scss/styles.scss */
+  /* line 249, ../../src/scss/styles.scss */
   .slide.workflow a[class^="icon-"] {
     margin-left: 2em; }
-  /* line 251, ../../src/scss/styles.scss */
+  /* line 253, ../../src/scss/styles.scss */
   .slide.workflow.exercise span.devicons {
     font-size: 35px; }
-    /* line 253, ../../src/scss/styles.scss */
+    /* line 255, ../../src/scss/styles.scss */
     .slide.workflow.exercise span.devicons:before {
       top: 9px;
       position: relative;
       right: -24px; }
 
-/* line 262, ../../src/scss/styles.scss */
+/* line 264, ../../src/scss/styles.scss */
 .slide.es2015 {
   border-left: 10px solid #323330; }
-  /* line 265, ../../src/scss/styles.scss */
+  /* line 267, ../../src/scss/styles.scss */
   .slide.es2015.history ul li {
     line-height: 33px;
     font-size: 20px; }
-  /* line 270, ../../src/scss/styles.scss */
+  /* line 272, ../../src/scss/styles.scss */
   .slide.es2015.resources ul li {
     line-height: 35px;
     font-size: 22px;
     margin: 10px 0; }
-  /* line 275, ../../src/scss/styles.scss */
+  /* line 277, ../../src/scss/styles.scss */
   .slide.es2015.resources pre {
-    margin-top: 40px; }
+    margin-top: 10px; }
 
-/* line 281, ../../src/scss/styles.scss */
+/* line 282, ../../src/scss/styles.scss */
+.slide.architecture {
+  border-left: 10px solid #8266B2; }
+
+/* line 287, ../../src/scss/styles.scss */
 .coverSession.tdd {
   background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #34A853; }
-  /* line 283, ../../src/scss/styles.scss */
+  /* line 289, ../../src/scss/styles.scss */
   .coverSession.tdd img[alt="Jasmine Logo"] {
     width: 100px;
     height: 100px; }
-  /* line 288, ../../src/scss/styles.scss */
+  /* line 294, ../../src/scss/styles.scss */
   .coverSession.tdd img[alt="Javascript Logo"] {
     width: 100px;
     height: 100px; }
-/* line 293, ../../src/scss/styles.scss */
+/* line 299, ../../src/scss/styles.scss */
 .coverSession.concepts {
   background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #EA4335; }
-  /* line 295, ../../src/scss/styles.scss */
+  /* line 301, ../../src/scss/styles.scss */
   .coverSession.concepts img[alt="Javascript Logo"] {
     margin: -20px 48px;
     height: 150px; }
-/* line 302, ../../src/scss/styles.scss */
+/* line 308, ../../src/scss/styles.scss */
 .coverSession.jquery {
   background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #0769AD; }
-  /* line 304, ../../src/scss/styles.scss */
+  /* line 310, ../../src/scss/styles.scss */
   .coverSession.jquery img[alt="jQuery Logo"] {
     margin: -20px 48px;
     height: 150px; }
-/* line 311, ../../src/scss/styles.scss */
+/* line 317, ../../src/scss/styles.scss */
 .coverSession.workflow {
   background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #F37D0B;
   /*   ![npm Logo](img/workflow/npm.svg)
@@ -448,18 +452,18 @@ h6 {
     ![yeoman Logo](img/workflow/yeoman.png)
   <d
    */ }
-  /* line 320, ../../src/scss/styles.scss */
+  /* line 326, ../../src/scss/styles.scss */
   .coverSession.workflow img[alt$="logo"] {
     /* margin:-20px 48px; */
     height: 100px;
     float: left; }
-  /* line 324, ../../src/scss/styles.scss */
+  /* line 330, ../../src/scss/styles.scss */
   .coverSession.workflow .box {
     top: 150px; }
-  /* line 325, ../../src/scss/styles.scss */
+  /* line 331, ../../src/scss/styles.scss */
   .coverSession.workflow h3 {
     top: 420px; }
-/* line 329, ../../src/scss/styles.scss */
+/* line 335, ../../src/scss/styles.scss */
 .coverSession.es2015 {
   background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #323330;
   /*   ![npm Logo](img/workflow/npm.svg)
@@ -468,62 +472,89 @@ h6 {
     ![yeoman Logo](img/workflow/yeoman.png)
   <d
    */ }
-  /* line 338, ../../src/scss/styles.scss */
+  /* line 344, ../../src/scss/styles.scss */
   .coverSession.es2015 h2 {
     color: #F5DA55; }
-  /* line 339, ../../src/scss/styles.scss */
+  /* line 345, ../../src/scss/styles.scss */
   .coverSession.es2015 img[alt$="logo"] {
     /* margin:-20px 48px; */
-    height: 200px;
+    height: 135px;
     float: left; }
-  /* line 343, ../../src/scss/styles.scss */
+  /* line 349, ../../src/scss/styles.scss */
   .coverSession.es2015 .box {
-    top: 150px;
-    left: 30px; }
-  /* line 344, ../../src/scss/styles.scss */
+    top: 220px;
+    left: 10px; }
+  /* line 350, ../../src/scss/styles.scss */
   .coverSession.es2015 h3 {
     top: 400px; }
-  /* line 345, ../../src/scss/styles.scss */
+  /* line 351, ../../src/scss/styles.scss */
   .coverSession.es2015 h4 {
     top: 460px; }
+/* line 354, ../../src/scss/styles.scss */
+.coverSession.architecture {
+  background: url("../img/vueling-in2-transparent.png") no-repeat scroll right 180px top 400px #8266B2; }
+  /* line 357, ../../src/scss/styles.scss */
+  .coverSession.architecture img[alt$="logo"] {
+    margin: 0; }
+  /* line 358, ../../src/scss/styles.scss */
+  .coverSession.architecture img[alt="es2015 logo"] {
+    width: 250px; }
+  /* line 359, ../../src/scss/styles.scss */
+  .coverSession.architecture img[alt="babel logo"] {
+    width: 185px; }
+  /* line 360, ../../src/scss/styles.scss */
+  .coverSession.architecture img[alt="webpack logo"] {
+    width: 100px; }
+  /* line 361, ../../src/scss/styles.scss */
+  .coverSession.architecture .box {
+    top: 160px;
+    left: 30px;
+    width: 300px;
+    text-align: center; }
+  /* line 367, ../../src/scss/styles.scss */
+  .coverSession.architecture h3 {
+    top: 400px; }
+  /* line 368, ../../src/scss/styles.scss */
+  .coverSession.architecture h4 {
+    top: 460px; }
 
-/* line 353, ../../src/scss/styles.scss */
+/* line 375, ../../src/scss/styles.scss */
 .general ol {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
-  /* line 357, ../../src/scss/styles.scss */
+  /* line 379, ../../src/scss/styles.scss */
   .general ol li {
     display: flex; }
 
-/* line 363, ../../src/scss/styles.scss */
+/* line 385, ../../src/scss/styles.scss */
 .what blockquote {
   margin-top: 1.2em;
   font-size: 3em; }
 
-/* line 370, ../../src/scss/styles.scss */
+/* line 392, ../../src/scss/styles.scss */
 .what2 blockquote {
   margin-top: 2em;
   font-size: 2em; }
 
-/* line 377, ../../src/scss/styles.scss */
+/* line 399, ../../src/scss/styles.scss */
 .what3 blockquote {
   margin-top: 2em;
   font-size: 2em; }
-  /* line 378, ../../src/scss/styles.scss */
+  /* line 400, ../../src/scss/styles.scss */
   .what3 blockquote p {
     line-height: 1.5em; }
 
-/* line 386, ../../src/scss/styles.scss */
+/* line 408, ../../src/scss/styles.scss */
 .two-columns-list {
   /* The maximum number of items a single column can handle.  If a column has more items than the maximum defined here, some items won't display. */ }
-  /* line 392, ../../src/scss/styles.scss */
+  /* line 414, ../../src/scss/styles.scss */
   .two-columns-list ol {
     position: relative;
     margin: 0 0 50px;
     padding: 0;
     font-size: 16px; }
-  /* line 399, ../../src/scss/styles.scss */
+  /* line 421, ../../src/scss/styles.scss */
   .two-columns-list ol li {
     position: absolute;
     margin: 0;
@@ -531,107 +562,107 @@ h6 {
     width: 50%;
     list-style-position: inside;
     line-height: 1.5; }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+2) {
     top: 1.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+3) {
     top: 3em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+4) {
     top: 4.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+5) {
     top: 6em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+6) {
     top: 7.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+7) {
     top: 9em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+8) {
     top: 10.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+9) {
     top: 12em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 409, ../../src/scss/styles.scss */
+  /* line 431, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+10) {
     top: 13.5em;
     /* line height is equal to the absolute position top for all items. will only effect first column because overridden later*/ }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+3):nth-last-child(-n+2) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+4):nth-last-child(-n+3) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+5):nth-last-child(-n+4) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+6):nth-last-child(-n+5) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+7):nth-last-child(-n+6) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+8):nth-last-child(-n+7) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+9):nth-last-child(-n+8) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+10):nth-last-child(-n+9) {
     position: static;
     margin-left: 50%; }
-  /* line 415, ../../src/scss/styles.scss */
+  /* line 437, ../../src/scss/styles.scss */
   .two-columns-list ol li:nth-child(n+11):nth-last-child(-n+10) {
     position: static;
     margin-left: 50%; }
 
-/* line 423, ../../src/scss/styles.scss */
+/* line 445, ../../src/scss/styles.scss */
 .slide ol, .slide ul {
   margin-bottom: 10px; }
-/* line 426, ../../src/scss/styles.scss */
+/* line 448, ../../src/scss/styles.scss */
 .slide p {
   display: inline; }
-/* line 429, ../../src/scss/styles.scss */
+/* line 451, ../../src/scss/styles.scss */
 .slide {
   background: url("../img/vueling-in2-top-logo-2.png") no-repeat top 25px right 25px #FFF;
   background-size: 15%; }
 
-/* line 437, ../../src/scss/styles.scss */
+/* line 459, ../../src/scss/styles.scss */
 .showterm a {
   margin: 0;
   float: right;
   /*		background: none; */ }
 
-/* line 445, ../../src/scss/styles.scss */
+/* line 467, ../../src/scss/styles.scss */
 .smallcode h2 {
   margin-bottom: 25px; }
-/* line 448, ../../src/scss/styles.scss */
+/* line 470, ../../src/scss/styles.scss */
 .smallcode pre {
   margin-left: 50px; }
-  /* line 450, ../../src/scss/styles.scss */
+  /* line 472, ../../src/scss/styles.scss */
   .smallcode pre code {
     line-height: 1.3;
     font-size: 18px; }
-/* line 456, ../../src/scss/styles.scss */
+/* line 478, ../../src/scss/styles.scss */
 .smallcode.smaller pre code {
   font-size: 12px; }
 
@@ -670,7 +701,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 */
-/* line 506, ../../src/scss/styles.scss */
+/* line 528, ../../src/scss/styles.scss */
 .icon-pixelovers:before {
   font-family: "untitled-font-1" !important;
   font-style: normal !important;
@@ -709,7 +740,7 @@ h6 {
   content: "i";
 }
 */
-/* line 545, ../../src/scss/styles.scss */
+/* line 567, ../../src/scss/styles.scss */
 .icon-pixelovers-1:before {
   content: "j"; }
 
