@@ -505,7 +505,7 @@ Do the following exercises and then let's share and comment the solutions
 
 ## <span class="icon-laptop"></span> KOAN jQuery
 
-Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure the undersanding of jquery concepts
+Do the following [KOAN](https://github.com/juanmaguitar/jquery-koans) to assure the understanding of jquery concepts
 
 <!-- ######################## RESOURCES TDD ######################## --> 
 
@@ -1030,7 +1030,7 @@ AFTER (ES2015)
 
 ## <span class="icon-laptop"></span> ES6 Katas: Arrow Functions
 
-Do the following katas to assure the undersanding of arrow functions
+Do the following katas to assure the understanding of arrow functions
 - [basics](http://tddbin.com/#?kata=es6/language/arrow-functions/basics)
 - [function binding](http://tddbin.com/#?kata=es6/language/arrow-functions/binding)
 
@@ -1093,7 +1093,7 @@ TEMPERATURE; // ReferenceError: TEMPERATURE is not defined!
 
 ## <span class="icon-laptop"></span> ES6 Katas: Block Scope
 
-Do the following katas to assure the undersanding of Block Scope
+Do the following katas to assure the understanding of Block Scope
 - [`let` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/let)
 - [`const` declaration](http://tddbin.com/#?kata=es6/language/block-scoping/const)
 
@@ -1160,7 +1160,7 @@ console.log( `Hello, ${ name }!
 
 ## <span class="icon-laptop"></span> ES6 Katas: Template Strings
 
-Do the following katas to assure the undersanding of template strings
+Do the following katas to assure the understanding of template strings
 - [basics](http://tddbin.com/#?kata=es6/language/template-strings/basics)
 - [multiline](http://tddbin.com/#?kata=es6/language/template-strings/multiline)
 - [tagged template strings](http://tddbin.com/#?kata=es6/language/template-strings/tagged)
@@ -1223,7 +1223,7 @@ messages.latest // hey!
 
 ## <span class="icon-laptop"></span> ES6 Katas: Enhanced Object Literals
 
-Do the following katas to assure the undersanding of Enhanced Object Literals
+Do the following katas to assure the understanding of Enhanced Object Literals
 - [basics](http://tddbin.com/#?kata=es6/language/object-literal/basics)
 - [computed properties](http://tddbin.com/#?kata=es6/language/object-literal/computed-properties)
 - [getter](http://tddbin.com/#?kata=es6/language/object-literal/getter)
@@ -1247,7 +1247,7 @@ f(3, undefined) === 15;
 
 ## <span class="icon-laptop"></span> ES6 Katas: Default parameters
 
-Do the following katas to assure the undersanding of Default parameters
+Do the following katas to assure the understanding of Default parameters
 - [basic](http://tddbin.com/#?kata=es6/language/default-parameters/basics)
  
 
@@ -1300,7 +1300,7 @@ children // undefined
 
 ## <span class="icon-laptop"></span> ES6 Katas: Destructuring Assignment
 
-Do the following katas to assure the undersanding of Destructuring Assignment
+Do the following katas to assure the understanding of Destructuring Assignment
 - [array](http://tddbin.com/#?kata=es6/language/destructuring/array)
 - [string](http://tddbin.com/#?kata=es6/language/destructuring/string)
 - [object](http://tddbin.com/#?kata=es6/language/destructuring/object)
@@ -1328,9 +1328,266 @@ console.log(arr); // [2, 4, 6]
 
 ## <span class="icon-laptop"></span> ES6 Katas: Rest operator
 
-Do the following katas to assure the undersanding of Rest operator
+Do the following katas to assure the understanding of Rest operator
 - [as parameter](http://tddbin.com/#?kata=es6/language/rest/as-parameter)
 - [with destructuring](http://tddbin.com/#?kata=es6/language/rest/with-destructuring)
+
+
+
+!SLIDE es2015 resources smallcode
+
+## [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+
+- For **function calls**: allows an expression to be expanded in places where multiple arguments are expected
+- For **array litterals**: allows an expression to be expanded in places where multiple elements are expected
+
+```javascript
+function f(x, y, z) {
+  return x + y + z;
+}
+
+var arr = [1, 2, 3];
+f(...arr) === 6; // true
+
+[0, ...arr, 4, 5, 6, 7]; // [0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Spread operator
+
+Do the following katas to assure the understanding of Spread operator
+- [with arays](http://tddbin.com/#?kata=es6/language/spread/with-arrays)
+- [with strings](http://tddbin.com/#?kata=es6/language/spread/with-strings)
+
+
+!SLIDE es2015 resources smallcode
+
+## [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+
+- New **data structure** for handling collections
+- Store unique values of any type, whether primitive values or object references
+- Efficient and clean
+
+```javascript
+var s = new Set();
+s.add("hello").add("goodbye").add("hello");
+s.size === 2;
+s.has("hello") === true;
+s.delete("hello");
+s.has("hello") === false;
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Set
+
+Do the following katas to assure the understanding of Set
+- [basics](http://tddbin.com/#?kata=es6/language/set/basics)
+- [`set.add()``](http://tddbin.com/#?kata=es6/language/set/add)
+- [`set.delete()`](http://tddbin.com/#?kata=es6/language/set/delete)
+- [the API](http://tddbin.com/#?kata=es6/language/set/api)
+- [`set.clear()](http://tddbin.com/#?kata=es6/language/set/clear)
+
+!SLIDE es2015 resources smallcode
+
+## [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+- New **data structure** for handling collections
+- Simple key/value map
+- Any value (both objects and primitive values) may be used as either a key or a value
+- Efficient and clean
+
+!SLIDE es2015 resources smallcode
+
+## Map
+
+```javascript
+var m = new Map();
+m.set("hello", 42);
+m.get("hello") === 42;
+
+var s = { n:4 };
+m.set(s, 34);
+m.get(s) === 34;
+```
+
+!SLIDE es2015 resources smallcode smaller
+
+## Map
+
+```javascript
+var myMap = new Map();
+
+var keyString = "a string",
+    keyObj = {},
+    keyFunc = function () {};
+
+// setting the values
+myMap.set(keyString, "value associated with 'a string'");
+myMap.set(keyObj, "value associated with keyObj");
+myMap.set(keyFunc, "value associated with keyFunc");
+
+myMap.size; // 3
+
+// getting the values
+myMap.get(keyString);    // "value associated with 'a string'"
+myMap.get(keyObj);       // "value associated with keyObj"
+myMap.get(keyFunc);      // "value associated with keyFunc"
+
+myMap.get("a string");   // "value associated with 'a string'"
+                         // because keyString === 'a string'
+myMap.get({});           // undefined, because keyObj !== {}
+myMap.get(function() {}) // undefined, because keyFunc !== function () {}
+```
+
+!SLIDE es2015
+
+## [Clases](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+- Basic support
+- `class` and [`extends`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) keywords
+- [`constructor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) definition
+- [`static`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static) method definitions
+
+!SLIDE es2015 resources smallcode smaller
+
+## Classes
+
+BEFORE
+
+```javascript
+var Shape = function( id, x, y ) {
+  this.id = id;
+  this.x = x;
+  this.y = y;
+};
+Shape.prototype.toString = function( x, y ) {
+  return "Shape(" + this.id + ")"
+};
+
+var Rectangle = function( id, x, y, width, height ) {
+  Shape.call( this, id, x, y );
+};
+Rectangle.prototype = Object.create(Shape.prototype);
+Rectangle.prototype.constructor = Rectangle;
+Rectangle.prototype.toString = function() {
+  return "Rectangle > " + Shape.prototype.toString.call( this );
+};
+```
+
+!SLIDE es2015 resources smallcode smaller
+
+## Classes
+
+BEFORE
+
+```javascript
+class Shape {
+  constructor (id, x, y) {
+    this.id = id;
+    this.x = x;
+    this.y = y;
+    // or Object.assign(this, {id, x, y});
+  }
+  toString () {
+    return `Shape(${this.id})`
+  }
+}
+
+class Rectangle extends Shape {
+  constructor (id, x, y, width, height) {
+    super(id, x, y)
+  }
+  toString () {
+    return "Rectangle > " + super.toString()
+  }
+}
+```
+
+
+
+!SLIDE es2015
+
+## Classes
+
+- [Examples Classes](https://googlechrome.github.io/samples/classes-es6/index.html)
+- [ES6 | Classes and Inheritance](https://medium.com/ecmascript-2015/es6-classes-and-inheritance-607804080906#.yly3wqbsq)  
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Classes
+
+Do the following katas to assure the understanding of Classes
+- [creation](http://tddbin.com/#?kata=es6/language/class/creation)
+- [accessors](http://tddbin.com/#?kata=es6/language/class/accessors)
+- [static](http://tddbin.com/#?kata=es6/language/class/static)
+- [extends](http://tddbin.com/#?kata=es6/language/class/extends)
+- [more extends](http://tddbin.com/#?kata=es6/language/class/more-extends)
+- [super in method](http://tddbin.com/#?kata=es6/language/class/super-in-method)
+- [super in constructor](http://tddbin.com/#?kata=es6/language/class/super-in-constructor)
+
+!SLIDE es2015
+
+## [Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
+
+- Native modules, alternative to [CommonJS](http://www.commonjs.org/) and [AMD](http://requirejs.org/docs/whyamd.html)
+- Modules can export multiple values (unlike the others)
+- Statically analyzed to load dependencies
+- Dependencies are loaded asynchronously, but can be optimized with a module bundler ([rollup](http://rollupjs.org/) or [webpack](https://webpack.github.io/))
+
+!SLIDE es2015 resources smallcode
+
+## Modules
+
+```javascript
+// -------- jquery.js --------
+export default function jQuery() {
+  /* code */
+}
+
+// -------- code.js --------
+import $ from 'jquery';
+$('body').addClass('yay');
+
+```
+
+!SLIDE es2015 resources smallcode smaller
+
+## Modules
+
+```javascript
+// --------- http.js --------
+export function get(url) {
+  /* code */
+}
+
+export function post(url, body) {
+  /* code */
+}
+
+// -------- code.js --------
+import { get, post } from 'http';
+import { TIMEOUT as HTTP_TIMEOUT } from 'http';
+import * as http from 'http';
+
+get('/my/url').then(function(result) {
+  /* code */
+});
+
+HTTP_TIMEOUT; // 1000;
+http.post('/my/url', 'body');
+```
+
+
+
+!SLIDE es2015
+
+## Modules
+
+- [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
+
+
 
 !SLIDE es2015 resources
 

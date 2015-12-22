@@ -97,9 +97,12 @@ a[class|=icon] {
 		}
 	}
   &.resources {
-    ul { margin-left:-50px; }
+    ul {
+      margin-left:-50px;
+    }
     a { margin-left:-10px; }
     span { margin-left:60px; }
+
   }
 }
 
@@ -263,6 +266,15 @@ h6 {
     line-height: 33px;
     font-size: 20px; }
   }
+  &.resources {
+    ul li {
+      line-height: 35px;
+      font-size: 22px;
+      margin: 10px 0;
+    }
+    pre { margin-top:40px;}
+  }
+
 }
 
 .coverSession {
