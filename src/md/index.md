@@ -1384,10 +1384,10 @@ s.has("hello") === false;
 
 Do the following katas to assure the understanding of Set
 - [basics](http://tddbin.com/#?kata=es6/language/set/basics)
-- [`set.add()``](http://tddbin.com/#?kata=es6/language/set/add)
+- [`set.add()`](http://tddbin.com/#?kata=es6/language/set/add)
 - [`set.delete()`](http://tddbin.com/#?kata=es6/language/set/delete)
 - [the API](http://tddbin.com/#?kata=es6/language/set/api)
-- [`set.clear()](http://tddbin.com/#?kata=es6/language/set/clear)
+- [`set.clear()`](http://tddbin.com/#?kata=es6/language/set/clear)
 
 !SLIDE es2015 resources smallcode
 
@@ -1440,6 +1440,17 @@ myMap.get("a string");   // "value associated with 'a string'"
 myMap.get({});           // undefined, because keyObj !== {}
 myMap.get(function() {}) // undefined, because keyFunc !== function () {}
 ```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Map
+
+Do the following katas to assure the understanding of Map
+- [basics](http://tddbin.com/#?kata=es6/language/map/basics)
+- [`map.get()`](http://tddbin.com/#?kata=es6/language/map/get)
+- [`map.set()`](http://tddbin.com/#?kata=es6/language/map/set)
+- [initalize](http://tddbin.com/#?kata=es6/language/map/initialize)
+- [`map.has()](http://tddbin.com/#?kata=es6/language/map/has)
 
 !SLIDE es2015
 
