@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&39e25a96afab">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&2521abecf634">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?93dddc6d00d7">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?43b4643c609f">
 	
-		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?3a9020a02528">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?24398c04f18f">
 	
-		<link rel="stylesheet" href="css/styles.css?71d775efd5a3">
+		<link rel="stylesheet" href="css/styles.css?881ea0e66540">
 	
 </head>
 <body class="list">
@@ -956,7 +956,7 @@
 	<section class="slide coverSession es2015" ><div>
 		<section class="logos">
   <div class="box">
-    <img src="img/es-2015.jpg" alt="es2015 logo">
+    <img src="img/es2015-small.png" alt="es2015 logo">
   <div>
 </section>
 
@@ -1488,7 +1488,7 @@
 <li><a href="http://tddbin.com/#?kata=es6/language/map/get"><code>map.get()</code></a></li>
 <li><a href="http://tddbin.com/#?kata=es6/language/map/set"><code>map.set()</code></a></li>
 <li><a href="http://tddbin.com/#?kata=es6/language/map/initialize">initalize</a></li>
-<li><a href="http://tddbin.com/#?kata=es6/language/map/has">`map.has()</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/map/has"><code>map.has()</code></a></li>
 </ul>
 
 	</div></section>
@@ -1529,7 +1529,7 @@
 	
 	<section class="slide es2015 resources smallcode smaller" ><div>
 		<h2>Classes</h2>
-<p>BEFORE</p>
+<p>AFTER</p>
 <pre><code class="language-javascript">class Shape {</code>
 <code>  constructor (id, x, y) {</code>
 <code>    this.id = id;</code>
@@ -1627,29 +1627,10 @@
 	</div></section>
 	
 	<section class="slide es2015" ><div>
-		<h2>Modules</h2>
-<ul>
-<li><a href="http://addyosmani.com/writing-modular-js/">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a></li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide es2015" ><div>
 		<h2><span class="icon-laptop"></span> ES6 Katas: Modules</h2>
 <p>Do the following katas to assure the understanding of Modules</p>
 <ul>
 <li><a href="http://tddbin.com/#?kata=es6/language/modules/import"><code>import</code> statement</a></li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide es2015" ><div>
-		<h2><a href="https://hacks.mozilla.org/2015/08/es6-in-depth-modules/">Modules</a></h2>
-<ul>
-<li>Native modules, alternative to <a href="http://www.commonjs.org/">CommonJS</a> and <a href="http://requirejs.org/docs/whyamd.html">AMD</a></li>
-<li>Modules can export multiple values (unlike the others)</li>
-<li>Statically analyzed to load dependencies</li>
-<li>Dependencies are loaded asynchronously, but can be optimized with a module bundler (<a href="http://rollupjs.org/">rollup</a> or <a href="https://webpack.github.io/">webpack</a>)</li>
 </ul>
 
 	</div></section>
@@ -1712,6 +1693,41 @@
 <code>&#39;Hello world&#39;.endsWith(&#39;world&#39;) // true</code>
 <code>&#39;Hello world&#39;.includes(&#39;orl&#39;) // true</code>
 <code>&#39;Hello world&#39;.repeat(2) // &#39;Hello worldHello world&#39;</code></pre>
+
+	</div></section>
+	
+	<section class="slide coverSession architecture" ><div>
+		<section class="logos">
+  <div class="box">
+    <img src="img/es2015-small.png" alt="es2015 logo">
+    <img src="img/babel.png" alt="babel logo">
+    <img src="img/webpack.png" alt="webpack logo">
+  <div>
+</section>
+
+<h2>Advanced JS Training</h2>
+<h3>Frontend <strong>Architecture</strong></h3>
+
+	</div></section>
+	
+	<section class="slide architecture" ><div>
+		<h2>Javascript Modular Architecture &quot;Past&quot;</h2>
+<ul>
+<li><a href="http://unscriptable.com/code/Using-AMD-loaders/#0">Using AMD loaders to write and manage modular javascript</a></li>
+<li><a href="http://addyosmani.com/writing-modular-js/">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a></li>
+<li><a href="https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture">Large-scale JavaScript Application Architecture</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide architecture" ><div>
+		<h2>Javascript Modular Architecture Present</h2>
+<ul>
+<li><a href="https://medium.com/@brianleroux/es6-modules-amd-and-commonjs-c1acefbe6fc0#.pxsaotk7a">ES6 Modules: The End of Civilization As We Know It?</a></li>
+<li><a href="http://blog.xebia.com/unlocking-es2015-features-with-webpack-and-babel/">Unlocking ES2015 Features With Webpack And Babel</a></li>
+<li><a href="https://medium.com/google-developers/javascript-application-architecture-on-the-road-to-2015-d8125811101b#.1f39fqwoo">JavaScript Application Architecture On The Road To 2015</a></li>
+<li><a href="http://todomvc.com/">TodoMVC | Helping you select an MV* framework</a></li>
+</ul>
 
 	</div></section>
 	
