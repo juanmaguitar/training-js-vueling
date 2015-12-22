@@ -1580,13 +1580,92 @@ http.post('/my/url', 'body');
 ```
 
 
-
 !SLIDE es2015
 
 ## Modules
 
 - [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
 
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Modules
+
+Do the following katas to assure the understanding of Modules
+- [`import` statement](http://tddbin.com/#?kata=es6/language/modules/import)
+
+
+!SLIDE es2015
+
+## [Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
+
+- Native modules, alternative to [CommonJS](http://www.commonjs.org/) and [AMD](http://requirejs.org/docs/whyamd.html)
+- Modules can export multiple values (unlike the others)
+- Statically analyzed to load dependencies
+- Dependencies are loaded asynchronously, but can be optimized with a module bundler ([rollup](http://rollupjs.org/) or [webpack](https://webpack.github.io/))
+
+
+!SLIDE es2015
+
+## [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+Array object extended with:
+
+- New static methods: [`from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from), [`of()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of)
+- New instance methods: [`copyWithin()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin), [`entries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries) , [`fill()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill), [`find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find), [`findIndex()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex), [`keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys), [`values()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values) 
+
+
+!SLIDE es2015 resources smallcode
+
+## Array
+
+```javascript
+Array.from(arguments) // [].slice.call(arguments);
+Array.from({0: 'hello', 1: world, length: 2}); // ['hello', 'world']
+Array.of(1, 2, 3) // [1, 2, 3]
+
+[1, 2, 3, 4, 5].copyWithin(0, 3, 4) // [4, 2, 3, 4, 5]
+[1, 2, 3].fill(4) // [4, 4, 4]
+[4, 5, 8, 12].find(isPrime) // 5
+[4, 5, 8, 12].findIndex(isPrime) // 2
+[4, 5, 8, 12].keys() // iterator from 0 to 3
+[4, 5, 8, 12].values() // iterator from 4 to 12
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Array
+
+Do the following katas to assure the understanding of Array
+- [`Array.from()`](http://tddbin.com/#?kata=es6/language/array-api/from)
+- [`Array.of()`](http://tddbin.com/#?kata=es6/language/array-api/of) 
+- [`[].fill()`](http://tddbin.com/#?kata=es6/language/array-api/fill) 
+- [`[].find()`](http://tddbin.com/#?kata=es6/language/array-api/find) 
+- [`[].findIndex()`](http://tddbin.com/#?kata=es6/language/array-api/findIndex)
+- [`[].entries()`](http://tddbin.com/#?kata=es6/language/array-api/entries) 
+- [`[].keys()`](http://tddbin.com/#?kata=es6/language/array-api/keys) 
+- [`[].values()`](http://tddbin.com/#?kata=es6/language/array-api/values) 
+
+!SLIDE es2015
+
+## [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+String object extended with:
+
+- New static methods: [`raw()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw)
+- New instance methods: [`startsWith()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith), [`endsWith()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith), [`includes()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat), ...
+
+
+!SLIDE es2015 resources smallcode
+
+## String
+
+```javascript
+String.raw`Line 1\nLine 2\nLine 3` // 'Line 1\\nLine 2\\nLine 3'
+'Hello world'.startsWith('Hello') // true
+'Hello world'.endsWith('world') // true
+'Hello world'.includes('orl') // true
+'Hello world'.repeat(2) // 'Hello worldHello world'
+```
 
 
 !SLIDE es2015 resources
@@ -1601,6 +1680,8 @@ http.post('/my/url', 'body');
 - [ECMAScript 2015](https://medium.com/ecmascript-2015)
 - [ES6 Katas](http://es6katas.org/)
 - [Scratch JS (chrome plugin)](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn)
+
+
 
 
 !SLIDE no-bullet-list resources
