@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&2521abecf634">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&491c720dd88e">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?43b4643c609f">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?b47833bdfbd3">
 	
-		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?24398c04f18f">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?46af6c065466">
 	
-		<link rel="stylesheet" href="css/styles.css?881ea0e66540">
+		<link rel="stylesheet" href="css/styles.css?57fc6cd7b801">
 	
 </head>
 <body class="list">
@@ -1696,6 +1696,21 @@
 
 	</div></section>
 	
+	<section class="slide es2015 resources" ><div>
+		<h2>Resources for this Unit</h2>
+<ul>
+<li><a href="http://www.thomasboyt.com/2013/06/21/es6-module-transpiler">Using Grunt &amp; the ES6 Module Transpiler</a></li>
+<li><a href="https://github.com/joefiorini/grunt-es6-module-transpiler"><code>grunt-es6-module-transpiler</code></a></li>
+<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5">ECMAScript 6 equivalents in ES5</a></li>
+<li><a href="https://hacks.mozilla.org/category/es6-in-depth/">ES6 In Depth</a></li>
+<li><a href="http://ariya.ofilabs.com/tag/es6">ariya.ofilabs.com | ES6</a> </li>
+<li><a href="https://medium.com/ecmascript-2015">ECMAScript 2015</a></li>
+<li><a href="http://es6katas.org/">ES6 Katas</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn">Scratch JS (chrome plugin)</a></li>
+</ul>
+
+	</div></section>
+	
 	<section class="slide coverSession architecture" ><div>
 		<section class="logos">
   <div class="box">
@@ -1710,8 +1725,96 @@
 
 	</div></section>
 	
+	<section class="slide smallcode no-bullet-list architecture" ><div>
+		<h2><span class="icon-keyboard"></span> ES2015, UMD modules &amp; webpack</h2>
+<ul>
+<li><p><mark>Steps</mark>:</p>
+<ol>
+<li>Clone the repository: <a href="https://github.com/juanmaguitar/project-es2015-webpack-umd">project-es2015-webpack-umd</a></li>
+<li>Install dependencies</li>
+<li>Have a look at the code at <code>src</code> folder </li>
+<li>Compile these files into one file</li>
+<li>Check results in the server and in the browser</li>
+</ol>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide first-tasks smallcode  architecture" ><div>
+		<h2><span class="icon-keyboard"></span> ES2015, UMD modules &amp; webpack</h2>
+<pre><code>$ git clone https://github.com/juanmaguitar/project-es2015-webpack-umd.git</code>
+<code>$ cs project-es2015-webpack-umd &amp;&amp; npm install</code>
+<code>$ npm start </code>
+<code>$ node dist/project-babel-webpack.js</code>
+<code>$ open &quot;index.html&quot;</code></pre>
+	</div></section>
+	
 	<section class="slide architecture" ><div>
-		<h2>Javascript Modular Architecture &quot;Past&quot;</h2>
+		<h2>ES2015, UMD modules &amp; webpack</h2>
+<ul>
+<li><a href="https://github.com/umdjs/umd">UMD</a></li>
+<li><a href="http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/">What Is AMD, CommonJS, and UMD?</a></li>
+<li><a href="http://bob.yexley.net/umd-javascript-that-runs-anywhere/">UMD: JavaScript modules that run anywhere</a></li>
+<li><a href="https://webpack.github.io/">webpack | module bundler</a></li>
+<li><a href="https://medium.com/@dabit3/beginner-s-guide-to-webpack-b1f1a3638460#.evekfzhll">Beginner’s guide to Webpack</a></li>
+<li><a href="http://survivejs.com/webpack_react/developing_with_webpack/">Developing with Webpack</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list architecture" ><div>
+		<h2><span class="icon-keyboard"></span> ES2015, SystemJS &amp; Grunt</h2>
+<ul>
+<li><p><mark>Steps</mark>:</p>
+<ol>
+<li>Clone the repository: <a href="https://github.com/juanmaguitar/project-es2015-systemJs">project-es2015-systemJs</a></li>
+<li>Install dependencies</li>
+<li>Have a look at the code at <code>src</code> folder </li>
+<li>Compile these files into one file</li>
+<li>Check results in the browser (see how some files are async loaded)</li>
+</ol>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide first-tasks smallcode  architecture" ><div>
+		<h2><span class="icon-keyboard"></span> ES2015, SystemJS &amp; Grunt</h2>
+<pre><code>$ git clone https://github.com/juanmaguitar/project-es2015-systemJs.git</code>
+<code>$ cs project-es2015-systemJs &amp;&amp; npm install</code>
+<code>$ grunt serve</code></pre>
+	</div></section>
+	
+	<section class="slide architecture" ><div>
+		<h2>ES2015, SystemJS &amp; Grunt</h2>
+<ul>
+<li><a href="http://www.slideshare.net/jesterxl/system-webpackjspm">System webpack-jspm</a></li>
+<li><a href="https://babeljs.io/docs/learn-es2015/#module-loaders">Module Loaders</a></li>
+<li><a href="https://github.com/ModuleLoader/es6-module-loader">es6-module-loader</a></li>
+<li><a href="https://github.com/systemjs/systemjs">SystemJS</a></li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide smallcode no-bullet-list architecture" ><div>
+		<h2><span class="icon-keyboard"></span> ES2015 &amp; webpack (browser)</h2>
+<ul>
+<li><p><mark>Steps</mark>:</p>
+<ol>
+<li>Clone the repository: <a href="https://github.com/juanmaguitar/webpack-multiple-entry-points">webpack-multiple-entry-points</a></li>
+<li>Install dependencies</li>
+<li>Have a look at the code at <code>src</code> folder </li>
+<li>Compile these files into one file</li>
+<li>Check results in the browser (see how some files are async loaded)</li>
+</ol>
+</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide architecture" ><div>
+		<h2>Resources</h2>
 <ul>
 <li><a href="http://unscriptable.com/code/Using-AMD-loaders/#0">Using AMD loaders to write and manage modular javascript</a></li>
 <li><a href="http://addyosmani.com/writing-modular-js/">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a></li>
@@ -1721,27 +1824,12 @@
 	</div></section>
 	
 	<section class="slide architecture" ><div>
-		<h2>Javascript Modular Architecture Present</h2>
+		<h2>Resources</h2>
 <ul>
 <li><a href="https://medium.com/@brianleroux/es6-modules-amd-and-commonjs-c1acefbe6fc0#.pxsaotk7a">ES6 Modules: The End of Civilization As We Know It?</a></li>
 <li><a href="http://blog.xebia.com/unlocking-es2015-features-with-webpack-and-babel/">Unlocking ES2015 Features With Webpack And Babel</a></li>
 <li><a href="https://medium.com/google-developers/javascript-application-architecture-on-the-road-to-2015-d8125811101b#.1f39fqwoo">JavaScript Application Architecture On The Road To 2015</a></li>
 <li><a href="http://todomvc.com/">TodoMVC | Helping you select an MV* framework</a></li>
-</ul>
-
-	</div></section>
-	
-	<section class="slide es2015 resources" ><div>
-		<h2>Resources for this Unit</h2>
-<ul>
-<li><a href="http://www.thomasboyt.com/2013/06/21/es6-module-transpiler">Using Grunt &amp; the ES6 Module Transpiler</a></li>
-<li><a href="https://github.com/joefiorini/grunt-es6-module-transpiler"><code>grunt-es6-module-transpiler</code></a></li>
-<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5">ECMAScript 6 equivalents in ES5</a></li>
-<li><a href="https://hacks.mozilla.org/category/es6-in-depth/">ES6 In Depth</a></li>
-<li><a href="http://ariya.ofilabs.com/tag/es6">ariya.ofilabs.com | ES6</a> </li>
-<li><a href="https://medium.com/ecmascript-2015">ECMAScript 2015</a></li>
-<li><a href="http://es6katas.org/">ES6 Katas</a></li>
-<li><a href="https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn">Scratch JS (chrome plugin)</a></li>
 </ul>
 
 	</div></section>
