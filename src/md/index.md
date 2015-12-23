@@ -1661,18 +1661,70 @@ String.raw`Line 1\nLine 2\nLine 3` // 'Line 1\\nLine 2\\nLine 3'
 'Hello world'.repeat(2) // 'Hello worldHello world'
 ```
 
+!SLIDE es2015
+
+## [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+- Native implementation of promises. Yay!
+- [Promises/A+](https://promisesaplus.com/) spec compliant
+
+!SLIDE es2015 resources smallcode
+
+## Promise
+
+```javascript
+var promise = new Promise(function(resolve, reject) {
+  // Do something asynchronous and call resolve with the
+  // result or reject with the error
+});
+
+promise.then(function(result) {
+  // Use the result of the async call
+}, function(error) {
+  // Process the error
+});
+```
+
+!SLIDE es2015 resources smallcode
+
+## Promise
+
+```javascript
+var allPromise = Promise.all([getLocation, getTemperature]);
+allPromise.then(function(location, temperature) {
+  console.log('The location is ', location,
+        'and the temperature is', temperature);
+}, function(error) {
+  // Process the error
+});
+
+var racePromise = Promise.race([getGoogleAds, getYahooAds, getBindAds]);
+racePromise.then(function(ads) {
+  page.addAds(ads);
+});
+```
+
+!SLIDE es2015
+
+## <span class="icon-laptop"></span> ES6 Katas: Promise
+
+Do the following katas to assure the understanding of Promise
+- [basics](http://tddbin.com/#?kata=es6/language/promise/basics)
+- [creation](http://tddbin.com/#?kata=es6/language/promise/creation) 
+- [chaining `then`](http://tddbin.com/#?kata=es6/language/promise/chaining-then) 
+
 !SLIDE es2015 resources
 
 ## Resources for this Unit  
   
 - [Using Grunt & the ES6 Module Transpiler](http://www.thomasboyt.com/2013/06/21/es6-module-transpiler)
-- [`grunt-es6-module-transpiler`](https://github.com/joefiorini/grunt-es6-module-transpiler)
 - [ECMAScript 6 equivalents in ES5](https://github.com/addyosmani/es6-equivalents-in-es5)
 - [ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
 - [ariya.ofilabs.com | ES6](http://ariya.ofilabs.com/tag/es6) 
 - [ECMAScript 2015](https://medium.com/ecmascript-2015)
 - [ES6 Katas](http://es6katas.org/)
 - [Scratch JS (chrome plugin)](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn)
+- [Promises](https://www.promisejs.org/)
 
 
 
@@ -1707,7 +1759,8 @@ String.raw`Line 1\nLine 2\nLine 3` // 'Line 1\\nLine 2\\nLine 3'
 
 ```
 $ git clone https://github.com/juanmaguitar/project-es2015-webpack-umd.git
-$ cs project-es2015-webpack-umd && npm install
+$ cs project-es2015-webpack-umd
+$ npm install
 $ npm start 
 $ node dist/project-babel-webpack.js
 $ open "index.html"
@@ -1742,7 +1795,8 @@ $ open "index.html"
 
 ```
 $ git clone https://github.com/juanmaguitar/project-es2015-systemJs.git
-$ cs project-es2015-systemJs && npm install
+$ cs project-es2015-systemJs
+$ npm install
 $ grunt serve 
 ```
 
@@ -1772,9 +1826,12 @@ $ grunt serve
 
 ```
 $ git clone https://github.com/juanmaguitar/webpack-multiple-entry-points.git
-$ cs webpack-multiple-entry-points && npm install
+$ cs webpack-multiple-entry-points
+$ npm install
 $ npm start 
 ```
+
+!SLIDE architecture
 
 ## ES2015 & webpack (browser)
 
@@ -1785,6 +1842,7 @@ $ npm start
 
 ## Resources
 
+- [BabelJs](https://babeljs.io/)
 - [Using AMD loaders to write and manage modular javascript](http://unscriptable.com/code/Using-AMD-loaders/#0)
 - [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
 - [Large-scale JavaScript Application Architecture](https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture)

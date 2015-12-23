@@ -8,13 +8,13 @@
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/bright/styles/screen.css">
 	
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&491c720dd88e">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato&16486dffc461">
 	
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?b47833bdfbd3">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?9ef45887cfac">
 	
-		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?46af6c065466">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css?79620073976b">
 	
-		<link rel="stylesheet" href="css/styles.css?57fc6cd7b801">
+		<link rel="stylesheet" href="css/styles.css?f9b9372d1317">
 	
 </head>
 <body class="list">
@@ -1696,17 +1696,69 @@
 
 	</div></section>
 	
+	<section class="slide es2015" ><div>
+		<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></h2>
+<ul>
+<li>Native implementation of promises. Yay!</li>
+<li><a href="https://promisesaplus.com/">Promises/A+</a> spec compliant</li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide es2015 resources smallcode" ><div>
+		<h2>Promise</h2>
+<pre><code class="language-javascript">var promise = new Promise(function(resolve, reject) {</code>
+<code>  // Do something asynchronous and call resolve with the</code>
+<code>  // result or reject with the error</code>
+<code>});</code>
+<code>&shy;</code>
+<code>promise.then(function(result) {</code>
+<code>  // Use the result of the async call</code>
+<code>}, function(error) {</code>
+<code>  // Process the error</code>
+<code>});</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015 resources smallcode" ><div>
+		<h2>Promise</h2>
+<pre><code class="language-javascript">var allPromise = Promise.all([getLocation, getTemperature]);</code>
+<code>allPromise.then(function(location, temperature) {</code>
+<code>  console.log(&#39;The location is &#39;, location,</code>
+<code>        &#39;and the temperature is&#39;, temperature);</code>
+<code>}, function(error) {</code>
+<code>  // Process the error</code>
+<code>});</code>
+<code>&shy;</code>
+<code>var racePromise = Promise.race([getGoogleAds, getYahooAds, getBindAds]);</code>
+<code>racePromise.then(function(ads) {</code>
+<code>  page.addAds(ads);</code>
+<code>});</code></pre>
+
+	</div></section>
+	
+	<section class="slide es2015" ><div>
+		<h2><span class="icon-laptop"></span> ES6 Katas: Promise</h2>
+<p>Do the following katas to assure the understanding of Promise</p>
+<ul>
+<li><a href="http://tddbin.com/#?kata=es6/language/promise/basics">basics</a></li>
+<li><a href="http://tddbin.com/#?kata=es6/language/promise/creation">creation</a> </li>
+<li><a href="http://tddbin.com/#?kata=es6/language/promise/chaining-then">chaining <code>then</code></a> </li>
+</ul>
+
+	</div></section>
+	
 	<section class="slide es2015 resources" ><div>
 		<h2>Resources for this Unit</h2>
 <ul>
 <li><a href="http://www.thomasboyt.com/2013/06/21/es6-module-transpiler">Using Grunt &amp; the ES6 Module Transpiler</a></li>
-<li><a href="https://github.com/joefiorini/grunt-es6-module-transpiler"><code>grunt-es6-module-transpiler</code></a></li>
 <li><a href="https://github.com/addyosmani/es6-equivalents-in-es5">ECMAScript 6 equivalents in ES5</a></li>
 <li><a href="https://hacks.mozilla.org/category/es6-in-depth/">ES6 In Depth</a></li>
 <li><a href="http://ariya.ofilabs.com/tag/es6">ariya.ofilabs.com | ES6</a> </li>
 <li><a href="https://medium.com/ecmascript-2015">ECMAScript 2015</a></li>
 <li><a href="http://es6katas.org/">ES6 Katas</a></li>
 <li><a href="https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn">Scratch JS (chrome plugin)</a></li>
+<li><a href="https://www.promisejs.org/">Promises</a></li>
 </ul>
 
 	</div></section>
@@ -1744,7 +1796,8 @@
 	<section class="slide first-tasks smallcode  architecture" ><div>
 		<h2><span class="icon-keyboard"></span> ES2015, UMD modules &amp; webpack</h2>
 <pre><code>$ git clone https://github.com/juanmaguitar/project-es2015-webpack-umd.git</code>
-<code>$ cs project-es2015-webpack-umd &amp;&amp; npm install</code>
+<code>$ cs project-es2015-webpack-umd</code>
+<code>$ npm install</code>
 <code>$ npm start </code>
 <code>$ node dist/project-babel-webpack.js</code>
 <code>$ open &quot;index.html&quot;</code></pre>
@@ -1782,7 +1835,8 @@
 	<section class="slide first-tasks smallcode  architecture" ><div>
 		<h2><span class="icon-keyboard"></span> ES2015, SystemJS &amp; Grunt</h2>
 <pre><code>$ git clone https://github.com/juanmaguitar/project-es2015-systemJs.git</code>
-<code>$ cs project-es2015-systemJs &amp;&amp; npm install</code>
+<code>$ cs project-es2015-systemJs</code>
+<code>$ npm install</code>
 <code>$ grunt serve</code></pre>
 	</div></section>
 	
@@ -1804,11 +1858,26 @@
 <ol>
 <li>Clone the repository: <a href="https://github.com/juanmaguitar/webpack-multiple-entry-points">webpack-multiple-entry-points</a></li>
 <li>Install dependencies</li>
-<li>Have a look at the code at <code>src</code> folder </li>
-<li>Compile these files into one file</li>
-<li>Check results in the browser (see how some files are async loaded)</li>
+<li>Launch local server and show the console in the browser </li>
+<li>Do changes locally and see results in browser</li>
 </ol>
 </li>
+</ul>
+
+	</div></section>
+	
+	<section class="slide first-tasks smallcode  architecture" ><div>
+		<h2><span class="icon-keyboard"></span> ES2015 &amp; webpack (browser)</h2>
+<pre><code>$ git clone https://github.com/juanmaguitar/webpack-multiple-entry-points.git</code>
+<code>$ cs webpack-multiple-entry-points</code>
+<code>$ npm install</code>
+<code>$ npm start</code></pre>
+	</div></section>
+	
+	<section class="slide architecture" ><div>
+		<h2>ES2015 &amp; webpack (browser)</h2>
+<ul>
+<li><a href="http://slides.com/danieldelacruzcalvo/learn-webpack#/">Learn Webpack</a></li>
 </ul>
 
 	</div></section>
@@ -1816,6 +1885,7 @@
 	<section class="slide architecture" ><div>
 		<h2>Resources</h2>
 <ul>
+<li><a href="https://babeljs.io/">BabelJs</a></li>
 <li><a href="http://unscriptable.com/code/Using-AMD-loaders/#0">Using AMD loaders to write and manage modular javascript</a></li>
 <li><a href="http://addyosmani.com/writing-modular-js/">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a></li>
 <li><a href="https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture">Large-scale JavaScript Application Architecture</a></li>
