@@ -1661,37 +1661,6 @@ String.raw`Line 1\nLine 2\nLine 3` // 'Line 1\\nLine 2\\nLine 3'
 'Hello world'.repeat(2) // 'Hello worldHello world'
 ```
 
-!SLIDE coverSession architecture
-
-<section class="logos">
-  <div class="box">
-    ![es2015 logo](img/es2015-small.png)
-    ![babel logo](img/babel.png)
-    ![webpack logo](img/webpack.png)
-  <div>
-</section>
- 
-## Advanced JS Training  
-### Frontend **Architecture** 
-
-
-!SLIDE architecture
-
-## Javascript Modular Architecture "Past"
-
-- [Using AMD loaders to write and manage modular javascript](http://unscriptable.com/code/Using-AMD-loaders/#0)
-- [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
-- [Large-scale JavaScript Application Architecture](https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture)
-
-!SLIDE architecture
-
-## Javascript Modular Architecture Present
-
-- [ES6 Modules: The End of Civilization As We Know It?](https://medium.com/@brianleroux/es6-modules-amd-and-commonjs-c1acefbe6fc0#.pxsaotk7a)
-- [Unlocking ES2015 Features With Webpack And Babel](http://blog.xebia.com/unlocking-es2015-features-with-webpack-and-babel/)
-- [JavaScript Application Architecture On The Road To 2015](https://medium.com/google-developers/javascript-application-architecture-on-the-road-to-2015-d8125811101b#.1f39fqwoo)
-- [TodoMVC | Helping you select an MV* framework](http://todomvc.com/)
-
 !SLIDE es2015 resources
 
 ## Resources for this Unit  
@@ -1707,7 +1676,128 @@ String.raw`Line 1\nLine 2\nLine 3` // 'Line 1\\nLine 2\\nLine 3'
 
 
 
+!SLIDE coverSession architecture
 
+<section class="logos">
+  <div class="box">
+    ![es2015 logo](img/es2015-small.png)
+    ![babel logo](img/babel.png)
+    ![webpack logo](img/webpack.png)
+  <div>
+</section>
+ 
+## Advanced JS Training  
+### Frontend **Architecture** 
+
+!SLIDE smallcode no-bullet-list architecture
+
+## <span class="icon-keyboard"></span> ES2015, UMD modules & webpack
+
+- @@Steps@@:
+
+    1. Clone the repository: [project-es2015-webpack-umd](https://github.com/juanmaguitar/project-es2015-webpack-umd)
+    1. Install dependencies
+    1. Have a look at the code at `src` folder 
+    1. Compile these files into one file
+    1. Check results in the server and in the browser
+    
+!SLIDE first-tasks smallcode  architecture
+
+## <span class="icon-keyboard"></span> ES2015, UMD modules & webpack
+
+```
+$ git clone https://github.com/juanmaguitar/project-es2015-webpack-umd.git
+$ cs project-es2015-webpack-umd && npm install
+$ npm start 
+$ node dist/project-babel-webpack.js
+$ open "index.html"
+```
+
+!SLIDE architecture
+
+## ES2015, UMD modules & webpack
+
+- [UMD](https://github.com/umdjs/umd)
+- [What Is AMD, CommonJS, and UMD?](http://davidbcalhoun.com/2014/what-is-amd-commonjs-and-umd/)
+- [UMD: JavaScript modules that run anywhere](http://bob.yexley.net/umd-javascript-that-runs-anywhere/)
+- [webpack | module bundler](https://webpack.github.io/)
+- [Beginner’s guide to Webpack](https://medium.com/@dabit3/beginner-s-guide-to-webpack-b1f1a3638460#.evekfzhll)
+- [Developing with Webpack](http://survivejs.com/webpack_react/developing_with_webpack/)
+
+!SLIDE smallcode no-bullet-list architecture
+
+## <span class="icon-keyboard"></span> ES2015, SystemJS & Grunt
+
+- @@Steps@@:
+
+    1. Clone the repository: [project-es2015-systemJs](https://github.com/juanmaguitar/project-es2015-systemJs)
+    1. Install dependencies
+    1. Have a look at the code at `src` folder 
+    1. Compile these files into one file
+    1. Check results in the browser (see how some files are async loaded)
+    
+!SLIDE first-tasks smallcode  architecture
+
+## <span class="icon-keyboard"></span> ES2015, SystemJS & Grunt
+
+```
+$ git clone https://github.com/juanmaguitar/project-es2015-systemJs.git
+$ cs project-es2015-systemJs && npm install
+$ grunt serve 
+```
+
+!SLIDE architecture
+
+## ES2015, SystemJS & Grunt
+
+- [System webpack-jspm](http://www.slideshare.net/jesterxl/system-webpackjspm)
+- [Module Loaders](https://babeljs.io/docs/learn-es2015/#module-loaders)
+- [es6-module-loader](https://github.com/ModuleLoader/es6-module-loader)
+- [SystemJS](https://github.com/systemjs/systemjs)
+
+!SLIDE smallcode no-bullet-list architecture
+
+## <span class="icon-keyboard"></span> ES2015 & webpack (browser)
+
+- @@Steps@@:
+
+    1. Clone the repository: [webpack-multiple-entry-points](https://github.com/juanmaguitar/webpack-multiple-entry-points)
+    1. Install dependencies
+    1. Launch local server and show the console in the browser 
+    1. Do changes locally and see results in browser
+    
+!SLIDE first-tasks smallcode  architecture
+
+## <span class="icon-keyboard"></span> ES2015 & webpack (browser)
+
+```
+$ git clone https://github.com/juanmaguitar/webpack-multiple-entry-points.git
+$ cs webpack-multiple-entry-points && npm install
+$ npm start 
+```
+
+## ES2015 & webpack (browser)
+
+- [Learn Webpack](http://slides.com/danieldelacruzcalvo/learn-webpack#/)
+
+
+!SLIDE architecture
+
+## Resources
+
+- [Using AMD loaders to write and manage modular javascript](http://unscriptable.com/code/Using-AMD-loaders/#0)
+- [Writing Modular JavaScript With AMD, CommonJS & ES Harmony](http://addyosmani.com/writing-modular-js/)
+- [Large-scale JavaScript Application Architecture](https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture)
+
+!SLIDE architecture
+
+## Resources
+
+- [ES6 Modules: The End of Civilization As We Know It?](https://medium.com/@brianleroux/es6-modules-amd-and-commonjs-c1acefbe6fc0#.pxsaotk7a)
+- [Unlocking ES2015 Features With Webpack And Babel](http://blog.xebia.com/unlocking-es2015-features-with-webpack-and-babel/)
+- [JavaScript Application Architecture On The Road To 2015](https://medium.com/google-developers/javascript-application-architecture-on-the-road-to-2015-d8125811101b#.1f39fqwoo)
+- [TodoMVC | Helping you select an MV* framework](http://todomvc.com/)
+ 
 !SLIDE no-bullet-list resources
 
 ## Final Resources
