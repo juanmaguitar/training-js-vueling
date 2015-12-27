@@ -49,7 +49,7 @@ by [JuanMa Garrido](#trainer)
 1. <span class="icon-calendar"> Workflow Tools: NPM, Grunt, Bower & Yeoman
 1. <span class="icon-calendar"> ES2015 (ES6)
 1. <span class="icon-calendar"> ES2015 (ES6)
-1. <span class="icon-calendar"> Frontend Arquitecture: Modular Arquitecture, Bundles & Asynchronous loading (w/ CommonJs & Webpack)
+1. <span class="icon-calendar"> Frontend Arquitecture w/ ES6 Modules: Bundles & Asynchronous loading (w/ Webpack, SystemJS, UMD)
 
 <!-- ######################## COVER ######################## --> 
 
@@ -1759,7 +1759,7 @@ Do the following katas to assure the understanding of Promise
 
 ```
 $ git clone https://github.com/juanmaguitar/project-es2015-webpack-umd.git
-$ cs project-es2015-webpack-umd
+$ cd project-es2015-webpack-umd
 $ npm install
 $ npm start 
 $ node dist/project-babel-webpack.js
@@ -1795,7 +1795,7 @@ $ open "index.html"
 
 ```
 $ git clone https://github.com/juanmaguitar/project-es2015-systemJs.git
-$ cs project-es2015-systemJs
+$ cd project-es2015-systemJs
 $ npm install
 $ grunt serve 
 ```
@@ -1826,7 +1826,7 @@ $ grunt serve
 
 ```
 $ git clone https://github.com/juanmaguitar/webpack-multiple-entry-points.git
-$ cs webpack-multiple-entry-points
+$ cd webpack-multiple-entry-points
 $ npm install
 $ npm start 
 ```

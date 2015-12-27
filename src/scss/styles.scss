@@ -230,9 +230,10 @@ h6 {
 
 .general {
   ol li {
+    text-indent: 0;
     font-size: 20px;
     line-height: 1.8em;
-    span { padding:0 0 0 60px; }
+    span { padding:0 0 0 10px; }
   }
 }
 

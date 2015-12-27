@@ -18,8 +18,9 @@ Learn and practice some advanced concepts of Javascript so the students can appl
     + Arrays & Functional Programming
     + Objects & inheritance
 - jQuery
-- Frontend Architecture: NPM, Grunt, JSLint, format, compilation
-- ES2015/ES6
+- Workflow Tools: NPM, Grunt, Bower & Yeoman
+- ES2015 (ES6)
+- Frontend Arquitecture w/ ES6 Modules: Bundles & Asynchronous loading (w/ Webpack, SystemJS, UMD)
 
 ## Materials ##
 
